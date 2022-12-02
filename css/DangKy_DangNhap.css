@@ -4,16 +4,11 @@
     font-family: "El Messiri", sans-serif;
 }
 
-.body {
-    background: #031323;
-    overflow: hidden;
-} 
-
-.fas {
+#section .fas {
     width: 32px;
 }
 
-.section {
+#section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,10 +29,10 @@
         background-position: 0% 50%;
     }
 }
-.box {
+#section .box {
     position: relative;
 }
-.box .square {
+#section  .box .square {
     position: absolute;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
@@ -56,39 +51,39 @@
         transform: translateY(20px);
     }
 }
-.box .square:nth-child(1) {
+#section .box .square:nth-child(1) {
     width: 100px;
     height: 100px;
     top: -15px;
     right: -45px;
 }
-.box .square:nth-child(2) {
+#section .box .square:nth-child(2) {
     width: 150px;
     height: 150px;
     top: 105px;
     left: -125px;
     z-index: 2;
 }
-.box .square:nth-child(3) {
+#section .box .square:nth-child(3) {
     width: 60px;
     height: 60px;
     bottom: 85px;
     right: -45px;
     z-index: 2;
 }
-.box .square:nth-child(4) {
+#section .box .square:nth-child(4) {
     width: 50px;
     height: 50px;
     bottom: 35px;
     left: -95px;
 }
-.box .square:nth-child(5) {
+#section box .square:nth-child(5) {
     width: 50px;
     height: 50px;
     top: -15px;
     left: -25px;
 }
-.box .square:nth-child(6) {
+#section .box .square:nth-child(6) {
     width: 85px;
     height: 85px;
     top: 165px;
@@ -96,7 +91,7 @@
     z-index: 2;
 }
 
-.container1 {
+#section .container1 {
     position: relative;
     padding: 50px;
     width: 260px;
@@ -110,7 +105,7 @@
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
 }
 
-.container1::after {
+#section .container1::after {
     content: "";
     position: absolute;
     top: 5px;
@@ -126,22 +121,22 @@
     );
 }
 
-.form {
+#section .form {
     position: relative;
     width: 100%;
     height: 100%;
 }
-.form h2 {
+#section .form h2 {
     color: #fff;
     letter-spacing: 2px;
     margin-bottom: 30px;
 }
-.form .inputBx {
+#section .form .inputBx {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
 }
-.form .inputBx input {
+#section .form .inputBx input {
     width: 80%;
     outline: none;
     border: none;
@@ -154,7 +149,7 @@
     font-size: 16px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
-.form .inputBx .password-control {
+#section .form .inputBx .password-control {
     position: absolute;
     top: 11px;
     right: 10px;
@@ -164,16 +159,16 @@
     background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
     transition: 0.5s;
 }
-.form .inputBx .view {
+#section .form .inputBx .view {
     background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
     transition: 0.5s;
 }
-.form .inputBx .fas {
+#section .form .inputBx .fas {
     position: absolute;
     top: 13px;
     left: 13px;
 }
-.form .inputBx input[type="submit"] {
+#section .form .inputBx input[type="submit"] {
     background: #fff;
     color: #111;
     max-width: 100px;
@@ -183,11 +178,11 @@
     cursor: pointer;
     transition: 1.5s;
 }
-#button{
+#section #button{
     text-align: center;
 
 }
-.form .inputBx input[type="submit"]:hover {
+#section .form .inputBx input[type="submit"]:hover {
     background: linear-gradient(
         115deg,
         rgba(0, 0, 0, 0.1),
@@ -196,10 +191,10 @@
     color: #fff;
     transition: 0.5s;
 }
-.form .inputBx input::placeholder {
+#section .form .inputBx input::placeholder {
     color: #fff;
 }
-.form .inputBx span {
+#section .form .inputBx span {
     position: absolute;
     left: 30px;
     padding: 10px;
@@ -208,27 +203,27 @@
     transition: 0.5s;
     pointer-events: none;
 }
-.form .inputBx input:focus ~ span,
-.form .inputBx input:valid ~ span {
+#section .form .inputBx input:focus ~ span,
+#section .form .inputBx input:valid ~ span {
     transform: translateX(-30px) translateY(-25px);
     font-size: 12px;
 }
-.form p {
+#section .form p {
     color: #fff;
     font-size: 15px;
     margin-top: 5px;
 }
-.form p a {
+#section .form p a {
     color: #fff;
 }
-.form p a:hover {
+#section .form p a:hover {
     background-color: #000;
     background-image: linear-gradient(to right, #434343 0%, black 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.remember {
+#section .remember {
     position: relative;
     display: inline-block;
     color: #fff;
