@@ -91,7 +91,7 @@
     z-index: 2;
 }
 
-#section .container1 {
+#section .container {
     position: relative;
     padding: 50px;
     width: 260px;
@@ -105,7 +105,7 @@
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
 }
 
-#section .container1::after {
+#section .container::after {
     content: "";
     position: absolute;
     top: 5px;

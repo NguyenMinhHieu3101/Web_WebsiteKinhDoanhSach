@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- InstanceBeginEditable name="doctitle_link_css" -->
     <title>SẢN PHẨM</title> 
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <!-- InstanceEndEditable -->
 </head>
@@ -135,13 +135,14 @@
         <div class="main">
             <div class="container">
                 <div class="row">
+					 <!-- InstanceBeginEditable name="nav-bar" -->
                     <div id="bar" class="main-bar">
                         <ul class="main-list">
                             <li class="main-item">
                                 <a title="Trang chủ" href="Home.html"><span>Trang chủ</span></a>
                             </li>
                             <li class="main-item">
-                                <a title="Sản phẩm" href="SanPham.html"><span>Sản phẩm</span></a>
+                                <a title="Sản phẩm" href="SanPham.html" class="active-nav"><span>Sản phẩm</span></a>
                             </li>
                             <li class="main-item">
                                 <a title="Tin tức" href="TinTuc.html"><span>Tin tức</span></a>
@@ -154,14 +155,690 @@
                             </li>
                         </ul>
                     </div>
+					<!-- InstanceEndEditable -->
                 </div>
             </div>
         </div>
 
         <!-- MAIN -->
 <!-- InstanceBeginEditable name="content" -->
-       <div>Content</div>
-	</div>            
+       <!-- SẢN PHẨM -->
+		<div>
+        <div class="main-control main-content-wrapper active1">
+            <div class="collection">
+                <div class="breadcrumbs">
+                    <div class="containter1">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ol class="breadcrumb breadcrumb-arrow hidden-sm hidden-xs">
+                                    <li class="change-color"><a href="">Trang chủ</a></li>
+                                    <li class="change-color"><a href="">Danh mục</a></li>
+                                    <li><span>Tất cả sản phẩm</span></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="containter1">
+                    <div class="row1">
+                        <aside class="col-md-3">
+                            <!-- menu sidebar -->
+                            <div class="list-group hidden-sm hidden-xs news-menu" id="list-group-l">
+                                <div class="list-group-item active">Danh mục</div>
+                                <ul class="nav navs sidebar menu" id="menu-blog">
+                                    <li class="item first"><a href="#"><span>Trinh Thám - Kinh Dị</span></a></li>
+                                    <li class="item"><a href="#"><span>Văn Học Hiện Đại</span></a></li>
+                                    <li class="item"><a href="#"><span>Văn Học Kinh Điển</span></a></li>
+                                    <li class="item"><a href="#"><span>Fantasy</span></a></li>
+                                    <li class="item"><a href="#"><span>Light Novel</span></a></li>
+                                    <li class="item"><a href="#"><span>Boys Love</span></a></li>
+                                    <li class="item"><a href="#"><span>Boxset</span></a></li>
+                                    <li class="item"><a href="#"><span>Sách Học Ngữ</span></a></li>
+                                    <li class="item"><a href="#"><span>Manga - Comic</span></a></li>
+                                    <li class="item"><a href="#"><span>Sách Thiếu Nhi</span></a></li>
+                                    <li class="item"><a href="#"><span>Phụ Kiện</span></a></li>
+                                    <li class="item last"><a href="#"><span>Combo Sách</span></a></li>
+                                </ul>
+                            </div>
+    
+                        </aside>
+    
+                        <!--  phần hiển thị các tập truyện -->
+                        <div class="col-md-9 col-sm-12 col-xs-12 content-collection">
+                            <div class="row1">
+                                <!-- phần trên container -->
+                                <div class="col-md-12">
+                                    <div class="row1">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <h1>Tất cả sản phẩm</h1>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="browse-tags">
+                                                <span id="sapxeptheo">Sắp xếp theo:</span>
+                                                <span class="custom-dropdown custom-dropdown--white">
+                                                    <select name="" id=""
+                                                        class="sort-by custom-dropdown__select custom-dropdown__select--white">
+                                                        <option class="mauchunhat" value="manual">Sản phẩm nổi bật</option>
+                                                        <option class="mauchunhat" value="price-ascending">Giá: Tăng dần
+                                                        </option>
+                                                        <option class="mauchunhat" value="price-descending">Giá: Giảm dần
+                                                        </option>
+                                                        <option class="mauchunhat" value="title-ascending">Tên: A-Z</option>
+                                                        <option class="mauchunhat" value="title-descending">Tên: Z-A
+                                                        </option>
+                                                        <option class="mauchunhat" value="created-ascending">Cũ nhất
+                                                        </option>
+                                                        <option class="mauchunhat" value="created-descending">Mới nhất
+                                                        </option>
+                                                        <option class="mauchunhat" value="best-selling">Bán chạy nhất
+                                                        </option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- phần product truyện -->
+                                <div class="col-md-12 content-product-list">
+                                    <div class="product-list-view row1 grid products-grid">
+                                        <!-- item 1 truyện -->
+                                        <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 pro-loop">
+                                            <div class="product-block product-resize">
+                                                <div class="product-img image-resize view view-third clearfix">
+                                                    <div class="product-sale">
+                                                        <span class="sale-lb">-30%</span>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#" title="Combo Kindaichi (5 cuốn)">
+                                                            <img src="//product.hstatic.net/200000287623/product/thon_tam_mo_-_bia_1_85e8afd326274befb18a24954326e5c4_large.jpg"
+                                                                alt=" Combo Kindaichi (5 cuốn) ">
+                                                        </a>
+                                                        <!-- 3 nút trên sản phẩm -->
+                                                        <div class="actions clearfix">
+                                                            <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-add-to-cart ajax_add_to_cart " title="Thêm vào giở" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- phần ghi giá -->
+                                                <div class="product-detail clearfix">
+                                                    <h3 class="pro-name">
+                                                        <a title="Combo Kindaichi (5 cuốn)" href="#">Combo Kindaichi (5 cuốn) </a>
+                                                    </h3>
+                                                    <div class="content_price">
+                                                        <p class="pro-price">373,100₫</p>
+                                                        <p class="pro-price-del">
+                                                            <del class="compare-price">533,000₫</del>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  item 2 truyện -->
+                                        <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 pro-loop">
+                                            <div class="product-block product-resize">
+                                                <div class="product-img image-resize view view-third clearfix">
+                                                    <div class="product-sale">
+                                                        <span class="sale-lb">-15%</span>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#" title="Tokyo 卍 Revengers - 5">
+                                                            <img src="//product.hstatic.net/200000287623/product/tokyo_revengers_5_bia_1_d69b061241cb4c4ba48d44403a6dbe94_large.jpg"
+                                                                alt="  Tokyo 卍 Revengers - 5 ">
+                                                        </a>
+                                                        <!-- 3 nút trên sản phẩm -->
+                                                        <div class="actions clearfix">
+                                                            <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-add-to-cart ajax_add_to_cart " title="Thêm vào giở" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- phần ghi giá -->
+                                                <div class="product-detail clearfix">
+                                                    <h3 class="pro-name">
+                                                        <a title="Tokyo 卍 Revengers - 5" href="#">Tokyo 卍 Revengers - 5 </a>
+                                                    </h3>
+                                                    <div class="content_price">
+                                                        <p class="pro-price">136,000₫</p>
+                                                        <p class="pro-price-del">
+                                                            <del class="compare-price">160,000₫</del>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item 3 truyện -->
+                                        <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 pro-loop">
+                                            <div class="product-block product-resize">
+                                                <div class="product-img image-resize view view-third clearfix">
+                                                    <div class="product-sale">
+                                                        <span class="sale-lb">-15%</span>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#" title="Tokyo 卍 Revengers - 5 (Bản Đặc Biệt Không Box)">
+                                                            <img src="//product.hstatic.net/200000287623/product/tokyo_revengers_5_bia_1_0c100182e9c54e0db0eabe3153a7c70b_large.jpg"
+                                                                alt="  Tokyo 卍 Revengers - 5 (Bản Đặc Biệt Không Box) ">
+                                                        </a>
+                                                        <!-- 3 nút trên sản phẩm -->
+                                                        <div class="actions clearfix">
+                                                            <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-add-to-cart ajax_add_to_cart " title="Thêm vào giở" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- phần ghi giá -->
+                                                <div class="product-detail clearfix">
+                                                    <h3 class="pro-name">
+                                                        <a title="Tokyo 卍 Revengers - 5 (Bản Đặc Biệt Không Box)" href="#">Tokyo 卍 Revengers - 5 (Bản Đặc Biệt Không Box) </a>
+                                                    </h3>
+                                                    <div class="content_price">
+                                                        <p class="pro-price">97,750₫</p>
+                                                        <p class="pro-price-del">
+                                                            <del class="compare-price">115,000₫</del>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item 4 truyện -->
+                                        <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 pro-loop">
+                                            <div class="product-block product-resize">
+                                                <div class="product-img image-resize view view-third clearfix">
+                                                    <div class="product-sale">
+                                                        <span class="sale-lb">-15%</span>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#" title="Mỹ Vị Hầm Ngục - 4">
+                                                            <img src="//product.hstatic.net/200000287623/product/my_vi_ham_nguc_4_-_bia1_d85ed0915beb4a488e134ffbd67316b7_large.jpg"
+                                                                alt=" Mỹ Vị Hầm Ngục - 4 ">
+                                                        </a>
+                                                        <!-- 3 nút trên sản phẩm -->
+                                                        <div class="actions clearfix">
+                                                            <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-add-to-cart ajax_add_to_cart " title="Thêm vào giở" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- phần ghi giá -->
+                                                <div class="product-detail clearfix">
+                                                    <h3 class="pro-name">
+                                                        <a title="Mỹ Vị Hầm Ngục - 4" href="#">Mỹ Vị Hầm Ngục - 4 </a>
+                                                    </h3>
+                                                    <div class="content_price">
+                                                        <p class="pro-price">59,500₫</p>
+                                                        <p class="pro-price-del">
+                                                            <del class="compare-price">70,000₫</del>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item 5 truyện -->
+                                        <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 pro-loop">
+                                            <div class="product-block product-resize">
+                                                <div class="product-img image-resize view view-third clearfix">
+                                                    <div class="product-sale">
+                                                        <span class="sale-lb">-15%</span>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#" title="Tokyo 卍 Revengers - 5 (Bản Đặc Biệt Có Box)">
+                                                            <img src="//product.hstatic.net/200000287623/product/tokyo_revengers_5_bia_1_6f7e74113c7b40f8ac9cea07410cecba_large.jpg"
+                                                                alt=" Tokyo 卍 Revengers - 5 (Bản Đặc Biệt Có Box) ">
+                                                        </a>
+                                                        <!-- 3 nút trên sản phẩm -->
+                                                        <div class="actions clearfix">
+                                                            <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-add-to-cart ajax_add_to_cart " title="Thêm vào giở" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- phần ghi giá -->
+                                                <div class="product-detail clearfix">
+                                                    <h3 class="pro-name">
+                                                        <a title="Tokyo 卍 Revengers - 5 (Bản Đặc Biệt Có Box)" href="#">Tokyo 卍 Revengers - 5 (Bản Đặc Biệt Có Box) </a>
+                                                    </h3>
+                                                    <div class="content_price">
+                                                        <p class="pro-price">136,000₫</p>
+                                                        <p class="pro-price-del">
+                                                            <del class="compare-price">160,000₫</del>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item 6 -->
+                                        <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 pro-loop">
+                                            <div class="product-block product-resize">
+                                                <div class="product-img image-resize view view-third clearfix">
+                                                    <div class="product-sale">
+                                                        <span class="sale-lb">-23%</span>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#" title="Núi Chuột Quét">
+                                                            <img src="//product.hstatic.net/200000287623/product/nui_chuot_quet_-_bia_1_1c06c110bb7e469987f61202abba4ca6_large.jpg"
+                                                                alt="  Núi Chuột Quét  ">
+                                                        </a>
+                                                        <!-- 3 nút trên sản phẩm -->
+                                                        <div class="actions clearfix">
+                                                            <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-add-to-cart ajax_add_to_cart " title="Thêm vào giở" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- phần ghi giá -->
+                                                <div class="product-detail clearfix">
+                                                    <h3 class="pro-name">
+                                                        <a title="Núi Chuột Quét" href="#">Núi Chuột Quét</a>
+                                                    </h3>
+                                                    <div class="content_price">
+                                                        <p class="pro-price">146,300₫</p>
+                                                        <p class="pro-price-del">
+                                                            <del class="compare-price">190,000₫</del>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item 7 -->
+                                        <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 pro-loop">
+                                            <div class="product-block product-resize">
+                                                <div class="product-img image-resize view view-third clearfix">
+                                                    <div class="product-sale">
+                                                        <span class="sale-lb">-20%</span>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#" title="BELLE - Rồng Và Công Chúa Tàn Nhang">
+                                                            <img src="//product.hstatic.net/200000287623/product/belle_bia_1_c4c13284a73e49b982813c912adc89d6_large.jpg"
+                                                                alt="  BELLE - Rồng Và Công Chúa Tàn Nhang ">
+                                                        </a>
+                                                        <!-- 3 nút trên sản phẩm -->
+                                                        <div class="actions clearfix">
+                                                            <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-add-to-cart ajax_add_to_cart " title="Thêm vào giở" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- phần ghi giá -->
+                                                <div class="product-detail clearfix">
+                                                    <h3 class="pro-name">
+                                                        <a title="BELLE - Rồng Và Công Chúa Tàn Nhang" href="#">BELLE - Rồng Và Công Chúa Tàn Nhang </a>
+                                                    </h3>
+                                                    <div class="content_price">
+                                                        <p class="pro-price">88,000₫</p>
+                                                        <p class="pro-price-del">
+                                                            <del class="compare-price">110,000₫</del>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item 8 -->
+                                        <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 pro-loop">
+                                            <div class="product-block product-resize">
+                                                <div class="product-img image-resize view view-third clearfix">
+                                                    <div class="product-sale">
+                                                        <span class="sale-lb">-20%</span>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#" title="Lời Nguyền Shiraisan">
+                                                            <img src="//product.hstatic.net/200000287623/product/loi_nguyen_shiraisan_-_bia1_eaaa01c874884824a26f6a8edbc34113_large.jpg"
+                                                                alt="  Lời Nguyền Shiraisan ">
+                                                        </a>
+                                                        <!-- 3 nút trên sản phẩm -->
+                                                        <div class="actions clearfix">
+                                                            <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-add-to-cart ajax_add_to_cart " title="Thêm vào giở" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- phần ghi giá -->
+                                                <div class="product-detail clearfix">
+                                                    <h3 class="pro-name">
+                                                        <a title="Lời Nguyền Shiraisan" href="#">Lời Nguyền Shiraisan </a> 
+                                                    </h3>
+                                                    <div class="content_price">
+                                                        <p class="pro-price">76,000₫</p>
+                                                        <p class="pro-price-del">
+                                                            <del class="compare-price">95,000₫</del>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <!-- item 9 -->
+                                        <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 pro-loop">
+                                            <div class="product-block product-resize">
+                                                <div class="product-img image-resize view view-third clearfix">
+                                                    <div class="product-sale">
+                                                        <span class="sale-lb">-20%</span>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#" title="Miền Đất Hứa - Hồi Ức Về Đồng Đội (Light Novel)">
+                                                            <img src="//product.hstatic.net/200000287623/product/neverland_ln_3_bia_1_286e99299c4543ec8a2b0d0c54989fbc_large.jpg"
+                                                                alt="  Miền Đất Hứa - Hồi Ức Về Đồng Đội (Light Novel) ">
+                                                        </a>
+                                                        <!-- 3 nút trên sản phẩm -->
+                                                        <div class="actions clearfix">
+                                                            <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-add-to-cart ajax_add_to_cart " title="Thêm vào giở" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- phần ghi giá -->
+                                                <div class="product-detail clearfix">
+                                                    <h3 class="pro-name">
+                                                        <a title="Miền Đất Hứa - Hồi Ức Về Đồng Đội (Light Novel)" href="#">Miền Đất Hứa - Hồi Ức Về Đồng Đội (Light Novel)  </a>
+                                                    </h3>
+                                                    <div class="content_price">
+                                                        <p class="pro-price">68,000₫</p>
+                                                        <p class="pro-price-del">
+                                                            <del class="compare-price">85,000₫</del>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item 10 -->
+                                        <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 pro-loop">
+                                            <div class="product-block product-resize">
+                                                <div class="product-img image-resize view view-third clearfix">
+                                                    <div class="product-sale">
+                                                        <span class="sale-lb">-20%</span>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#" title="Tập Tỏ Tình - 2">
+                                                            <img src="//product.hstatic.net/200000287623/product/tap_to_tinh_2_bia_1_ec561f4e29a44e6fbdc16293144c87c2_large.jpg"
+                                                                alt="  Tập Tỏ Tình - 2 ">
+                                                        </a>
+                                                        <!-- 3 nút trên sản phẩm -->
+                                                        <div class="actions clearfix">
+                                                            <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-add-to-cart ajax_add_to_cart " title="Thêm vào giở" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- phần ghi giá -->
+                                                <div class="product-detail clearfix">
+                                                    <h3 class="pro-name">
+                                                        <a title="Tập Tỏ Tình - 2" href="#">Tập Tỏ Tình - 2  </a>
+                                                    </h3>
+                                                    <div class="content_price">
+                                                        <p class="pro-price">104,000₫</p>
+                                                        <p class="pro-price-del">
+                                                            <del class="compare-price">130,000₫</del>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item 11 -->
+                                        <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 pro-loop">
+                                            <div class="product-block product-resize">
+                                                <div class="product-img image-resize view view-third clearfix">
+                                                    <div class="product-sale">
+                                                        <span class="sale-lb">-15%</span>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#" title="Horimiya - 16">
+                                                            <img src="//product.hstatic.net/200000287623/product/horimiya_16_ban_thuong_dac_biet_-_bia_1_67a5fe8171454ea7b6c045f50ab6c539_large.jpg"
+                                                                alt="  Horimiya - 16  ">
+                                                        </a>
+                                                        <!-- 3 nút trên sản phẩm -->
+                                                        <div class="actions clearfix">
+                                                            <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-add-to-cart ajax_add_to_cart " title="Thêm vào giở" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- phần ghi giá -->
+                                                <div class="product-detail clearfix">
+                                                    <h3 class="pro-name">
+                                                        <a title="Horimiya - 16" href="#">Horimiya - 16 </a>
+                                                    </h3>
+                                                    <div class="content_price">
+                                                        <p class="pro-price">42,500₫</p>
+                                                        <p class="pro-price-del">
+                                                            <del class="compare-price">50,000₫</del>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item 12 -->
+                                        <div class="col-lg-3 col-sm-4 col-md-4 col-xs-6 pro-loop">
+                                            <div class="product-block product-resize">
+                                                <div class="product-img image-resize view view-third clearfix">
+                                                    <div class="product-sale">
+                                                        <span class="sale-lb">-15%</span>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#" title="Vẽ Vời Vẩn Vơ - 4">
+                                                            <img src="//product.hstatic.net/200000287623/product/ve_voi_van_vo_4_-_bia_1_a298a636b0ef40888bda3394187710a1_large.jpg"
+                                                                alt="  Vẽ Vời Vẩn Vơ - 4 ">
+                                                        </a>
+                                                        <!-- 3 nút trên sản phẩm -->
+                                                        <div class="actions clearfix">
+                                                            <a class="btn-quickview" title="Xem nhanh" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-buynow" title="Mua ngay" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                            <a class="btn-add-to-cart ajax_add_to_cart " title="Thêm vào giở" href="#">
+                                                                <i class="icon_list"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- phần ghi giá -->
+                                                <div class="product-detail clearfix">
+                                                    <h3 class="pro-name">
+                                                        <a title="Vẽ Vời Vẩn Vơ - 4" href="#">Vẽ Vời Vẩn Vơ - 4 </a>
+                                                    </h3>
+                                                    <div class="content_price">
+                                                        <p class="pro-price">49,300₫</p>
+                                                        <p class="pro-price-del">
+                                                            <del class="compare-price">58,000₫</del>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                                <!-- phần mô tả các trang sau -->
+                                <div class="col-md-12 pw-default">
+                                    <div class=" col-md-8 col-sm-6 col-xs-12 text-center">
+                                        <span class="page-node current">1</span>
+                                        <a href="#" class="page-node">2</a>
+                                        <a href="#" class="page-node">3</a>
+                                        <a href="#" class="page-node">...</a>
+                                        <a href="#" class="page-node">6</a>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs">
+                                        <a href="#" class="pull-right next">
+                                            <span>Trang sau
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- POST SLIDER -->
+
+    <div class="page-wrapper">
+        <div class="post-slider">
+            <h2 class="slider-title">BÀI VIẾT MỚI</h2>
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+            <div class="post-wrapper">
+                <div class="post">
+                    <a
+                        href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song"><img
+                            src="https://file.hstatic.net/200000287623/article/22291480_1360463820742776_6215763102557804907_o_164b9a8f372b466a87cfa24a8e1c2bb7_large.jpg"
+                            alt="" class="slider-image"></a>
+                    <div class="post-info">
+                        <h4><a
+                                href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song">[REVIEW
+                                ĐỘC GIẢ] 5 CENTIMET TRÊN GIÂY - BI KỊCH TUỔI TRẺ VÀ CUỘC HÀNH TRÌNH TÌM LẠI
+                                LẼ SỐNG</a></h4>
+                        <p>5 Centimet Trên Giây của Shinkai Makoto không chỉ là chút vị đắng của tách cà phê mà ai cũng
+                            phải một lần nhâm nhi trong đời, mà còn là tác phẩm có dấu ấn đậm nét của văn học N...</p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <a
+                        href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song"><img
+                            src="https://file.hstatic.net/200000287623/article/22291480_1360463820742776_6215763102557804907_o_164b9a8f372b466a87cfa24a8e1c2bb7_large.jpg"
+                            alt="" class="slider-image"></a>
+                    <div class="post-info">
+                        <h4><a
+                                href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song">[REVIEW
+                                ĐỘC GIẢ] 5 CENTIMET TRÊN GIÂY - BI KỊCH TUỔI TRẺ VÀ CUỘC HÀNH TRÌNH TÌM LẠI
+                                LẼ SỐNG</a></h4>
+                        <p>5 Centimet Trên Giây của Shinkai Makoto không chỉ là chút vị đắng của tách cà phê mà ai cũng
+                            phải một lần nhâm nhi trong đời, mà còn là tác phẩm có dấu ấn đậm nét của văn học N...</p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <a
+                        href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song"><img
+                            src="https://file.hstatic.net/200000287623/article/22291480_1360463820742776_6215763102557804907_o_164b9a8f372b466a87cfa24a8e1c2bb7_large.jpg"
+                            alt="" class="slider-image"></a>
+                    <div class="post-info">
+                        <h4><a
+                                href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song">[REVIEW
+                                ĐỘC GIẢ] 5 CENTIMET TRÊN GIÂY - BI KỊCH TUỔI TRẺ VÀ CUỘC HÀNH TRÌNH TÌM LẠI
+                                LẼ SỐNG</a></h4>
+                        <p>5 Centimet Trên Giây của Shinkai Makoto không chỉ là chút vị đắng của tách cà phê mà ai cũng
+                            phải một lần nhâm nhi trong đời, mà còn là tác phẩm có dấu ấn đậm nét của văn học N...</p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <a
+                        href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song"><img
+                            src="https://file.hstatic.net/200000287623/article/22291480_1360463820742776_6215763102557804907_o_164b9a8f372b466a87cfa24a8e1c2bb7_large.jpg"
+                            alt="" class="slider-image"></a>
+                    <div class="post-info">
+                        <h4><a
+                                href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song">[REVIEW
+                                ĐỘC GIẢ] 5 CENTIMET TRÊN GIÂY - BI KỊCH TUỔI TRẺ VÀ CUỘC HÀNH TRÌNH TÌM LẠI
+                                LẼ SỐNG</a></h4>
+                        <p>5 Centimet Trên Giây của Shinkai Makoto không chỉ là chút vị đắng của tách cà phê mà ai cũng
+                            phải một lần nhâm nhi trong đời, mà còn là tác phẩm có dấu ấn đậm nét của văn học N...</p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <a
+                        href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song"><img
+                            src="https://file.hstatic.net/200000287623/article/22291480_1360463820742776_6215763102557804907_o_164b9a8f372b466a87cfa24a8e1c2bb7_large.jpg"
+                            alt="" class="slider-image"></a>
+                    <div class="post-info">
+                        <h4><a
+                                href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song">[REVIEW
+                                ĐỘC GIẢ] 5 CENTIMET TRÊN GIÂY - BI KỊCH TUỔI TRẺ VÀ CUỘC HÀNH TRÌNH TÌM LẠI
+                                LẼ SỐNG</a></h4>
+                        <p>5 Centimet Trên Giây của Shinkai Makoto không chỉ là chút vị đắng của tách cà phê mà ai cũng
+                            phải một lần nhâm nhi trong đời, mà còn là tác phẩm có dấu ấn đậm nét của văn học N...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+           
 <!-- InstanceEndEditable -->
 	</div>
     <!-- JQuery -->
