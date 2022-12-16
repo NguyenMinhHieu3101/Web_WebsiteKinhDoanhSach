@@ -1,7 +1,7 @@
 /*ĐĂNG NHẬP*/
-@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap");
- * {
-    font-family: "El Messiri", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
+* {
+    font-family: 'El Messiri', sans-serif;
 }
 
 #section .fas {
@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #ffc0cb, #e73c7e, #ff69b4, #ffc0cb);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 }
@@ -32,7 +32,7 @@
 #section .box {
     position: relative;
 }
-#section  .box .square {
+#section .box .square {
     position: absolute;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
@@ -40,7 +40,6 @@
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 15px;
     animation: square 10s linear infinite;
-
 }
 @keyframes square {
     0%,
@@ -94,7 +93,7 @@
 #section .container {
     position: relative;
     padding: 50px;
-    width: 260px;
+    width: 350px;
     min-height: 380px;
     display: flex;
     justify-content: center;
@@ -106,7 +105,7 @@
 }
 
 #section .container::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 5px;
     right: 5px;
@@ -114,11 +113,7 @@
     left: 5px;
     border-radius: 5px;
     pointer-events: none;
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.1) 0%,
-        rgba(255, 255, 255, 0.1) 2%
-    );
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 2%);
 }
 
 #section .form {
@@ -168,7 +163,7 @@
     top: 13px;
     left: 13px;
 }
-#section .form .inputBx input[type="submit"] {
+#section .form .inputBx input[type='submit'] {
     background: #fff;
     color: #111;
     max-width: 100px;
@@ -178,16 +173,11 @@
     cursor: pointer;
     transition: 1.5s;
 }
-#section #button{
+#section #button {
     text-align: center;
-
 }
-#section .form .inputBx input[type="submit"]:hover {
-    background: linear-gradient(
-        115deg,
-        rgba(0, 0, 0, 0.1),
-        rgba(255, 255, 255, 0.25)
-    );
+#section .form .inputBx input[type='submit']:hover {
+    background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
     color: #fff;
     transition: 0.5s;
 }
