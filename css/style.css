@@ -411,6 +411,8 @@ svg:not(:root) {
 }
 
 .flexslider-container .flexslider {
+    width: 100%;
+    margin-left: 20px;
     border: 0;
     margin: 0;
 }
