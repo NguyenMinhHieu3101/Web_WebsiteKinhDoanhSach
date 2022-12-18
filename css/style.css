@@ -2,8 +2,9 @@
 
     /* --main-color: #01a14b; */
     --main-color: #F67694;
-   
+    --header-footer-text: #ffffff;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +35,8 @@ img {
     width: 100%;
     height: 50px;
     /* background: #01a14b; */
-    background: var(--main-color);
+    /* background: var(--main-color); */
+    background-image: url(../images/newyear/nav-bar.png);
     display: flex;
     justify-content: space-around;
 }
@@ -52,11 +54,12 @@ img {
     display: inline-block;
     font-weight: 600;
 }
-.active-nav{
-    background-color: #02bff6;
-   
 
+.active-nav{
+    background-color: var(--main-color);
+    color: var(--header-footer-text) !important;
 }
+
 .first-half a {
     color: #fff;
     text-decoration: none;
@@ -1132,6 +1135,7 @@ p.pro-price-del {
 
 .image-slider {
     padding-bottom: 20px;
+    width: 75%;
 }
 
 .image-wrapper {
@@ -1760,6 +1764,7 @@ a.next{
     background-color: #fff;
     font-weight: 100;
 }
+
 .pull-right {
     float: right!important;
 }
@@ -1767,9 +1772,11 @@ a.next{
 a.next span i {
     margin-left: 4px;
 }
+
 a.next span{
     padding: 0 13px;
 }
+
 .fa {
     font-family: 'FontAwesome'!important;
     display: inline-block;
@@ -1778,6 +1785,7 @@ a.next span{
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
 }
+
 .fa-angle-right:before {
     content:"\003e" !important;
 
