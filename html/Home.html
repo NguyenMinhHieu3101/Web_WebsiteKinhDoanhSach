@@ -8,6 +8,7 @@
     <!-- InstanceBeginEditable name="doctitle_link_css" -->
     <title>HOME</title> 
     <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <!-- InstanceEndEditable -->
 </head>
@@ -173,9 +174,9 @@
                         <div class="slider-default col-sl">
                             <div class="row">
                                 <div class="flexslider-container">
-                                    <div class="flexslider" style="margin-left: 15%;">
+                                    <!-- <div class="flexslider" style="margin-left: 15%;">
                                         <ul class="slides">
-                                            <!-- <li class=""
+                                            <li class=""
                                                 style="width: 100%; float: left; margin-right: -100%; position: relative; display: block; z-index: 1; opacity: 0;">
                                                 <a href="https://ipm.vn/collections/sach-moi">
                                                     <img src="//theme.hstatic.net/200000287623/1000800165/14/slideshow_1.jpg?v=203"
@@ -189,22 +190,22 @@
                                                         alt="" draggable="false">
                                                 </a>
                                             </li> -->
-                                            <li style="width: 100%; float: left; position: relative; display: block; z-index: 2; opacity: 1;"
+                                            <!-- <li style="width: 100%; float: left; position: relative; display: block; z-index: 2; opacity: 1;"
                                                 class="flex-active-slide">
                                                 <a
                                                     href="https://ipm.vn/products/lop-hoc-de-cao-thuc-luc-3?fbclid=IwAR1FmuUE0tSx-cF_zKvAvBBUNtMAJ8qnj9x1IO4tbD-HyLrZnK3a-m7VHn8">
                                                     <img src="../images/newyear/banner.png"
                                                         alt="" draggable="false">
                                                 </a>
-                                            </li>
+                                            </li> -->
                                             <!-- <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: block; z-index: 1; opacity: 0;"
                                                 class="">
                                                 <a href="https://ipm.vn/products/tap-to-tinh-1">
                                                     <img src="//theme.hstatic.net/200000287623/1000800165/14/slideshow_4.jpg?v=203"
                                                         alt="" draggable="false">
                                                 </a>
-                                            </li> -->
-                                        </ul>
+                                            </li> 
+                                        </ul> -->
                                         <!-- <div class="flex-controls">
                                             <ol class="flex-control-nav flex-control-paging">
                                                 <li>
@@ -229,7 +230,81 @@
                                                 </li>
                                             </ul>
                                         </div> -->
-                                    </div>
+                                        <section id="banner">
+                                            <div class="slideshow-container">
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">1 / 3</div>
+                                                    <img src="../images/newyear/banner.png" style="width:100%" alt="Banner 1">
+                                                </div>
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">2 / 3</div>
+                                                    <img src="../images/newyear/slider1.jpg" style="width:100%" alt="Banner 2">
+                                                </div>
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">3 / 3</div>
+                                                    <img src="../images/newyear/slider4.jpg" style="width:100%" alt="Banner 3">
+                                                </div>
+                            
+                                                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                                <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+                                            </div>
+                                            <br>
+                                            <!--The dots/circles-->
+                                            <!-- <div style="text-align:center">
+                                                <span class="dot" onclick="currentSlide(1)"></span>
+                                                <span class="dot" onclick="currentSlide(2)"></span>
+                                                <span class="dot" onclick="currentSlide(3)"></span>
+                                            </div> -->
+                                            <script>
+                                                let slideIndex = 0;
+                                                showSlides();
+                                                function showSlides() {
+                                                    let i;
+                                                    let slides = document.getElementsByClassName("mySlides");
+                                                    for (i = 0; i < slides.length; i++) {
+                                                        slides[i].style.display = "none";
+                                                    }
+                                                    slideIndex++;
+                                                    if (slideIndex > slides.length) { slideIndex = 1 }
+                                                    slides[slideIndex - 1].style.display = "block";
+                                                    //Change image every 3 sec
+                                                    setTimeout(showSlides, 3000);
+                                                }
+                            
+                                                let slideIndex1 = 1;
+                            
+                                                showSlides1(slideIndex1); //Gọi hàm chuyển ảnh slideshow banner khi nhấn Next/Previous hoặc 3 nút tròn chuyển ảnh
+                            
+                                                //Next/previous controls
+                            
+                                                function plusSlides(n) {
+                                                    showSlides1(slideIndex1 += n);
+                                                }
+                                                function currentSlide(n) {
+                                                    showSlides1(slideIndex1 = n);
+                                                }
+                                                function showSlides1(n) {
+                                                    let i;
+                                                    let slides = document.getElementsByClassName("mySlides");
+                                                    let dots = document.getElementsByClassName("dot");
+                                                    if (n > slides.length) { slideIndex1 = 1 }
+                                                    if (n < 1) { slideIndex1 = slides.length }
+                                                    for (i = 0; i < slides.length; i++) {
+                                                        slides[i].style.display = "none";
+                                                    }
+                                                    for (i = 0; i < dots.length; i++) {
+                                                        dots[i].className = dots[i].className.replace(" active", "");
+                                                    }
+                                                    slides[slideIndex1 - 1].style.display = "block";
+                                                    dots[slideIndex1 - 1].className += " active";
+                                                }
+                                            </script>
+                                        </section>
+                                        <!-- <section id="logo">
+                                            <a href="Home.html"><img src="images/logo.png" width="436" height="60" alt="" />
+                                            </a>
+                                        </section> -->
+                                    </div> 
                                 </div>
                             </div>
                         </div>
@@ -2183,65 +2258,61 @@
 
                 <div class="post">
                     <a
-                        href="https://ipm.vn/blogs/tintuc/diem-sach-light-novel-bakemonogatari-thanh-xuan-thu-vi-ben-van-dieu-quai-go"><img
-                            src="https://file.hstatic.net/200000287623/article/bakemonogatari_-_ban_gioi_han_va_dac_biet_tai_viet_nam_11111111_7781146bbf6d44b4bbfc73c808f3ddfe_large.jpg"
+                        href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song"><img
+                            src="https://file.hstatic.net/200000287623/article/22291480_1360463820742776_6215763102557804907_o_164b9a8f372b466a87cfa24a8e1c2bb7_large.jpg"
                             alt="" class="slider-image"></a>
                     <div class="post-info">
                         <h4><a
-                                href="https://ipm.vn/blogs/tintuc/diem-sach-light-novel-bakemonogatari-thanh-xuan-thu-vi-ben-van-dieu-quai-go">
-                                [ĐIỂM SÁCH] BAKEMONOGATARI - THANH XUÂN "THÚ VỊ" BÊN MUÔN VÀN ĐIỀU "QUÁI GỞ"
-                            </a></h4>
-                        <p>
-                            Giữa thời hiện đại, trong bối cảnh đô thị hết sức bình thường, vậy mà cậu nam sinh Araragi Koyomi lại bắt gặp 1001 câu chuyện "quái dị" - ma - thần - quỷ - quái - hay ...
-                        </p>
+                                href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song">[REVIEW
+                                ĐỘC GIẢ] 5 CENTIMET TRÊN GIÂY - BI KỊCH TUỔI TRẺ VÀ CUỘC HÀNH TRÌNH TÌM LẠI
+                                LẼ SỐNG</a></h4>
+                        <p>5 Centimet Trên Giây của Shinkai Makoto không chỉ là chút vị đắng của tách cà phê mà ai cũng
+                            phải một lần nhâm nhi trong đời, mà còn là tác phẩm có dấu ấn đậm nét của văn học N...</p>
                     </div>
                 </div>
 
                 <div class="post">
                     <a
-                        href="https://ipm.vn/blogs/tintuc/diem-sach-khi-te-bao-lam-viec-cuoc-chien-khong-hoi-ket-cua-co-the"><img
-                            src="https://file.hstatic.net/200000287623/article/khi_te_bao_lam_viec_-_truyen_tranh_manga_7a8148b658b34591952bb5ceb0408c66_large.jpg"
+                        href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song"><img
+                            src="https://file.hstatic.net/200000287623/article/22291480_1360463820742776_6215763102557804907_o_164b9a8f372b466a87cfa24a8e1c2bb7_large.jpg"
                             alt="" class="slider-image"></a>
                     <div class="post-info">
                         <h4><a
-                                href="https://ipm.vn/blogs/tintuc/diem-sach-khi-te-bao-lam-viec-cuoc-chien-khong-hoi-ket-cua-co-the">
-                                [ĐIỂM SÁCH] KHI TẾ BÀO LÀM VIỆC - CUỘC CHIẾN KHÔNG HỒI KẾT TRONG CƠ THỂ CON NGƯỜI
-                            </a></h4>
-                        <p>
-                            Bất cứ khi nào bạn cảm thấy cô đơn hay buồn bã, hãy nhớ rằng, trong cơ thể bạn có đến hàng chục nghìn tỉ tế bào đang âm thầm đồng hành và hiến dâng trọn đời vì bạn, từng giây từ...
-                        </p>
+                                href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song">[REVIEW
+                                ĐỘC GIẢ] 5 CENTIMET TRÊN GIÂY - BI KỊCH TUỔI TRẺ VÀ CUỘC HÀNH TRÌNH TÌM LẠI
+                                LẼ SỐNG</a></h4>
+                        <p>5 Centimet Trên Giây của Shinkai Makoto không chỉ là chút vị đắng của tách cà phê mà ai cũng
+                            phải một lần nhâm nhi trong đời, mà còn là tác phẩm có dấu ấn đậm nét của văn học N...</p>
                     </div>
                 </div>
 
                 <div class="post">
                     <a
-                        href="https://ipm.vn/blogs/tintuc/review-docgia-belle-rong-va-cong-chua-tan-nhang"><img
-                            src="https://file.hstatic.net/200000287623/article/z3790881528746_3722dfeb2093cb435f7f59503d389398544232_3775e9826242400fa8fcecaa8d03087c_large.jpg"
+                        href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song"><img
+                            src="https://file.hstatic.net/200000287623/article/22291480_1360463820742776_6215763102557804907_o_164b9a8f372b466a87cfa24a8e1c2bb7_large.jpg"
                             alt="" class="slider-image"></a>
                     <div class="post-info">
                         <h4><a
-                                href="https://ipm.vn/blogs/tintuc/review-docgia-belle-rong-va-cong-chua-tan-nhang">
-                                [REVIEW ĐỘC GIẢ] BELLE – RỒNG VÀ CÔNG CHÚA TÀN NHANG: ĐỂ TIẾNG HÁT ĐƯA TA ĐẾN NƠI CÓ ÁNH DƯƠNG!
-                            </a></h4>
-                        <p>
-                            BELLE – RỒNG VÀ CÔNG CHÚA TÀN NHANG là tiểu thuyết được chấp bút bởi Mamoru Hosoda và minh họa bởi Yoriyuki Ikegami (Trúc Linh dịch). Câu chuyện giả tưởng này bắt đầu với nhân v...
-                        </p>
+                                href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song">[REVIEW
+                                ĐỘC GIẢ] 5 CENTIMET TRÊN GIÂY - BI KỊCH TUỔI TRẺ VÀ CUỘC HÀNH TRÌNH TÌM LẠI
+                                LẼ SỐNG</a></h4>
+                        <p>5 Centimet Trên Giây của Shinkai Makoto không chỉ là chút vị đắng của tách cà phê mà ai cũng
+                            phải một lần nhâm nhi trong đời, mà còn là tác phẩm có dấu ấn đậm nét của văn học N...</p>
                     </div>
                 </div>
 
                 <div class="post">
                     <a
-                        href="https://ipm.vn/blogs/tintuc/diem-sach-mirai-den-tu-tuong-lai-the-gioi-nhiem-mau-den-tu-mai-nha"><img
-                            src="https://file.hstatic.net/200000287623/article/mirai_den_tu_tuong_lai_-_light_novel_cua_mamoru_hosoda111_b98d09b6f904442e977c199f6c1802ea_large.jpg"
+                        href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song"><img
+                            src="https://file.hstatic.net/200000287623/article/22291480_1360463820742776_6215763102557804907_o_164b9a8f372b466a87cfa24a8e1c2bb7_large.jpg"
                             alt="" class="slider-image"></a>
                     <div class="post-info">
                         <h4><a
-                                href="https://ipm.vn/blogs/tintuc/diem-sach-mirai-den-tu-tuong-lai-the-gioi-nhiem-mau-den-tu-mai-nha">
-                                [ĐIỂM SÁCH] MIRAI ĐẾN TỪ TƯƠNG LAI – THẾ GIỚI NHIỆM MÀU ĐẾN TỪ MÁI NHÀ THÂN THƯƠNG
-                            </a></h4>
-                        <p>
-                            Với Mirai đến từ tương lai, tác giả Mamoru Hosoda tiếp tục khai thác đề tài gia đình và tình thân - vốn góp phần xây dựng và định hình nên tên tuổi của ông qua hàng loạt tác phẩ...
-                        </p>
+                                href="https://ipm.vn/blogs/tintuc/5-centimet-tren-giay-bi-kich-tuoi-tre-va-cuoc-hanh-trinh-tim-lai-le-song">[REVIEW
+                                ĐỘC GIẢ] 5 CENTIMET TRÊN GIÂY - BI KỊCH TUỔI TRẺ VÀ CUỘC HÀNH TRÌNH TÌM LẠI
+                                LẼ SỐNG</a></h4>
+                        <p>5 Centimet Trên Giây của Shinkai Makoto không chỉ là chút vị đắng của tách cà phê mà ai cũng
+                            phải một lần nhâm nhi trong đời, mà còn là tác phẩm có dấu ấn đậm nét của văn học N...</p>
                     </div>
                 </div>
             </div>
