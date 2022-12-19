@@ -1157,11 +1157,11 @@ p.pro-price-del {
 /* POST-SLIDER */
 
 .page-wrapper {
-    padding: 20px 0px 100px 0px;
+    padding: 20px 0px 50px 0px;
 }
 
 .post-slider {
-    /* position: relative; */
+    position: relative;
     padding-bottom: 20px;
     /* border: 1px solid red; */
 }
@@ -1173,8 +1173,7 @@ p.pro-price-del {
 
 .post-slider .next {
     position: absolute;
-    top: 370%;
-    /* top: 1300px; */
+    top: 50%;
     right: 70px;
     font-size: 2em;
     color: #000;
@@ -1183,8 +1182,7 @@ p.pro-price-del {
 
 .post-slider .prev {
     position: absolute;
-    top: 370%;
-    /* top: 1300px; */
+    top: 50%;
     left: 70px;
     font-size: 2em;
     color: #000;
@@ -1207,6 +1205,7 @@ p.pro-price-del {
     display: inline-block;
     background-color: #fff;
     border: #a1a1a1;
+    border-bottom: 1px solid #e5e5e5;
     float: left;
     -webkit-transition: margin 0.3s ease-out;
     -moz-transition: margin 0.3s ease-out;
@@ -1222,7 +1221,10 @@ p.pro-price-del {
     height: 260px;
     padding: 15px 8px 30px 8px;
     /* border: 1px solid green; */
-    border-bottom: 1px solid #e5e5e5;
+}
+
+.post-slider .post-wrapper .post h4 {
+    text-align: center;
 }
 
 .post-slider .post-wrapper .post .post-info a {
@@ -1245,6 +1247,7 @@ p.pro-price-del {
 
 .post-slider .post-wrapper .post .slider-image {
     width: 100%;
+    margin-bottom: 15px;
     height: auto;
     cursor: pointer;
 }
