@@ -246,6 +246,76 @@
                         referrerpolicy="no-referrer-when-downgrade"
                     ></iframe>
                 </div>
+                <div class="col-md-7" id="col-left contactFormWrapper">
+                    <h3>Viết nhận xét</h3>
+                    <hr class="line-left" />
+                    <p>
+                        Nếu bạn có thắc mắc gì, có thể gửi yêu cầu cho chúng tôi, và chúng tôi sẽ liên lạc lại với bạn
+                        sớm nhất có thể .
+                    </p>
+                    <form accept-charset="UTF-8" action="/contact" class="contact-form" method="post">
+                        <input name="form_type" type="hidden" value="contact" />
+                        <input name="utf8" type="hidden" value="✓" />
+
+                        <div class="form-group">
+                            <label for="contactFormName" class="sr-only">Tên</label>
+                            <input
+                                required=""
+                                type="text"
+                                id="contactFormName"
+                                class="form-control input-lg"
+                                name="contact[name]"
+                                placeholder="Tên của bạn"
+                                autocapitalize="words"
+                                value=""
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="contactFormEmail" class="sr-only">Email</label>
+                            <input
+                                required=""
+                                type="email"
+                                name="contact[email]"
+                                placeholder="Email của bạn"
+                                id="contactFormEmail"
+                                class="form-control input-lg"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                value=""
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="contactFormMessage" class="sr-only">Nội dung</label>
+                            <textarea
+                                required=""
+                                rows="6"
+                                name="contact[body]"
+                                class="form-control"
+                                placeholder="Viết bình luận"
+                                id="contactFormMessage"
+                            ></textarea>
+                        </div>
+
+                        <input type="submit" class="btn btn-primary btn-lg" value="Gửi liên hệ" />
+
+                        <input
+                            id="26861db3021f46eabaab5f3f8a514bcb"
+                            name="g-recaptcha-response"
+                            type="hidden"
+                            value="03AD1IbLDYUDKr78s_GQdB7pIfAkhWwygBph3lk9UcRR_VHwQWmvhV3LKFR2NqosAv7z0C88_h4PCe2u6zEL6Rwrc5wuuPPxIHavbW2LjtXNFVI2rkDjbrVPyNOr112Yc6b__07PfnIv6uquw5rIAaST6sHYDuN9Bz2wojqADXMBAqoINJOvqVzCeo8_da_YKBjmo9liw6hLThEXG6cS1hKkxWaEwWEnBtNfvdSVKfqZl3LPPUhUa1nl80LkFAwBH4UkFOJOg0pemmD5mS6F9E1DyJryqw5eIJ2bsoVJEEaSlPAHzyYHwKpifWVA0z358QKeUcB_WFYem5IIipaJAHImnhcJDDUBczMdotpBU4tZSFEJgdKe0Nx3Kerk2iMMSuNMs6vEEy-Fc7yvAzW_k3jMEy2948RVH_nvdn1fqEwAucnNcYT2k15S487ZhyvFPYX8c4bFCzdOv1xQ7N2Sp9WdwuMDlsltp_M4DryQ4CE3bt85k106U6pE0"
+                        />
+                        <script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script>
+                        <script>
+                            grecaptcha.ready(function () {
+                                grecaptcha
+                                    .execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', { action: 'submit' })
+                                    .then(function (token) {
+                                        document.getElementById('26861db3021f46eabaab5f3f8a514bcb').value = token;
+                                    });
+                            });
+                        </script>
+                    </form>
+                </div>
             </section>
             <!-- InstanceEndEditable -->
         </div>
