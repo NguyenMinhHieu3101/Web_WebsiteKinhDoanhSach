@@ -16,6 +16,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
             media="all"
         />
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
         <!-- InstanceEndEditable -->
     </head>
 
@@ -246,78 +247,112 @@
                         referrerpolicy="no-referrer-when-downgrade"
                     ></iframe>
                 </div>
-                <div class="col-md-7" id="col-left contactFormWrapper">
-                    <h3>Viết nhận xét</h3>
-                    <hr class="line-left" />
-                    <p>
-                        Nếu bạn có thắc mắc gì, có thể gửi yêu cầu cho chúng tôi, và chúng tôi sẽ liên lạc lại với bạn
-                        sớm nhất có thể .
-                    </p>
-                    <form accept-charset="UTF-8" action="/contact" class="contact-form" method="post">
-                        <input name="form_type" type="hidden" value="contact" />
-                        <input name="utf8" type="hidden" value="✓" />
+                <section id="contact">
+                    <div class="contact-wrapper">
+                        <!-- Left contact page -->
+                        <form id="contact-form" class="form-horizontal" role="form">
+                            <h1 class="section-header">Viết nhận xét</h1>
+                            <hr class="hr2" />
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="name"
+                                        placeholder="Tên của bạn"
+                                        name="name"
+                                        value=""
+                                        required
+                                    />
+                                </div>
+                            </div>
 
-                        <div class="form-group">
-                            <label for="contactFormName" class="sr-only">Tên</label>
-                            <input
-                                required=""
-                                type="text"
-                                id="contactFormName"
-                                class="form-control input-lg"
-                                name="contact[name]"
-                                placeholder="Tên của bạn"
-                                autocapitalize="words"
-                                value=""
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label for="contactFormEmail" class="sr-only">Email</label>
-                            <input
-                                required=""
-                                type="email"
-                                name="contact[email]"
-                                placeholder="Email của bạn"
-                                id="contactFormEmail"
-                                class="form-control input-lg"
-                                autocorrect="off"
-                                autocapitalize="off"
-                                value=""
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label for="contactFormMessage" class="sr-only">Nội dung</label>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        placeholder="Email của bạn"
+                                        name="email"
+                                        value=""
+                                        required
+                                    />
+                                </div>
+                            </div>
+
                             <textarea
-                                required=""
-                                rows="6"
-                                name="contact[body]"
                                 class="form-control"
+                                rows="10"
                                 placeholder="Viết bình luận"
-                                id="contactFormMessage"
+                                name="message"
+                                required
                             ></textarea>
+
+                            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                                <div class="alt-send-button">
+                                    <i class="fas fa-paper-plane"></i><span class="send-text">SEND</span>
+                                </div>
+                            </button>
+                        </form>
+
+                        <!-- Left contact page -->
+
+                        <div class="direct-contact-container">
+                            <h1 class="section-header">Thành viên trong nhóm</h1>
+                            <hr class="hr2" />
+                            <ul class="contact-list">
+                                <li class="list-item">
+                                    <i class="fas fa-user fa-2x"
+                                        ><span class="contact-text place">Nguyễn Minh Hiếu</span></i
+                                    >
+                                </li>
+                                <li class="list-item">
+                                    <i class="fas fa-user fa-2x"><span class="contact-text place">Sa Đam</span></i>
+                                </li>
+                                <li class="list-item">
+                                    <i class="fas fa-user fa-2x"
+                                        ><span class="contact-text place">Lê Thị Phương Quyên</span></i
+                                    >
+                                </li>
+                                <li class="list-item">
+                                    <i class="fas fa-user fa-2x"
+                                        ><span class="contact-text place">Dương Hoàng Mai</span></i
+                                    >
+                                </li>
+                                <li class="list-item">
+                                    <i class="fas fa-user fa-2x"
+                                        ><span class="contact-text place">Trần Đăng Hậu</span></i
+                                    >
+                                </li>
+                            </ul>
+
+                            <hr />
+                            <li class="list-item">
+                                <i class="fas fa-envelope fa-2x"
+                                    ><span class="contact-text gmail"
+                                        ><a href="mailto:#" title="Send me an email">UIT@gm.uit.edu.vn</a></span
+                                    ></i
+                                >
+                            </li>
+                            <hr />
+
+                            <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
                         </div>
-
-                        <input type="submit" class="btn btn-primary btn-lg" value="Gửi liên hệ" />
-
-                        <input
-                            id="26861db3021f46eabaab5f3f8a514bcb"
-                            name="g-recaptcha-response"
-                            type="hidden"
-                            value="03AD1IbLDYUDKr78s_GQdB7pIfAkhWwygBph3lk9UcRR_VHwQWmvhV3LKFR2NqosAv7z0C88_h4PCe2u6zEL6Rwrc5wuuPPxIHavbW2LjtXNFVI2rkDjbrVPyNOr112Yc6b__07PfnIv6uquw5rIAaST6sHYDuN9Bz2wojqADXMBAqoINJOvqVzCeo8_da_YKBjmo9liw6hLThEXG6cS1hKkxWaEwWEnBtNfvdSVKfqZl3LPPUhUa1nl80LkFAwBH4UkFOJOg0pemmD5mS6F9E1DyJryqw5eIJ2bsoVJEEaSlPAHzyYHwKpifWVA0z358QKeUcB_WFYem5IIipaJAHImnhcJDDUBczMdotpBU4tZSFEJgdKe0Nx3Kerk2iMMSuNMs6vEEy-Fc7yvAzW_k3jMEy2948RVH_nvdn1fqEwAucnNcYT2k15S487ZhyvFPYX8c4bFCzdOv1xQ7N2Sp9WdwuMDlsltp_M4DryQ4CE3bt85k106U6pE0"
-                        />
-                        <script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script>
-                        <script>
-                            grecaptcha.ready(function () {
-                                grecaptcha
-                                    .execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', { action: 'submit' })
-                                    .then(function (token) {
-                                        document.getElementById('26861db3021f46eabaab5f3f8a514bcb').value = token;
-                                    });
-                            });
-                        </script>
-                    </form>
-                </div>
+                    </div>
+                </section>
             </section>
             <!-- InstanceEndEditable -->
+            <script>
+                document.querySelector('#contact-form').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    e.target.elements.name.value = '';
+                    e.target.elements.email.value = '';
+                    e.target.elements.message.value = '';
+                });
+            </script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         </div>
         <!-- JQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
