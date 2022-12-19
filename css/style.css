@@ -60,7 +60,11 @@ img {
     color: var(--header-footer-text) !important;
 }
 
+.first-half {
+    background-color: #f7f7f9;
+}
 .first-half a {
+    
     color: #fff;
     text-decoration: none;
     /* display: block; */
