@@ -1157,7 +1157,7 @@ p.pro-price-del {
 /* POST-SLIDER */
 
 .page-wrapper {
-    padding: 20px 0px 50px 0px;
+    padding: 20px 0px 40px 0px;
 }
 
 .post-slider {
@@ -1239,6 +1239,7 @@ p.pro-price-del {
     line-height: 1.8;
     color: #666;
     font-size: 15px;
+    text-align: center;
 }
 
 .post-slider .post-wrapper .post .post-info a:hover {
@@ -1247,7 +1248,7 @@ p.pro-price-del {
 
 .post-slider .post-wrapper .post .slider-image {
     width: 100%;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     height: auto;
     cursor: pointer;
 }
