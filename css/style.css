@@ -1786,6 +1786,33 @@ a.next span {
 }
 
 /* Contact */
+#location {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif !important;
+    margin: 0 0 13px 0;
+    font-weight: 400;
+    line-height: 36px;
+    background: #fff;
+    padding: 10px 15px 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    content: '';
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 25vh;
+}
+#map {
+    height: 600px;
+    width: 1000px;
+    margin: auto;
+    padding: 0;
+    position: relative;
+
+    overflow: hidden;
+}
 
 #contact {
     width: 100%;
