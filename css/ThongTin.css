@@ -1,0 +1,34 @@
+:root{
+    --main-color: #f67694;
+}
+#layout-page{
+	background: #fff;
+	padding: 0px 15vw;
+	padding-bottom: 18px;
+	margin-top:30px;
+	font-weight: 300;
+}
+
+#layout-page .header-page, #layout-page .header-page h2 {
+    background: #fff;
+    padding: 10px 15px 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    content: "";
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+h1.gioithieu {
+    display: block;
+    font-weight: 400;
+    color: #000000;
+    margin: 0 0 1.3vw 0;
+    font-size: 3vw;
+    line-height: 3.6vw;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: var(--main-color);
+}

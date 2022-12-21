@@ -40,7 +40,7 @@
                             <a href="file:///C|/Users/PC/Documents/GitHub/Web_WebsiteKinhDoanhSach/html/index.html">
                                 <!-- <img class="img-responsive" src="https://theme.hstatic.net/200000287623/1000800165/14/logo.png?v=203" alt="">  -->
                                 <img style="width: 140px; height: 70px;" class="img-responsive" 
-                                    src="../../images/newyear/logo_tet2.png" alt=""> 
+                                    src="../images/newyear/logo_tet2.png" alt=""> 
 
                             </a>
                         </h1>
@@ -189,7 +189,7 @@
                 <div class="contact-footer">
                     <div class="footer-logo">
                         <a href="#">
-                            <img style="width: 180px; height: 90px;" class="img-responsive" src="../../images/newyear/logo_tet2.png"
+                            <img style="width: 180px; height: 90px;" class="img-responsive" src="../images/newyear/logo_tet2.png"
                                 alt="Doflamingo Bookstore">
                         </a>
                     </div>
@@ -270,7 +270,7 @@
                         </div>
                     </div>
 
-                    <img style="width: 200px; height: 200px; margin-top: 50px;" src="../../images/newyear/happy-new-year.png" alt="">
+                    <img style="width: 200px; height: 200px; margin-top: 50px;" src="../images/newyear/happy-new-year.png" alt="">
                 </div>               
             </div>
         </div>
@@ -289,7 +289,7 @@
         }
 
         //Configure below to change URL path to the snow image
-        var snowsrc = "../../images/newyear/apricot (1).png"
+        var snowsrc = "../images/newyear/apricot (1).png"
         // Configure below to change number of snow to render
         var no = 30;
         // Configure whether snow should disappear after x seconds (0=never):
