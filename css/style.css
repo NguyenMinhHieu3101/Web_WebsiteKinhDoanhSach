@@ -130,17 +130,17 @@ button {
     margin: 0;
 }
 
-#header .img-responsive {
+.header .img-responsive {
     display: block;
     max-width: 100%;
 }
 
-#header .row {
+.header .row {
     margin-right: -15px;
     margin-left: -15px;
 }
 
-#header .container {
+.header .container {
     position: relative;
     padding-right: 15px;
     padding-left: 15px;
@@ -148,14 +148,14 @@ button {
     margin-left: auto;
 }
 
-#header .col-hd-lg {
+.header .col-hd-lg {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
 }
 
-#header .col-sl {
+.header .col-sl {
     float: left;
     position: relative;
     min-height: 1px;
@@ -163,8 +163,8 @@ button {
     padding-left: 15px;
 }
 
-#header .row::before,
-#header .row::after {
+.header .row::before,
+.header .row::after {
     content: '\0020';
     display: block;
     height: 0;
