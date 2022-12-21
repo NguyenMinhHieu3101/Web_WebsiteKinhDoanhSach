@@ -1,109 +1,187 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="../templates/Templates/template1.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+    <!-- InstanceBegin template="../templates/Templates/template1.dwt" codeOutsideHTMLIsLocked="false" -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- InstanceBeginEditable name="doctitle_link_css" -->
-    <title>Tin Tức</title>
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-    <link rel="stylesheet" href="/css/TinTuc.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <!-- InstanceEndEditable -->
-</head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- InstanceBeginEditable name="doctitle_link_css" -->
+        <title>Tin Tức</title>
+        <link rel="stylesheet" href="/css/style.css" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../css/slider.css" />
+        <link rel="stylesheet" href="/css/TinTuc.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <!-- InstanceEndEditable -->
+    </head>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"
+    />
 
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+    ></script>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <body>
+        <div class="first-half">
+            <!-- TOP BAR -->
 
-<body>
-    <div class="first-half">
+            <div class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-item">DOFLAMINGO</li>
+                </ul>
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="link" href="DangNhap.html" title="Đăng nhập">Đăng nhập</a></li>
+                    <li class="nav-item"><span class="sep">|</span></li>
+                    <li class="nav-item"><a class="link" href="DangKy.html" title="Đăng ký">Đăng ký</a></li>
+                </ul>
+            </div>
 
-        <!-- TOP BAR -->
+            <!-- HEADER -->
 
-        <div class="nav-bar">
-            <ul class="nav-list">
-                <li class="nav-item">DOFLAMINGO</li>
-            </ul>
-            <ul class="nav-list">
-                <li class="nav-item"><a class="link" href="DangNhap.html" title="Đăng nhập">Đăng nhập</a></li>
-                <li class="nav-item"><span class="sep">|</span></li>
-                <li class="nav-item"><a class="link" href="DangKy.html" title="Đăng ký">Đăng ký</a></li>
-
-            </ul>
-        </div>
-
-        <!-- HEADER -->
-
-        <div class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="header-logo col-hd-lg">
-                        <h1>
-                            <a href="file:///C|/Users/PC/Documents/GitHub/Web_WebsiteKinhDoanhSach/html/index.html">
-                                <!-- <img class="img-responsive" src="https://theme.hstatic.net/200000287623/1000800165/14/logo.png?v=203" alt="">  -->
-                                <img style="width: 140px; height: 70px;" class="img-responsive"
-                                    src="../templates/images/newyear/logo_tet2.png" alt="">
-
-                            </a>
-                        </h1>
-                    </div>
-                    <div class="header-search">
-                        <form id="searchForm" class="search-form" action="">
-                            <label for="search" class="hide"></label>
-                            <input type="hidden" name="type" value="product">
-                            <input class="search-text" name="q" type="search" id="search" placeholder="Tìm kiếm...">
-                            <!-- <button type="submit" class="search-btn">
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="header-logo col-hd-lg">
+                            <h1>
+                                <a href="file:///C|/Users/PC/Documents/GitHub/Web_WebsiteKinhDoanhSach/html/index.html">
+                                    <!-- <img class="img-responsive" src="https://theme.hstatic.net/200000287623/1000800165/14/logo.png?v=203" alt="">  -->
+                                    <img
+                                        style="width: 140px; height: 70px"
+                                        class="img-responsive"
+                                        src="../templates/images/newyear/logo_tet2.png"
+                                        alt=""
+                                    />
+                                </a>
+                            </h1>
+                        </div>
+                        <div class="header-search">
+                            <form id="searchForm" class="search-form" action="">
+                                <label for="search" class="hide"></label>
+                                <input type="hidden" name="type" value="product" />
+                                <input
+                                    class="search-text"
+                                    name="q"
+                                    type="search"
+                                    id="search"
+                                    placeholder="Tìm kiếm..."
+                                />
+                                <!-- <button type="submit" class="search-btn">
                             <i class="icon_list">
                             </i>
                         </button> -->
-                            <button type="submit" class="search-btn">
-                                <i class="icon_list">
-                                    <!--?xml version="1.0" ?-->
-                                    <svg height="64px" id="SVGRoot" version="1.1" viewBox="0 0 64 64" width="64px"
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#"
-                                        xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                        xmlns:svg="http://www.w3.org/2000/svg">
-                                        <defs id="defs3848"></defs>
-                                        <g id="layer1">
-                                            <g id="g5183" style="stroke:#000000" transform="translate(25.5,-27)">
-                                                <circle class="fil0 str1" cx="0.73810571" cy="53.392174" id="circle15"
-                                                    r="20.063322"
-                                                    style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.00005412;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
-                                                </circle>
-                                                <line class="fil0 str2" id="line25"
-                                                    style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.99974346;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-                                                    x1="15.617603" x2="30.305107" y1="68.559662" y2="83.151169"></line>
-                                                <path class="fil0 str0"
-                                                    d="m -12.701441,53.392174 c 0,-7.391751 6.047795,-13.439547 13.43954602,-13.439547"
-                                                    id="path281"
-                                                    style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.00005412;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
-                                                </path>
+                                <button type="submit" class="search-btn">
+                                    <i class="icon_list">
+                                        <!--?xml version="1.0" ?-->
+                                        <svg
+                                            height="64px"
+                                            id="SVGRoot"
+                                            version="1.1"
+                                            viewBox="0 0 64 64"
+                                            width="64px"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:cc="http://creativecommons.org/ns#"
+                                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                            xmlns:svg="http://www.w3.org/2000/svg"
+                                        >
+                                            <defs id="defs3848"></defs>
+                                            <g id="layer1">
+                                                <g id="g5183" style="stroke: #000000" transform="translate(25.5,-27)">
+                                                    <circle
+                                                        class="fil0 str1"
+                                                        cx="0.73810571"
+                                                        cy="53.392174"
+                                                        id="circle15"
+                                                        r="20.063322"
+                                                        style="
+                                                            clip-rule: evenodd;
+                                                            fill: none;
+                                                            fill-rule: evenodd;
+                                                            stroke: #000000;
+                                                            stroke-width: 2.00005412;
+                                                            image-rendering: optimizeQuality;
+                                                            shape-rendering: geometricPrecision;
+                                                            text-rendering: geometricPrecision;
+                                                        "
+                                                    ></circle>
+                                                    <line
+                                                        class="fil0 str2"
+                                                        id="line25"
+                                                        style="
+                                                            clip-rule: evenodd;
+                                                            fill: none;
+                                                            fill-rule: evenodd;
+                                                            stroke: #000000;
+                                                            stroke-width: 3.99974346;
+                                                            stroke-linecap: round;
+                                                            stroke-linejoin: round;
+                                                            image-rendering: optimizeQuality;
+                                                            shape-rendering: geometricPrecision;
+                                                            text-rendering: geometricPrecision;
+                                                        "
+                                                        x1="15.617603"
+                                                        x2="30.305107"
+                                                        y1="68.559662"
+                                                        y2="83.151169"
+                                                    ></line>
+                                                    <path
+                                                        class="fil0 str0"
+                                                        d="m -12.701441,53.392174 c 0,-7.391751 6.047795,-13.439547 13.43954602,-13.439547"
+                                                        id="path281"
+                                                        style="
+                                                            clip-rule: evenodd;
+                                                            fill: none;
+                                                            fill-rule: evenodd;
+                                                            stroke: #000000;
+                                                            stroke-width: 2.00005412;
+                                                            stroke-linecap: round;
+                                                            stroke-linejoin: round;
+                                                            image-rendering: optimizeQuality;
+                                                            shape-rendering: geometricPrecision;
+                                                            text-rendering: geometricPrecision;
+                                                        "
+                                                    ></path>
+                                                </g>
                                             </g>
-                                        </g>
-                                    </svg>
-                                </i>
-                            </button>
-                        </form>
-
-                    </div>
-                    <div class="header-cart">
-                        <div class="topbar-cart">
-                            <div class="shopping_cart">
-                                <a href="" title="giỏ hàng" rel="nofollow">
-                                    <p class="cart-icon">
-                                        <i class="icon_list">
-                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                width="446.843px" height="446.843px" viewBox="0 0 446.843 446.843"
-                                                style="enable-background:new 0 0 446.843 446.843;" xml:space="preserve">
-
-                                                <path d="M444.09,93.103c-2.698-3.699-7.006-5.888-11.584-5.888H109.92c-0.625,0-1.249,0.038-1.85,0.119l-13.276-38.27
+                                        </svg>
+                                    </i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="header-cart">
+                            <div class="topbar-cart">
+                                <div class="shopping_cart">
+                                    <a href="" title="giỏ hàng" rel="nofollow">
+                                        <p class="cart-icon">
+                                            <i class="icon_list">
+                                                <svg
+                                                    version="1.1"
+                                                    id="Capa_1"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    x="0px"
+                                                    y="0px"
+                                                    width="446.843px"
+                                                    height="446.843px"
+                                                    viewBox="0 0 446.843 446.843"
+                                                    style="enable-background: new 0 0 446.843 446.843"
+                                                    xml:space="preserve"
+                                                >
+                                                    <path
+                                                        d="M444.09,93.103c-2.698-3.699-7.006-5.888-11.584-5.888H109.92c-0.625,0-1.249,0.038-1.85,0.119l-13.276-38.27
                                             c-1.376-3.958-4.406-7.113-8.3-8.646L19.586,14.134c-7.374-2.887-15.695,0.735-18.591,8.1c-2.891,7.369,0.73,15.695,8.1,18.591
                                             l60.768,23.872l74.381,214.399c-3.283,1.144-6.065,3.663-7.332,7.187l-21.506,59.739c-1.318,3.663-0.775,7.733,1.468,10.916
                                             c2.24,3.183,5.883,5.078,9.773,5.078h11.044c-6.844,7.616-11.044,17.646-11.044,28.675c0,23.718,19.298,43.012,43.012,43.012
@@ -118,873 +196,786 @@
                                             h63.967L381.453,213.861z M234.571,213.861v-37.038h66.113v37.038H234.571z M300.684,242.538v31.064h-66.113v-31.064H300.684z
                                             M139.115,176.823h66.784v37.038h-53.933L139.115,176.823z M234.571,148.149V115.89h66.113v32.259H234.571z M205.898,115.89v32.259
                                             h-76.734l-11.191-32.259H205.898z M161.916,242.538h43.982v31.064h-33.206L161.916,242.538z M329.359,273.603v-31.064h42.909
-                                            l-9.955,31.064H329.359z"></path>
-                                            </svg>
-                                        </i>
-                                        <span class="cart_quantity">0</span>
-                                    </p>
-                                    <p>
-                                        <span class="top-cart">Giỏ hàng</span>
-                                        <span class="ajax_cart_no_product ajax_cart_quantity">0</span> sản phẩm
-                                    </p>
+                                            l-9.955,31.064H329.359z"
+                                                    ></path>
+                                                </svg>
+                                            </i>
+                                            <span class="cart_quantity">0</span>
+                                        </p>
+                                        <p>
+                                            <span class="top-cart">Giỏ hàng</span>
+                                            <span class="ajax_cart_no_product ajax_cart_quantity">0</span> sản phẩm
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NAVIGATION -->
+
+            <div class="main">
+                <div class="container">
+                    <div class="row">
+                        <!-- InstanceBeginEditable name="nav-bar" -->
+                        <div id="bar" class="main-bar">
+                            <ul class="main-list">
+                                <li class="main-item">
+                                    <a title="Trang chủ" href="Home.html"><span>Trang chủ</span></a>
+                                </li>
+                                <li class="main-item">
+                                    <a title="Sản phẩm" href="SanPham.html"><span>Sản phẩm</span></a>
+                                </li>
+                                <li class="main-item">
+                                    <a title="Tin tức" href="TinTuc.html" class="active-nav"><span>Tin tức</span></a>
+                                </li>
+                                <li class="main-item">
+                                    <a title="Thông tin" href="ThongTin.html"><span>Thông tin</span></a>
+                                </li>
+                                <li class="main-item">
+                                    <a title="Liên hệ" href="LienHe.html"><span>Liên hệ</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- InstanceEndEditable -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAIN -->
+            <!-- InstanceBeginEditable name="content" -->
+            <div class="main-content-wrapper">
+                <div class="breadcrumbs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ol class="breadcrumb breadcrumb-arrow hidden-sm hidden-xs">
+                                    <li><a href="/" target="_self">Trang chủ</a></li>
+
+                                    <li class="active"><span> TIN TỨC</span></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <!--Begin Content-->
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-12 col-xs-12">
+                                    <!-- Begin: Nội dung blog -->
+                                    <div class="content-blog">
+                                        <div class="topLine">
+                                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                                <a
+                                                    href="/blogs/tintuc/huong-dan-cach-nhan-hang-truc-tiep-tai-cua-hang-ipm-nhanh-nhat"
+                                                >
+                                                    <img
+                                                        src="https://file.hstatic.net/200000287623/article/mot_so_quy_tac_khi_nhan_sach_tai_cua_hang_ipm_f7ed766bc825454bb03a2b587f59ddbe.png"
+                                                    />
+                                                </a>
+                                            </div>
+                                            <div class="dd col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                                <h2>
+                                                    <a
+                                                        href="/blogs/tintuc/huong-dan-cach-nhan-hang-truc-tiep-tai-cua-hang-ipm-nhanh-nhat"
+                                                        >[HƯỚNG DẪN] CÁCH NHẬN HÀNG TRỰC TIẾP TẠI CỬA HÀNG IPM NHANH
+                                                        NHẤT</a
+                                                    >
+                                                </h2>
+
+                                                <span>15/12/2022</span>
+
+                                                <span><a href="#"> TIN TỨC </a></span>
+                                                <span
+                                                    ><em class="views">
+                                                        <i class="comment-icon fa fa-comments-o"></i>
+                                                        <a
+                                                            href="/blogs/tintuc/huong-dan-cach-nhan-hang-truc-tiep-tai-cua-hang-ipm-nhanh-nhat#comments"
+                                                        >
+                                                            0 Bình luận
+                                                        </a>
+                                                    </em></span
+                                                >
+                                                <p>
+                                                    Thân gửi Quý độc giả của IPM,Nếu bạn ở Hà Nội, đặt sách tại website
+                                                    ipm.vn và có mong muốn lấy hàng trực tiếp, bạn có thể lựa chọn
+                                                    phương thức "Nhận hàng tại cửa hàng" và tới nhận sách tại địa chỉ:
+                                                    Số 110 Nguyễn Ngọc Nại, Phường Khương Mai, Quận Thanh Xuân, Hà Nội.
+                                                    Với hình thức giao...
+                                                    <a
+                                                        href="/blogs/tintuc/huong-dan-cach-nhan-hang-truc-tiep-tai-cua-hang-ipm-nhanh-nhat"
+                                                        >Xem thêm <i class="fa fa-arrow-right"></i
+                                                    ></a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="topLine">
+                                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                                <a
+                                                    href="/blogs/tintuc/diem-sach-loi-nguyen-shiraisan-them-mot-tac-pham-kinh-di-la-lung-c"
+                                                >
+                                                    <img
+                                                        src="https://file.hstatic.net/200000287623/article/z3901175290386_372ca62f537ec867edcc6b1c0b6b26a7_981dd76900884b1a8f80c953842ca1aa.jpg"
+                                                    />
+                                                </a>
+                                            </div>
+                                            <div class="dd col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                                <h2>
+                                                    <a
+                                                        href="/blogs/tintuc/diem-sach-loi-nguyen-shiraisan-them-mot-tac-pham-kinh-di-la-lung-c"
+                                                        >[ĐIỂM SÁCH] LỜI NGUYỀN SHIRAISAN – THÊM MỘT TÁC PHẨM KINH DỊ LẠ
+                                                        LÙNG CỦA OTSUICHI</a
+                                                    >
+                                                </h2>
+
+                                                <span>14/12/2022</span>
+
+                                                <span><a href="#"> TIN TỨC </a></span>
+                                                <span
+                                                    ><em class="views">
+                                                        <i class="comment-icon fa fa-comments-o"></i>
+                                                        <a
+                                                            href="/blogs/tintuc/diem-sach-loi-nguyen-shiraisan-them-mot-tac-pham-kinh-di-la-lung-c#comments"
+                                                        >
+                                                            0 Bình luận
+                                                        </a>
+                                                    </em></span
+                                                >
+                                                <p>
+                                                    Otsuichi là tác giả truyện trinh thám kinh dị quen thuộc của độc giả
+                                                    Việt Nam với nhiều tác phẩm được liệt vào hàng “không thể ngừng
+                                                    đọc”. Đó là “Zoo”, là “Calling you”, là “Mắt đá”. Và lần này, IPM
+                                                    cho ra mắt “Lời nguyền Shiraisan” phiên bản tiếng Việt.Ở giai đoạn
+                                                    đầu sự nghiệp, các tác phẩm của...
+                                                    <a
+                                                        href="/blogs/tintuc/diem-sach-loi-nguyen-shiraisan-them-mot-tac-pham-kinh-di-la-lung-c"
+                                                        >Xem thêm <i class="fa fa-arrow-right"></i
+                                                    ></a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="topLine">
+                                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                                <a
+                                                    href="/blogs/tintuc/diem-sach-chieng-nguyen-hon-ai-danh-guc-nguoi-doc-bang-giong-van"
+                                                >
+                                                    <img
+                                                        src="https://file.hstatic.net/200000287623/article/z3629472927173_0186d1cc59c535bdea9e11b89697d884__1__269bf08cf2fe4e6885e644a07f7e21e3.jpg"
+                                                    />
+                                                </a>
+                                            </div>
+                                            <div class="dd col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                                <h2>
+                                                    <a
+                                                        href="/blogs/tintuc/diem-sach-chieng-nguyen-hon-ai-danh-guc-nguoi-doc-bang-giong-van"
+                                                        >[ĐIỂM SÁCH] CHIÊNG NGUYỆN HỒN AI – “ĐÁNH GỤC” NGƯỜI ĐỌC BẰNG
+                                                        GIỌNG VĂN ĐIỀM TĨNH VÀ KẾT THÚC NGỠ NGÀNG</a
+                                                    >
+                                                </h2>
+
+                                                <span>13/12/2022</span>
+
+                                                <span><a href="#"> TIN TỨC </a></span>
+                                                <span
+                                                    ><em class="views">
+                                                        <i class="comment-icon fa fa-comments-o"></i>
+                                                        <a
+                                                            href="/blogs/tintuc/diem-sach-chieng-nguyen-hon-ai-danh-guc-nguoi-doc-bang-giong-van#comments"
+                                                        >
+                                                            0 Bình luận
+                                                        </a>
+                                                    </em></span
+                                                >
+                                                <p>
+                                                    Gấp trang cuối cuốn sách, nhìn lại quá trình đọc Chiêng Nguyện Hồn
+                                                    Ai, độc giả sẽ không khỏi ngạc nhiên bởi toàn bộ cuốn sách là một
+                                                    giọng văn hết sức lãnh đạm nhưng lại khiến ta không thể rời mắt khỏi
+                                                    mạch truyện.Chiêng Nguyện Hồn Ai&nbsp;của tác giả Wangyuan – Vương
+                                                    Nguyên đạt giải Nhất Giải thưởng Trinh...
+                                                    <a
+                                                        href="/blogs/tintuc/diem-sach-chieng-nguyen-hon-ai-danh-guc-nguoi-doc-bang-giong-van"
+                                                        >Xem thêm <i class="fa fa-arrow-right"></i
+                                                    ></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 pagination-blog">
+                                        <div class="row">
+                                            <!-- Begin: Phân trang blog -->
+                                            <div id="pagination" class="pw">
+                                                <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs"></div>
+                                                <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 text-center">
+                                                    <span class="page-node current">1</span>
+
+                                                    <a class="page-node" href="/blogs/tintuc?page=2">2</a>
+
+                                                    <a class="page-node" href="/blogs/tintuc?page=3">3</a>
+
+                                                    <span class="page-node">…</span>
+
+                                                    <a class="page-node" href="/blogs/tintuc?page=9">9</a>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs">
+                                                    <a class="pull-right next" href="/blogs/tintuc?page=2"
+                                                        ><span>Trang sau <i class="fa fa-angle-right"></i></span
+                                                    ></a>
+                                                </div>
+                                            </div>
+
+                                            <!-- End: Phân trang blog -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 hidden-sm hidden-xs">
+                                    <!-- Begin sidebar blog -->
+                                    <div class="sidebar">
+                                        <!-- Begin: Danh mục tin tức -->
+                                        <div class="news-menu list-group">
+                                            <span class="list-group-item active">Danh mục </span>
+                                            <ul class="nav sidebar" id="menu-blog">
+                                                <li class="first">
+                                                    <a href="/">
+                                                        <span>Trang chủ</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="item has-sub">
+                                                    <a href="/collections/all">
+                                                        <span class="lbl">Sản phẩm</span>
+                                                        <span
+                                                            data-toggle="collapse"
+                                                            data-parent="#cssmenu"
+                                                            href="#sub-item-2"
+                                                            class="sign"
+                                                        >
+                                                            <img
+                                                                src="//hstatic.net/0/0/global/design/theme-default/arrow-down.png"
+                                                            />
+                                                        </span>
+                                                    </a>
+                                                    <ul class="nav children collapse" id="sub-item-2">
+                                                        <li class="first">
+                                                            <a
+                                                                href="/collections/sach-trinh-tham-kinh-di"
+                                                                title="Trinh Thám - Kinh Dị"
+                                                            >
+                                                                <span>Trinh Thám - Kinh Dị</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="">
+                                                            <a
+                                                                href="/collections/van-hoc-hien-dai"
+                                                                title="Văn Học Hiện Đại"
+                                                            >
+                                                                <span>Văn Học Hiện Đại</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="">
+                                                            <a
+                                                                href="/collections/van-hoc-kinh-dien"
+                                                                title="Văn Học Kinh Điển"
+                                                            >
+                                                                <span>Văn Học Kinh Điển</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="">
+                                                            <a href="/collections/fantasy" title="Fantasy">
+                                                                <span>Fantasy</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="">
+                                                            <a href="/collections/light-novel" title="Light Novel">
+                                                                <span>Light Novel</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="">
+                                                            <a href="/collections/boys-love" title="Boys Love">
+                                                                <span>Boys Love</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="">
+                                                            <a href="/collections/boxset" title="Boxset">
+                                                                <span>Boxset</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="">
+                                                            <a href="/collections/sach-hoc-ngu" title="Sách Học Ngữ">
+                                                                <span>Sách Học Ngữ</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="">
+                                                            <a href="/collections/manga-comic" title="Manga - Comic">
+                                                                <span>Manga - Comic</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="">
+                                                            <a
+                                                                href="/collections/sach-thieu-nhi"
+                                                                title="Sách Thiếu Nhi"
+                                                            >
+                                                                <span>Sách Thiếu Nhi</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="">
+                                                            <a href="/collections/phu-kien" title="Phụ Kiện">
+                                                                <span>Phụ Kiện</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="last">
+                                                            <a href="/collections/combo-sach" title="Combo Sách">
+                                                                <span>Combo Sách</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="current active">
+                                                    <a href="/blogs/tintuc">
+                                                        <span>Tin tức</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class=" ">
+                                                    <a href="/pages/about-us">
+                                                        <span>Về IPM</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="last">
+                                                    <a href="/pages/lien-he">
+                                                        <span>Liên hệ</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <script>
+                                                $(document).ready(function () {
+                                                    //$('ul li:has(ul)').addClass('hassub');
+                                                    $('#menu-blog ul ul li:odd').addClass('odd');
+                                                    $('#menu-blog ul ul li:even').addClass('even');
+                                                    $('#menu-blog > ul > li > a').click(function () {
+                                                        $('#menu-blog li').removeClass('active');
+                                                        $(this).closest('li').addClass('active');
+                                                        var checkElement = $(this).nextS();
+                                                        if (checkElement.is('ul') && checkElement.is(':visible')) {
+                                                            $(this).closest('li').removeClass('active');
+                                                            checkElement.slideUp('normal');
+                                                        }
+                                                        if (checkElement.is('ul') && !checkElement.is(':visible')) {
+                                                            $('#menu-blog ul ul:visible').slideUp('normal');
+                                                            checkElement.slideDown('normal');
+                                                        }
+                                                        if ($(this).closest('li').find('ul').children().length == 0) {
+                                                            return true;
+                                                        } else {
+                                                            return false;
+                                                        }
+                                                    });
+
+                                                    $('.drop-down-1').click(function (e) {
+                                                        if ($(this).parents('li').hasClass('has-sub')) {
+                                                            e.preventDefault();
+                                                            if ($(this).hasClass('open-nav')) {
+                                                                $(this).removeClass('open-nav');
+                                                                $(this)
+                                                                    .parents('li')
+                                                                    .children('ul.lve2-blog')
+                                                                    .slideUp('normal')
+                                                                    .removeClass('in');
+                                                            } else {
+                                                                $(this).addClass('open-nav');
+                                                                $(this)
+                                                                    .parents('li')
+                                                                    .children('ul.lve2-blog')
+                                                                    .slideDown('normal')
+                                                                    .addClass('in');
+                                                            }
+                                                        } else {
+                                                        }
+                                                    });
+                                                });
+
+                                                $('.news-menu  ul.navs li.active')
+                                                    .parents('ul.children')
+                                                    .addClass('in');
+                                            </script>
+                                        </div>
+                                        <!-- End: Danh mục tin tức -->
+
+                                        <!--Begin: Bài viết mới nhất-->
+                                        <div class="news-latest list-group">
+                                            <span class="list-group-item active"> Bài viết mới nhất </span>
+
+                                            <div class="article">
+                                                <div class="col-ld-3 col-md-3 col-sm-4 col-xs-4">
+                                                    <a
+                                                        href="/blogs/tintuc/huong-dan-cach-nhan-hang-truc-tiep-tai-cua-hang-ipm-nhanh-nhat"
+                                                    >
+                                                        <img
+                                                            src="//file.hstatic.net/200000287623/article/mot_so_quy_tac_khi_nhan_sach_tai_cua_hang_ipm_f7ed766bc825454bb03a2b587f59ddbe_large.png"
+                                                            alt="[HƯỚNG DẪN] CÁCH NHẬN HÀNG TRỰC TIẾP TẠI CỬA HÀNG IPM NHANH NHẤT"
+                                                        />
+                                                    </a>
+                                                </div>
+
+                                                <div class="post-content col-lg-9 col-md-9 col-sm-8 col-xs-8">
+                                                    <a
+                                                        href="/blogs/tintuc/huong-dan-cach-nhan-hang-truc-tiep-tai-cua-hang-ipm-nhanh-nhat"
+                                                        >[HƯỚNG DẪN] CÁCH NHẬN HÀNG TRỰC TIẾP TẠI CỬA HÀNG IPM
+                                                        NHANH...</a
+                                                    ><span class="date"> <i class="time-date"></i>15/12/2022</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="article">
+                                                <div class="col-ld-3 col-md-3 col-sm-4 col-xs-4">
+                                                    <a
+                                                        href="/blogs/tintuc/diem-sach-loi-nguyen-shiraisan-them-mot-tac-pham-kinh-di-la-lung-c"
+                                                    >
+                                                        <img
+                                                            src="//file.hstatic.net/200000287623/article/z3901175290386_372ca62f537ec867edcc6b1c0b6b26a7_981dd76900884b1a8f80c953842ca1aa_large.jpg"
+                                                            alt="[ĐIỂM SÁCH] LỜI NGUYỀN SHIRAISAN – THÊM MỘT TÁC PHẨM KINH DỊ LẠ LÙNG CỦA OTSUICHI"
+                                                        />
+                                                    </a>
+                                                </div>
+
+                                                <div class="post-content col-lg-9 col-md-9 col-sm-8 col-xs-8">
+                                                    <a
+                                                        href="/blogs/tintuc/diem-sach-loi-nguyen-shiraisan-them-mot-tac-pham-kinh-di-la-lung-c"
+                                                        >[ĐIỂM SÁCH] LỜI NGUYỀN SHIRAISAN – THÊM MỘT TÁC PHẨM KINH
+                                                        DỊ...</a
+                                                    ><span class="date"> <i class="time-date"></i>14/12/2022</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="article">
+                                                <div class="col-ld-3 col-md-3 col-sm-4 col-xs-4">
+                                                    <a
+                                                        href="/blogs/tintuc/diem-sach-chieng-nguyen-hon-ai-danh-guc-nguoi-doc-bang-giong-van"
+                                                    >
+                                                        <img
+                                                            src="//file.hstatic.net/200000287623/article/z3629472927173_0186d1cc59c535bdea9e11b89697d884__1__269bf08cf2fe4e6885e644a07f7e21e3_large.jpg"
+                                                            alt="[ĐIỂM SÁCH] CHIÊNG NGUYỆN HỒN AI – “ĐÁNH GỤC” NGƯỜI ĐỌC BẰNG GIỌNG VĂN ĐIỀM TĨNH VÀ KẾT THÚC NGỠ NGÀNG"
+                                                        />
+                                                    </a>
+                                                </div>
+
+                                                <div class="post-content col-lg-9 col-md-9 col-sm-8 col-xs-8">
+                                                    <a
+                                                        href="/blogs/tintuc/diem-sach-chieng-nguyen-hon-ai-danh-guc-nguoi-doc-bang-giong-van"
+                                                        >[ĐIỂM SÁCH] CHIÊNG NGUYỆN HỒN AI – “ĐÁNH GỤC” NGƯỜI ĐỌC
+                                                        BẰNG...</a
+                                                    ><span class="date"> <i class="time-date"></i>13/12/2022</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="article">
+                                                <div class="col-ld-3 col-md-3 col-sm-4 col-xs-4">
+                                                    <a
+                                                        href="/blogs/tintuc/diem-sach-hinh-canh-mat-tri-nhe-tay-nhung-khong-nhe-do"
+                                                    >
+                                                        <img
+                                                            src="//file.hstatic.net/200000287623/article/hinh_canh_mat_tri_trinh_tham_trung_quoc_chan_ho_kei_553c5598e7754a6ea73b48b3b166b048_large.jpg"
+                                                            alt="[ĐIỂM SÁCH] HÌNH CẢNH MẤT TRÍ - NHẸ TAY NHƯNG KHÔNG NHẸ ĐÔ"
+                                                        />
+                                                    </a>
+                                                </div>
+
+                                                <div class="post-content col-lg-9 col-md-9 col-sm-8 col-xs-8">
+                                                    <a
+                                                        href="/blogs/tintuc/diem-sach-hinh-canh-mat-tri-nhe-tay-nhung-khong-nhe-do"
+                                                        >[ĐIỂM SÁCH] HÌNH CẢNH MẤT TRÍ - NHẸ TAY NHƯNG KHÔNG NHẸ...</a
+                                                    ><span class="date"> <i class="time-date"></i>20/11/2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--End: Bài viết mới nhất-->
+                                    </div>
+                                    <!-- End sidebar blog -->
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Content-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- InstanceEndEditable -->
+        </div>
+        <!-- JQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+        <!-- Slick Carousel -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+
+        <!-- Custom Script -->
+        <!-- InstanceBeginEditable name="js" -->
+        <script src="../templates/js/scripts.js"></script>
+
+        <!-- InstanceEndEditable -->
+
+        <!-- FOOTET -->
+
+        <footer class="footer-position">
+            <div class="side-footer">
+                <div class="container">
+                    <div class="contact-footer">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img
+                                    style="width: 180px; height: 90px"
+                                    class="img-responsive"
+                                    src="../templates/images/newyear/logo_tet2.png"
+                                    alt="Doflamingo Bookstore"
+                                />
+                            </a>
+                        </div>
+
+                        <p class="marker-first">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Khu Phố 6, Phường Linh Trung, TP. Thủ Đức, TP. HCM</span>
+                        </p>
+                        <p class="marker-first">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Hotline: 0123456789</span>
+                        </p>
+                        <p class="marker-first">
+                            <i class="far fa-envelope"></i>
+                            <span>Email: abc.bookstore@gmail.com</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Giấy phép DKKD số 0123456789, cấp lần thứ 6 năm 2019</span>
+                        </p>
+                    </div>
+
+                    <div user-footer>
+                        <div class="support">
+                            <div class="support-user">
+                                <h4>Hỗ trợ khách hàng</h4>
+                                <div>
+                                    <ul>
+                                        <li><a href="">Câu hỏi thường gặp</a></li>
+                                        <li><a href="">Điều khoản dịch vụ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="policy">
+                                <h4>Chính sách</h4>
+                                <div>
+                                    <ul>
+                                        <li><a href="">Chính sách bảo mật</a></li>
+                                        <li><a href="">Chính sách thanh toán</a></li>
+                                        <li><a href="">Chính sách vận chuyển</a></li>
+                                        <li><a href="">Chính sách đổi trả</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class-="email-group">
+                            <div class="email">
+                                <h4>Đăng ký nhận tin</h4>
+                                <p>
+                                    Hãy nhập email của bạn vào ô dưới đây để có thể nhận được tất cả tin tức mới nhất
+                                    của ABC
+                                </p>
+                                <div class="input-group">
+                                    <form action="">
+                                        <input
+                                            type="email"
+                                            value=""
+                                            placeholder="Nhập email của bạn..."
+                                            name="contact[email]"
+                                            id="Email"
+                                            class="input-group-field"
+                                            autocorrect="off"
+                                            autocapitalize="off"
+                                        />
+                                    </form>
+                                    <button type="submit" class="button-btn1" name="subscribe" id="subscribe">
+                                        Đăng ký
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="connect-footer">
+                        <div class="connect">
+                            <h4>Kết nối với chúng tôi</h4>
+                            <div class="icon-footer">
+                                <a href="">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-youtube"></i>
                                 </a>
                             </div>
                         </div>
-                    </div>
 
-                </div>
-            </div>
-        </div>
-
-        <!-- NAVIGATION -->
-
-
-        <div class="main">
-            <div class="container">
-                <div class="row">
-                    <!-- InstanceBeginEditable name="nav-bar" -->
-                    <div id="bar" class="main-bar">
-                        <ul class="main-list">
-                            <li class="main-item">
-                                <a title="Trang chủ" href="Home.html"><span>Trang chủ</span></a>
-                            </li>
-                            <li class="main-item">
-                                <a title="Sản phẩm" href="SanPham.html"><span>Sản phẩm</span></a>
-                            </li>
-                            <li class="main-item">
-                                <a title="Tin tức" href="TinTuc.html" class="active-nav"><span>Tin tức</span></a>
-                            </li>
-                            <li class="main-item">
-                                <a title="Thông tin" href="ThongTin.html"><span>Thông tin</span></a>
-                            </li>
-                            <li class="main-item">
-                                <a title="Liên hệ" href="LienHe.html"><span>Liên hệ</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- InstanceEndEditable -->
-                </div>
-            </div>
-        </div>
-
-        <!-- MAIN -->
-        <!-- InstanceBeginEditable name="content" -->
-        <div class="main-content-wrapper">
-
-            <div class="breadcrumbs">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <ol class="breadcrumb breadcrumb-arrow hidden-sm hidden-xs">
-
-                                <li><a href="/" target="_self">Trang chủ</a></li>
-
-
-
-                                <li class="active"><span> TIN TỨC</span></li>
-
-
-
-                            </ol>
-                        </div>
+                        <img
+                            style="width: 200px; height: 200px; margin-top: 50px"
+                            src="../templates/images/newyear/happy-new-year.png"
+                            alt=""
+                        />
                     </div>
                 </div>
             </div>
-
-            <div class="container">
-                <div class="row">
-                    <!--Begin Content-->
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <div class="col-md-9 col-sm-12 col-xs-12">
-
-                                <!-- Begin: Nội dung blog -->
-                                <div class="content-blog">
-                                    <div class="topLine">
-                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-
-                                            <a
-                                                href="/blogs/tintuc/huong-dan-cach-nhan-hang-truc-tiep-tai-cua-hang-ipm-nhanh-nhat">
-                                                <img
-                                                    src="https://file.hstatic.net/200000287623/article/mot_so_quy_tac_khi_nhan_sach_tai_cua_hang_ipm_f7ed766bc825454bb03a2b587f59ddbe.png">
-                                            </a>
-
-                                        </div>
-                                        <div class="dd col-lg-7 col-md-7 col-sm-7 col-xs-12">
-                                            <h2><a
-                                                    href="/blogs/tintuc/huong-dan-cach-nhan-hang-truc-tiep-tai-cua-hang-ipm-nhanh-nhat">[HƯỚNG
-                                                    DẪN] CÁCH NHẬN HÀNG TRỰC TIẾP TẠI CỬA HÀNG IPM NHANH NHẤT</a></h2>
-
-                                            <span>15/12/2022</span>
-
-                                            <span><a href="#"> TIN TỨC </a></span>
-                                            <span><em class="views">
-
-                                                    <i class="comment-icon fa fa-comments-o"></i>
-                                                    <a
-                                                        href="/blogs/tintuc/huong-dan-cach-nhan-hang-truc-tiep-tai-cua-hang-ipm-nhanh-nhat#comments">
-                                                        0 Bình luận
-                                                    </a>
-
-                                                </em></span>
-                                            <p>Thân gửi Quý độc giả của IPM,Nếu bạn ở Hà Nội, đặt sách tại website
-                                                ipm.vn và có mong muốn lấy hàng trực tiếp, bạn có thể lựa chọn phương
-                                                thức "Nhận hàng tại cửa hàng" và tới nhận sách tại địa chỉ: Số 110
-                                                Nguyễn Ngọc Nại, Phường Khương Mai, Quận Thanh Xuân, Hà Nội. Với hình
-                                                thức giao...
-                                                <a
-                                                    href="/blogs/tintuc/huong-dan-cach-nhan-hang-truc-tiep-tai-cua-hang-ipm-nhanh-nhat">Xem
-                                                    thêm <i class="fa fa-arrow-right"></i></a>
-                                            </p>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                    <div class="topLine">
-                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-
-                                            <a
-                                                href="/blogs/tintuc/diem-sach-loi-nguyen-shiraisan-them-mot-tac-pham-kinh-di-la-lung-c">
-                                                <img
-                                                    src="https://file.hstatic.net/200000287623/article/z3901175290386_372ca62f537ec867edcc6b1c0b6b26a7_981dd76900884b1a8f80c953842ca1aa.jpg">
-                                            </a>
-
-                                        </div>
-                                        <div class="dd col-lg-7 col-md-7 col-sm-7 col-xs-12">
-                                            <h2><a
-                                                    href="/blogs/tintuc/diem-sach-loi-nguyen-shiraisan-them-mot-tac-pham-kinh-di-la-lung-c">[ĐIỂM
-                                                    SÁCH] LỜI NGUYỀN SHIRAISAN – THÊM MỘT TÁC PHẨM KINH DỊ LẠ LÙNG CỦA
-                                                    OTSUICHI</a></h2>
-
-                                            <span>14/12/2022</span>
-
-                                            <span><a href="#"> TIN TỨC </a></span>
-                                            <span><em class="views">
-
-                                                    <i class="comment-icon fa fa-comments-o"></i>
-                                                    <a
-                                                        href="/blogs/tintuc/diem-sach-loi-nguyen-shiraisan-them-mot-tac-pham-kinh-di-la-lung-c#comments">
-                                                        0 Bình luận
-                                                    </a>
-
-                                                </em></span>
-                                            <p>Otsuichi là tác giả truyện trinh thám kinh dị quen thuộc của độc giả Việt
-                                                Nam với nhiều tác phẩm được liệt vào hàng “không thể ngừng đọc”. Đó là
-                                                “Zoo”, là “Calling you”, là “Mắt đá”. Và lần này, IPM cho ra mắt “Lời
-                                                nguyền Shiraisan” phiên bản tiếng Việt.Ở giai đoạn đầu sự nghiệp, các
-                                                tác phẩm của...
-                                                <a
-                                                    href="/blogs/tintuc/diem-sach-loi-nguyen-shiraisan-them-mot-tac-pham-kinh-di-la-lung-c">Xem
-                                                    thêm <i class="fa fa-arrow-right"></i></a>
-                                            </p>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                    <div class="topLine">
-                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-
-                                            <a
-                                                href="/blogs/tintuc/diem-sach-chieng-nguyen-hon-ai-danh-guc-nguoi-doc-bang-giong-van">
-                                                <img
-                                                    src="https://file.hstatic.net/200000287623/article/z3629472927173_0186d1cc59c535bdea9e11b89697d884__1__269bf08cf2fe4e6885e644a07f7e21e3.jpg">
-                                            </a>
-
-                                        </div>
-                                        <div class="dd col-lg-7 col-md-7 col-sm-7 col-xs-12">
-                                            <h2><a
-                                                    href="/blogs/tintuc/diem-sach-chieng-nguyen-hon-ai-danh-guc-nguoi-doc-bang-giong-van">[ĐIỂM
-                                                    SÁCH] CHIÊNG NGUYỆN HỒN AI – “ĐÁNH GỤC” NGƯỜI ĐỌC BẰNG GIỌNG VĂN
-                                                    ĐIỀM TĨNH VÀ KẾT THÚC NGỠ NGÀNG</a></h2>
-
-                                            <span>13/12/2022</span>
-
-                                            <span><a href="#"> TIN TỨC </a></span>
-                                            <span><em class="views">
-
-                                                    <i class="comment-icon fa fa-comments-o"></i>
-                                                    <a
-                                                        href="/blogs/tintuc/diem-sach-chieng-nguyen-hon-ai-danh-guc-nguoi-doc-bang-giong-van#comments">
-                                                        0 Bình luận
-                                                    </a>
-
-                                                </em></span>
-                                            <p>Gấp trang cuối cuốn sách, nhìn lại quá trình đọc Chiêng Nguyện Hồn Ai,
-                                                độc giả sẽ không khỏi ngạc nhiên bởi toàn bộ cuốn sách là một giọng văn
-                                                hết sức lãnh đạm nhưng lại khiến ta không thể rời mắt khỏi mạch
-                                                truyện.Chiêng Nguyện Hồn Ai&nbsp;của tác giả Wangyuan – Vương Nguyên đạt
-                                                giải Nhất Giải thưởng Trinh...
-                                                <a
-                                                    href="/blogs/tintuc/diem-sach-chieng-nguyen-hon-ai-danh-guc-nguoi-doc-bang-giong-van">Xem
-                                                    thêm <i class="fa fa-arrow-right"></i></a>
-                                            </p>
-                                        </div>
-                                    </div>
-
-
-
-                                </div>
-                                <div class="col-lg-12 pagination-blog">
-                                    <div class="row">
-
-                                        <!-- Begin: Phân trang blog -->
-                                        <div id="pagination" class="pw">
-
-                                            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs">
-
-                                            </div>
-                                            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 text-center">
-
-
-
-                                                <span class="page-node current">1</span>
-
-
-
-                                                <a class="page-node" href="/blogs/tintuc?page=2">2</a>
-
-
-
-                                                <a class="page-node" href="/blogs/tintuc?page=3">3</a>
-
-
-
-                                                <span class="page-node ">…</span>
-
-
-
-                                                <a class="page-node" href="/blogs/tintuc?page=9">9</a>
-
-
-                                            </div>
-                                            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs">
-
-                                                <a class="pull-right next" href="/blogs/tintuc?page=2"><span>Trang sau
-                                                        <i class="fa fa-angle-right"></i></span></a>
-
-                                            </div>
-
-                                        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                        <!-- End: Phân trang blog -->
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3  hidden-sm hidden-xs">
-                                <!-- Begin sidebar blog -->
-                                <div class="sidebar">
-
-                                    <!-- Begin: Danh mục tin tức -->
-                                    <div class="news-menu list-group">
-                                        <span class="list-group-item active">Danh mục </span>
-                                        <ul class="nav sidebar" id="menu-blog">
-
-
-
-
-                                            <li class=" first">
-                                                <a href="/">
-                                                    <span>Trang chủ</span>
-                                                </a>
-                                            </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                            <li class="item has-sub  ">
-                                                <a href="/collections/all">
-                                                    <span class="lbl">Sản phẩm</span>
-                                                    <span data-toggle="collapse" data-parent="#cssmenu"
-                                                        href="#sub-item-2" class="sign">
-                                                        <img
-                                                            src="//hstatic.net/0/0/global/design/theme-default/arrow-down.png">
-                                                    </span>
-                                                </a>
-                                                <ul class="nav children collapse" id="sub-item-2">
-
-
-                                                    <li class="first">
-                                                        <a href="/collections/sach-trinh-tham-kinh-di"
-                                                            title="Trinh Thám - Kinh Dị">
-                                                            <span>Trinh Thám - Kinh Dị</span>
-                                                        </a>
-                                                    </li>
-
-
-
-                                                    <li class="">
-                                                        <a href="/collections/van-hoc-hien-dai"
-                                                            title="Văn Học Hiện Đại">
-                                                            <span>Văn Học Hiện Đại</span>
-                                                        </a>
-                                                    </li>
-
-
-
-                                                    <li class="">
-                                                        <a href="/collections/van-hoc-kinh-dien"
-                                                            title="Văn Học Kinh Điển">
-                                                            <span>Văn Học Kinh Điển</span>
-                                                        </a>
-                                                    </li>
-
-
-
-                                                    <li class="">
-                                                        <a href="/collections/fantasy" title="Fantasy">
-                                                            <span>Fantasy</span>
-                                                        </a>
-                                                    </li>
-
-
-
-                                                    <li class="">
-                                                        <a href="/collections/light-novel" title="Light Novel">
-                                                            <span>Light Novel</span>
-                                                        </a>
-                                                    </li>
-
-
-
-                                                    <li class="">
-                                                        <a href="/collections/boys-love" title="Boys Love">
-                                                            <span>Boys Love</span>
-                                                        </a>
-                                                    </li>
-
-
-
-                                                    <li class="">
-                                                        <a href="/collections/boxset" title="Boxset">
-                                                            <span>Boxset</span>
-                                                        </a>
-                                                    </li>
-
-
-
-                                                    <li class="">
-                                                        <a href="/collections/sach-hoc-ngu" title="Sách Học Ngữ">
-                                                            <span>Sách Học Ngữ</span>
-                                                        </a>
-                                                    </li>
-
-
-
-                                                    <li class="">
-                                                        <a href="/collections/manga-comic" title="Manga - Comic">
-                                                            <span>Manga - Comic</span>
-                                                        </a>
-                                                    </li>
-
-
-
-                                                    <li class="">
-                                                        <a href="/collections/sach-thieu-nhi" title="Sách Thiếu Nhi">
-                                                            <span>Sách Thiếu Nhi</span>
-                                                        </a>
-                                                    </li>
-
-
-
-                                                    <li class="">
-                                                        <a href="/collections/phu-kien" title="Phụ Kiện">
-                                                            <span>Phụ Kiện</span>
-                                                        </a>
-                                                    </li>
-
-
-
-                                                    <li class="last">
-                                                        <a href="/collections/combo-sach" title="Combo Sách">
-                                                            <span>Combo Sách</span>
-                                                        </a>
-                                                    </li>
-
-
-                                                </ul>
-                                            </li>
-
-
-
-
-
-                                            <li class="current active  ">
-                                                <a href="/blogs/tintuc">
-                                                    <span>Tin tức</span>
-                                                </a>
-                                            </li>
-
-
-
-
-
-                                            <li class=" ">
-                                                <a href="/pages/about-us">
-                                                    <span>Về IPM</span>
-                                                </a>
-                                            </li>
-
-
-
-
-
-                                            <li class=" last">
-                                                <a href="/pages/lien-he">
-                                                    <span>Liên hệ</span>
-                                                </a>
-                                            </li>
-
-
-                                        </ul>
-                                        <script>
-                                            $(document).ready(function () {
-                                                //$('ul li:has(ul)').addClass('hassub');
-                                                $('#menu-blog ul ul li:odd').addClass('odd');
-                                                $('#menu-blog ul ul li:even').addClass('even');
-                                                $('#menu-blog > ul > li > a').click(function () {
-                                                    $('#menu-blog li').removeClass('active');
-                                                    $(this).closest('li').addClass('active');
-                                                    var checkElement = $(this).nextS();
-                                                    if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
-                                                        $(this).closest('li').removeClass('active');
-                                                        checkElement.slideUp('normal');
-                                                    }
-                                                    if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-                                                        $('#menu-blog ul ul:visible').slideUp('normal');
-                                                        checkElement.slideDown('normal');
-                                                    }
-                                                    if ($(this).closest('li').find('ul').children().length == 0) {
-                                                        return true;
-                                                    } else {
-                                                        return false;
-                                                    }
-                                                });
-
-                                                $('.drop-down-1').click(function (e) {
-                                                    if ($(this).parents('li').hasClass('has-sub')) {
-                                                        e.preventDefault();
-                                                        if ($(this).hasClass('open-nav')) {
-                                                            $(this).removeClass('open-nav');
-                                                            $(this).parents('li').children('ul.lve2-blog').slideUp('normal').removeClass('in');
-                                                        } else {
-                                                            $(this).addClass('open-nav');
-                                                            $(this).parents('li').children('ul.lve2-blog').slideDown('normal').addClass('in');
-                                                        }
-                                                    } else {
-
-                                                    }
-                                                });
-
-                                            });
-
-                                            $(".news-menu  ul.navs li.active").parents('ul.children').addClass("in");
-                                        </script>
-                                    </div>
-                                    <!-- End: Danh mục tin tức -->
-
-
-
-
-
-
-                                    <!--Begin: Bài viết mới nhất-->
-                                    <div class="news-latest list-group">
-                                        <span class="list-group-item active">
-                                            Bài viết mới nhất
-                                        </span>
-
-
-
-
-
-                                        <div class="article">
-
-                                            <div class="col-ld-3 col-md-3 col-sm-4 col-xs-4">
-                                                <a
-                                                    href="/blogs/tintuc/huong-dan-cach-nhan-hang-truc-tiep-tai-cua-hang-ipm-nhanh-nhat">
-                                                    <img src="//file.hstatic.net/200000287623/article/mot_so_quy_tac_khi_nhan_sach_tai_cua_hang_ipm_f7ed766bc825454bb03a2b587f59ddbe_large.png"
-                                                        alt="[HƯỚNG DẪN] CÁCH NHẬN HÀNG TRỰC TIẾP TẠI CỬA HÀNG IPM NHANH NHẤT">
-                                                </a>
-                                            </div>
-
-                                            <div class="post-content  col-lg-9 col-md-9 col-sm-8 col-xs-8 ">
-                                                <a
-                                                    href="/blogs/tintuc/huong-dan-cach-nhan-hang-truc-tiep-tai-cua-hang-ipm-nhanh-nhat">[HƯỚNG
-                                                    DẪN] CÁCH NHẬN HÀNG TRỰC TIẾP TẠI CỬA HÀNG IPM NHANH...</a><span
-                                                    class="date"> <i class="time-date"></i>15/12/2022</span>
-                                            </div>
-                                        </div>
-
-
-
-
-
-
-                                        <div class="article">
-
-                                            <div class="col-ld-3 col-md-3 col-sm-4 col-xs-4">
-                                                <a
-                                                    href="/blogs/tintuc/diem-sach-loi-nguyen-shiraisan-them-mot-tac-pham-kinh-di-la-lung-c">
-                                                    <img src="//file.hstatic.net/200000287623/article/z3901175290386_372ca62f537ec867edcc6b1c0b6b26a7_981dd76900884b1a8f80c953842ca1aa_large.jpg"
-                                                        alt="[ĐIỂM SÁCH] LỜI NGUYỀN SHIRAISAN – THÊM MỘT TÁC PHẨM KINH DỊ LẠ LÙNG CỦA OTSUICHI">
-                                                </a>
-                                            </div>
-
-                                            <div class="post-content  col-lg-9 col-md-9 col-sm-8 col-xs-8 ">
-                                                <a
-                                                    href="/blogs/tintuc/diem-sach-loi-nguyen-shiraisan-them-mot-tac-pham-kinh-di-la-lung-c">[ĐIỂM
-                                                    SÁCH] LỜI NGUYỀN SHIRAISAN – THÊM MỘT TÁC PHẨM KINH DỊ...</a><span
-                                                    class="date"> <i class="time-date"></i>14/12/2022</span>
-                                            </div>
-                                        </div>
-
-
-
-
-
-
-                                        <div class="article">
-
-                                            <div class="col-ld-3 col-md-3 col-sm-4 col-xs-4">
-                                                <a
-                                                    href="/blogs/tintuc/diem-sach-chieng-nguyen-hon-ai-danh-guc-nguoi-doc-bang-giong-van">
-                                                    <img src="//file.hstatic.net/200000287623/article/z3629472927173_0186d1cc59c535bdea9e11b89697d884__1__269bf08cf2fe4e6885e644a07f7e21e3_large.jpg"
-                                                        alt="[ĐIỂM SÁCH] CHIÊNG NGUYỆN HỒN AI – “ĐÁNH GỤC” NGƯỜI ĐỌC BẰNG GIỌNG VĂN ĐIỀM TĨNH VÀ KẾT THÚC NGỠ NGÀNG">
-                                                </a>
-                                            </div>
-
-                                            <div class="post-content  col-lg-9 col-md-9 col-sm-8 col-xs-8 ">
-                                                <a
-                                                    href="/blogs/tintuc/diem-sach-chieng-nguyen-hon-ai-danh-guc-nguoi-doc-bang-giong-van">[ĐIỂM
-                                                    SÁCH] CHIÊNG NGUYỆN HỒN AI – “ĐÁNH GỤC” NGƯỜI ĐỌC BẰNG...</a><span
-                                                    class="date"> <i class="time-date"></i>13/12/2022</span>
-                                            </div>
-                                        </div>
-
-
-
-
-
-
-                                        <div class="article">
-
-                                            <div class="col-ld-3 col-md-3 col-sm-4 col-xs-4">
-                                                <a
-                                                    href="/blogs/tintuc/diem-sach-hinh-canh-mat-tri-nhe-tay-nhung-khong-nhe-do">
-                                                    <img src="//file.hstatic.net/200000287623/article/hinh_canh_mat_tri_trinh_tham_trung_quoc_chan_ho_kei_553c5598e7754a6ea73b48b3b166b048_large.jpg"
-                                                        alt="[ĐIỂM SÁCH] HÌNH CẢNH MẤT TRÍ - NHẸ TAY NHƯNG KHÔNG NHẸ ĐÔ">
-                                                </a>
-                                            </div>
-
-                                            <div class="post-content  col-lg-9 col-md-9 col-sm-8 col-xs-8 ">
-                                                <a
-                                                    href="/blogs/tintuc/diem-sach-hinh-canh-mat-tri-nhe-tay-nhung-khong-nhe-do">[ĐIỂM
-                                                    SÁCH] HÌNH CẢNH MẤT TRÍ - NHẸ TAY NHƯNG KHÔNG NHẸ...</a><span
-                                                    class="date"> <i class="time-date"></i>20/11/2022</span>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <!--End: Bài viết mới nhất-->
-
-
-
-                                </div>
-                                <!-- End sidebar blog -->
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Content-->
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-        <!-- InstanceEndEditable -->
-    </div>
-    <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-    <!-- Slick Carousel -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <!-- Custom Script -->
-    <!-- InstanceBeginEditable name="js" -->
-    <script src="../templates/js/scripts.js"></script>
-
-    <!-- InstanceEndEditable -->
-
-
-    <!-- FOOTET -->
-
-    <footer class="footer-position">
-        <div class="side-footer">
-            <div class="container">
-                <div class="contact-footer">
-                    <div class="footer-logo">
-                        <a href="#">
-                            <img style="width: 180px; height: 90px;" class="img-responsive"
-                                src="../templates/images/newyear/logo_tet2.png" alt="Doflamingo Bookstore">
-                        </a>
-                    </div>
-
-                    <p class="marker-first">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Khu Phố 6, Phường Linh Trung, TP. Thủ Đức, TP. HCM</span>
-                    </p>
-                    <p class="marker-first">
-                        <i class="fas fa-phone-alt"></i>
-                        <span>Hotline: 0123456789</span>
-                    </p>
-                    <p class="marker-first">
-                        <i class="far fa-envelope"></i>
-                        <span>Email: abc.bookstore@gmail.com</span>
-                    </p>
-                    <p>
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Giấy phép DKKD số 0123456789, cấp lần thứ 6 năm 2019</span>
-                    </p>
-                </div>
-
-                <div user-footer>
-                    <div class="support">
-                        <div class="support-user">
-                            <h4>Hỗ trợ khách hàng</h4>
-                            <div>
-                                <ul>
-                                    <li><a href="">Câu hỏi thường gặp</a></li>
-                                    <li><a href="">Điều khoản dịch vụ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="policy">
-                            <h4>Chính sách</h4>
-                            <div>
-                                <ul>
-                                    <li><a href="">Chính sách bảo mật</a></li>
-                                    <li><a href="">Chính sách thanh toán</a></li>
-                                    <li><a href="">Chính sách vận chuyển</a></li>
-                                    <li><a href="">Chính sách đổi trả</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class-="email-group">
-                        <div class="email">
-                            <h4>Đăng ký nhận tin</h4>
-                            <p>Hãy nhập email của bạn vào ô dưới đây để có thể nhận được tất cả tin tức mới nhất của
-                                ABC</p>
-                            <div class="input-group">
-                                <form action="">
-                                    <input type="email" value="" placeholder="Nhập email của bạn..."
-                                        name="contact[email]" id="Email" class="input-group-field" autocorrect="off"
-                                        autocapitalize="off">
-                                </form>
-                                <button type="submit" class="button-btn1" name="subscribe" id="subscribe">Đăng
-                                    ký</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="connect-footer">
-                    <div class="connect">
-                        <h4>Kết nối với chúng tôi</h4>
-                        <div class="icon-footer">
-                            <a href="">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <img style="width: 200px; height: 200px; margin-top: 50px;"
-                        src="../templates/images/newyear/happy-new-year.png" alt="">
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- HIỆU ỨNG HOA MAI -->
-
-    <script type="text/javascript">
-        /******************************************
-     * Snow Effect Script- By Altan d.o.o. (http://www.altan.hr/snow/index.html)
-     * Visit Dynamic Drive DHTML code library (http://www.dynamicdrive.com/) for full source code
-     * Last updated Nov 9th, 05' by DD. This notice must stay intact for use
-     ******************************************/
-        function openwindow() {
-            window.open("autumn_effect.htm", "", "width=350,height=500")
-        }
-
-        //Configure below to change URL path to the snow image
-        var snowsrc = "../images/newyear/apricot (1).png"
-        // Configure below to change number of snow to render
-        var no = 30;
-        // Configure whether snow should disappear after x seconds (0=never):
-        var hidesnowtime = 0;
-        // Configure how much snow should drop down before fading ("windowheight" or "pageheight")
-        var snowdistance = "pageheight";
-
-        ///////////Stop Config//////////////////////////////////
-
-        var ie4up = (document.all) ? 1 : 0;
-        var ns6up = (document.getElementById && !document.all) ? 1 : 0;
-
-        function iecompattest() {
-            return (document.compatMode && document.compatMode != "BackCompat") ? document.documentElement : document.body
-        }
-
-        var dx, xp, yp;    // coordinate and position variables
-        var am, stx, sty;  // amplitude and step variables
-        var i, doc_width = 800, doc_height = 600;
-
-        if (ns6up) {
-            doc_width = self.innerWidth;
-            doc_height = self.innerHeight;
-        } else if (ie4up) {
-            doc_width = iecompattest().clientWidth;
-            doc_height = iecompattest().clientHeight;
-        }
-
-        dx = new Array();
-        xp = new Array();
-        yp = new Array();
-        am = new Array();
-        stx = new Array();
-        sty = new Array();
-        snowsrc = (snowsrc.indexOf("dynamicdrive.com") != -1) ? "snow.gif" : snowsrc
-        for (i = 0; i < no; ++i) {
-            dx[i] = 0;                        // set coordinate variables
-            xp[i] = Math.random() * (doc_width - 50);  // set position variables
-            yp[i] = Math.random() * doc_height;
-            am[i] = Math.random() * 20;         // set amplitude variables
-            stx[i] = 0.02 + Math.random() / 10; // set step variables
-            sty[i] = 0.7 + Math.random();     // set step variables
-            if (ie4up || ns6up) {
-                if (i == 0) {
-                    document.write("<div id=\"dot" + i + "\" style=\"POSITION: absolute; Z-INDEX: " + i + "; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dynamicdrive.com\"><img src='" + snowsrc + "' border=\"0\"><\/a><\/div>");
+        </footer>
+
+        <!-- HIỆU ỨNG HOA MAI -->
+
+        <script type="text/javascript">
+            /******************************************
+             * Snow Effect Script- By Altan d.o.o. (http://www.altan.hr/snow/index.html)
+             * Visit Dynamic Drive DHTML code library (http://www.dynamicdrive.com/) for full source code
+             * Last updated Nov 9th, 05' by DD. This notice must stay intact for use
+             ******************************************/
+            function openwindow() {
+                window.open('autumn_effect.htm', '', 'width=350,height=500');
+            }
+
+            //Configure below to change URL path to the snow image
+            var snowsrc = '../images/newyear/apricot (1).png';
+            // Configure below to change number of snow to render
+            var no = 30;
+            // Configure whether snow should disappear after x seconds (0=never):
+            var hidesnowtime = 0;
+            // Configure how much snow should drop down before fading ("windowheight" or "pageheight")
+            var snowdistance = 'pageheight';
+
+            ///////////Stop Config//////////////////////////////////
+
+            var ie4up = document.all ? 1 : 0;
+            var ns6up = document.getElementById && !document.all ? 1 : 0;
+
+            function iecompattest() {
+                return document.compatMode && document.compatMode != 'BackCompat'
+                    ? document.documentElement
+                    : document.body;
+            }
+
+            var dx, xp, yp; // coordinate and position variables
+            var am, stx, sty; // amplitude and step variables
+            var i,
+                doc_width = 800,
+                doc_height = 600;
+
+            if (ns6up) {
+                doc_width = self.innerWidth;
+                doc_height = self.innerHeight;
+            } else if (ie4up) {
+                doc_width = iecompattest().clientWidth;
+                doc_height = iecompattest().clientHeight;
+            }
+
+            dx = new Array();
+            xp = new Array();
+            yp = new Array();
+            am = new Array();
+            stx = new Array();
+            sty = new Array();
+            snowsrc = snowsrc.indexOf('dynamicdrive.com') != -1 ? 'snow.gif' : snowsrc;
+            for (i = 0; i < no; ++i) {
+                dx[i] = 0; // set coordinate variables
+                xp[i] = Math.random() * (doc_width - 50); // set position variables
+                yp[i] = Math.random() * doc_height;
+                am[i] = Math.random() * 20; // set amplitude variables
+                stx[i] = 0.02 + Math.random() / 10; // set step variables
+                sty[i] = 0.7 + Math.random(); // set step variables
+                if (ie4up || ns6up) {
+                    if (i == 0) {
+                        document.write(
+                            '<div id="dot' +
+                                i +
+                                '" style="POSITION: absolute; Z-INDEX: ' +
+                                i +
+                                '; VISIBILITY: visible; TOP: 15px; LEFT: 15px;"><a href="http://dynamicdrive.com"><img src=\'' +
+                                snowsrc +
+                                '\' border="0"><\/a><\/div>'
+                        );
+                    } else {
+                        document.write(
+                            '<div id="dot' +
+                                i +
+                                '" style="POSITION: absolute; Z-INDEX: ' +
+                                i +
+                                '; VISIBILITY: visible; TOP: 15px; LEFT: 15px;"><img src=\'' +
+                                snowsrc +
+                                '\' border="0"><\/div>'
+                        );
+                    }
+                }
+            }
+
+            function snowIE_NS6() {
+                // IE and NS6 main animation function
+                doc_width = ns6up ? window.innerWidth - 10 : iecompattest().clientWidth - 10;
+                doc_height =
+                    window.innerHeight && snowdistance == 'windowheight'
+                        ? window.innerHeight
+                        : ie4up && snowdistance == 'windowheight'
+                        ? iecompattest().clientHeight
+                        : ie4up && !window.opera && snowdistance == 'pageheight'
+                        ? iecompattest().scrollHeight
+                        : iecompattest().offsetHeight;
+                if (snowdistance == 'windowheight') {
+                    doc_height = window.innerHeight || iecompattest().clientHeight;
                 } else {
-                    document.write("<div id=\"dot" + i + "\" style=\"POSITION: absolute; Z-INDEX: " + i + "; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='" + snowsrc + "' border=\"0\"><\/div>");
+                    doc_height = iecompattest().scrollHeight;
                 }
-            }
-        }
-
-        function snowIE_NS6() {  // IE and NS6 main animation function
-            doc_width = ns6up ? window.innerWidth - 10 : iecompattest().clientWidth - 10;
-            doc_height = (window.innerHeight && snowdistance == "windowheight") ? window.innerHeight : (ie4up && snowdistance == "windowheight") ? iecompattest().clientHeight : (ie4up && !window.opera && snowdistance == "pageheight") ? iecompattest().scrollHeight : iecompattest().offsetHeight;
-            if (snowdistance == "windowheight") {
-                doc_height = window.innerHeight || iecompattest().clientHeight
-            }
-            else {
-                doc_height = iecompattest().scrollHeight
-            }
-            for (i = 0; i < no; ++i) {  // iterate for every dot
-                yp[i] += sty[i];
-                if (yp[i] > doc_height - 50) {
-                    xp[i] = Math.random() * (doc_width - am[i] - 30);
-                    yp[i] = 0;
-                    stx[i] = 0.02 + Math.random() / 10;
-                    sty[i] = 0.7 + Math.random();
+                for (i = 0; i < no; ++i) {
+                    // iterate for every dot
+                    yp[i] += sty[i];
+                    if (yp[i] > doc_height - 50) {
+                        xp[i] = Math.random() * (doc_width - am[i] - 30);
+                        yp[i] = 0;
+                        stx[i] = 0.02 + Math.random() / 10;
+                        sty[i] = 0.7 + Math.random();
+                    }
+                    dx[i] += stx[i];
+                    document.getElementById('dot' + i).style.top = yp[i] + 'px';
+                    document.getElementById('dot' + i).style.left = xp[i] + am[i] * Math.sin(dx[i]) + 'px';
                 }
-                dx[i] += stx[i];
-                document.getElementById("dot" + i).style.top = yp[i] + "px";
-                document.getElementById("dot" + i).style.left = xp[i] + am[i] * Math.sin(dx[i]) + "px";
+                snowtimer = setTimeout('snowIE_NS6()', 10);
             }
-            snowtimer = setTimeout("snowIE_NS6()", 10);
-        }
 
-        function hidesnow() {
-            if (window.snowtimer) clearTimeout(snowtimer)
-            for (i = 0; i < no; i++) document.getElementById("dot" + i).style.visibility = "hidden"
-        }
+            function hidesnow() {
+                if (window.snowtimer) clearTimeout(snowtimer);
+                for (i = 0; i < no; i++) document.getElementById('dot' + i).style.visibility = 'hidden';
+            }
 
+            if (ie4up || ns6up) {
+                snowIE_NS6();
+                if (hidesnowtime > 0) setTimeout('hidesnow()', hidesnowtime * 1000);
+            }
+        </script>
+    </body>
 
-        if (ie4up || ns6up) {
-            snowIE_NS6();
-            if (hidesnowtime > 0)
-                setTimeout("hidesnow()", hidesnowtime * 1000)
-        }
-
-    </script>
-</body>
-
-<!-- InstanceEnd -->
-
+    <!-- InstanceEnd -->
 </html>
