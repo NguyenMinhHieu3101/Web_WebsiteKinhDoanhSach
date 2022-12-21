@@ -159,6 +159,6 @@ span.sign{right: 0;
 	height: 19px;
 	display: inline-block;
 	margin-right: 5px;
-	float: left;
+	
 }
 .news-latest .article a:hover{color:var(--main-color);}
