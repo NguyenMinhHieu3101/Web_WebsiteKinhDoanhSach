@@ -10,6 +10,7 @@
         <title>ĐĂNG KÝ</title>
         <link rel="stylesheet" href="../css/style.css" type="text/css" />
         <link rel="stylesheet" type="text/css" href="../css/slider.css" />
+        <link rel="stylesheet" href="../css/DangKy_DangNhap.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
         <!-- InstanceEndEditable -->
     </head>
@@ -243,7 +244,7 @@
                             <form action="">
                                 <div class="inputBx">
                                     <input type="text" required="required" />
-                                    <span>Login</span>
+                                    <span>Account</span>
                                     <i class="fas fa-user-circle"></i>
                                 </div>
                                 <div class="inputBx password">
@@ -252,15 +253,18 @@
                                     <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
                                     <i class="fas fa-key"></i>
                                 </div>
-                                <label class="remember"><input type="checkbox" /> Remember</label>
+                                <div class="inputBx password">
+                                    <input id="password-input" type="password" name="password" required="required" />
+                                    <span>Re-Password</span>
+                                    <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                                    <i class="fas fa-key"></i>
+                                </div>
+
                                 <div class="inputBx" id="button">
-                                    <input type="submit" value="Log In" disabled />
+                                    <input type="submit" value="Sign Up" disabled />
                                 </div>
                             </form>
-                            <p>
-                                Don't have an account
-                                <a href="./Signup.html">Sign up</a>
-                            </p>
+                            <p>Login right now: <a href="./Login.html">Log In</a></p>
                         </div>
                     </div>
                 </div>

@@ -130,45 +130,45 @@ button {
     margin: 0;
 }
 
-.img-responsive {
+#header .img-responsive {
     display: block;
     max-width: 100%;
 }
 
-.row {
+#header .row {
     margin-right: -15px;
     margin-left: -15px;
 }
 
-.container {
-    position: relative;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+#header .container {
+    position: relative ;
+    padding-right: 15px ;
+    padding-left: 15px ;
+    margin-right: auto ;
+    margin-left: auto ;
 }
 
-.col-hd-lg {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+#header .col-hd-lg {
+    position: relative ;
+    min-height: 1px ;
+    padding-right: 15px ;
+    padding-left: 15px ;
 }
 
-.col-sl {
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+#header .col-sl {
+    float: left ;
+    position: relative ;
+    min-height: 1px ;
+    padding-right: 15px ;
+    padding-left: 15px ;
 }
 
-.row::before,
-.row::after {
-    content: '\0020';
-    display: block;
-    height: 0;
-    visibility: hidden;
+#header .row::before,
+#header .row::after {
+    content: '\0020' ;
+    display: block ;
+    height: 0 ;
+    visibility: hidden ;
 }
 
 .header .row {
@@ -509,7 +509,8 @@ svg:not(:root) {
 .flexslider .slides > li {
     display: none;
     -webkit-backface-visibility: hidden;
-} */
+}
+*/
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
 /* .flexslider .slides img {
@@ -2032,3 +2033,35 @@ textarea {
         width: 99%;
     }
 }
+
+/* #contact .col-sm-12 {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    --main-color: #f67694;
+    --header-footer-text: #ffffff;
+    box-sizing: border-box;
+    margin: 0;
+    font: inherit;
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    max-width: 800px;
+    background-color: #000;
+    color: white;
+    letter-spacing: 1px;
+} */
+
+/* @media (min-width: 768px) {
+    #contact .col-sm-12 {
+        width: 100%;
+    }
+} */
