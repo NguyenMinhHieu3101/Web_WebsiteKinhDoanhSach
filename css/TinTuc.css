@@ -37,9 +37,9 @@
 }
 .topLine p a{font-size: 12px;
 	display: block;
-	color: #01a14b;
+	color: var(--main-color);
 }
-.topLine h2 a:hover{color:#01a14b;}
+.topLine h2 a:hover{color:var(--main-color);}
 .topLine span em, .topLine span a,.topLine span{
 	color:#aab2bd;
 	font-weight: 300;
@@ -67,15 +67,15 @@ span.date {
 	font-size: 12px;
 }
 div#pagination span.page-node.current{
-	background:#01a14b;
+	background:var(--main-color);
 	color: #fff;
 }
 div#pagination a.page-node:hover{
-	background:#01a14b;
+	background:var(--main-color);
 	color: #fff;
 }
 #pagination a:hover{
-	background:#01a14b;
+	background:var(--main-color);
 	color: #fff;
 }
 div#pagination a.next span i{
@@ -95,6 +95,11 @@ div#pagination a.prev span i{
 	font-weight: 400;
 	border-bottom: 3px solid #e0e0e0!important;
 }
+.news-menu .nav > li > a{
+	padding: 1vw 1.5vw;
+	color:#555555;
+	font-weight: 300;
+}
 .news-menu .list-group-item.active {
 	z-index: 2;
 	color:#000000;
@@ -108,17 +113,13 @@ div#pagination a.prev span i{
 #menu-blog > li{
 	border-top: 1px solid #e0e0e0;
 }
-.news-menu .nav > li > a{
-	padding: 10px 15px;
-	color: #555555;	
-	font-weight: 300;
-}
+
 span.sign{right: 0;
 	position: absolute;
 	padding-right: 10px;
 }
 .news-menu .sidebar li:hover > a, .news-menu .sidebar li.active >a{
-	color:#01a14b;
+	color:var(--main-color);
 }
 #menu-blog > li.item>ul >li> a {
 	margin-left: 0;
@@ -160,4 +161,4 @@ span.sign{right: 0;
 	margin-right: 5px;
 	float: left;
 }
-.news-latest .article a:hover{color:#01a14b;}
+.news-latest .article a:hover{color:var(--main-color);}

@@ -1,5 +1,5 @@
 :root {
-    /* --main-color: #01a14b; */
+    /* --main-color: var(--main-color); */
     --main-color: #f67694;
     --header-footer-text: #ffffff;
 }
@@ -32,7 +32,7 @@ img {
 .nav-bar {
     width: 100%;
     height: 50px;
-    /* background: #01a14b; */
+    /* background: var(--main-color); */
     /* background: var(--main-color); */
     background-image: url(../images/newyear/nav-bar.png);
     display: flex;
@@ -1608,7 +1608,7 @@ div#list-group-l {
 
 .collection .browse-tags .custom-dropdown--white::before {
     border-radius: 0px 30px 30px 0px !important;
-    background: #01a14b;
+    background: var(--main-color);
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     content: '';
     position: absolute;
@@ -1619,7 +1619,7 @@ div#list-group-l {
     bottom: 0;
 }
 .collection .browse-tags .custom-dropdown__select {
-    border: 1px solid #01a14b;
+    border: 1px solid var(--main-color);
     color: rgba(0, 0, 0, 0.8);
     font-weight: 100;
     font-size: 14px;
@@ -1716,7 +1716,7 @@ div#list-group-l {
 }
 
 span.page-node.current {
-    background: #01a14b;
+    background: var(--main-color);
     color: #fff;
     border: 1px solid #e9e9e9;
     display: inline-block;
