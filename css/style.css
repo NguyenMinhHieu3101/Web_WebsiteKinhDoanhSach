@@ -1085,7 +1085,7 @@ p.pro-price-del {
     fill: #fff;
 }
 /*BUY */
-.add-buy{
+.add-buy {
     background: #336b75;
     color: #fff !important;
     margin: 8px 0px;
@@ -1093,13 +1093,12 @@ p.pro-price-del {
     line-height: 30px;
     padding: 0 14px;
     font-weight: 500;
-
 }
-.add-buy:hover{
+.add-buy:hover {
     cursor: pointer;
     opacity: 0.8;
 }
-.click-collect{
+.click-collect {
     background: #9e866b;
     color: #fff !important;
     font-size: 14px;
@@ -1107,14 +1106,14 @@ p.pro-price-del {
     padding: 0 14px;
     font-weight: 500;
 }
-.click-collect:hover{
+.click-collect:hover {
     cursor: pointer;
     opacity: 0.8;
 }
-.buy-book{
+.buy-book {
     display: none;
 }
-.display-buybook{
+.display-buybook {
     display: block;
 }
 
@@ -2112,15 +2111,18 @@ textarea {
 #contact .list-item {
     line-height: 4;
     color: black;
+    width: 300px;
 }
 
 #contact .contact-text {
     font: 300 18px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1.9px;
+    width: 400px;
 }
 
 #contact .place {
     margin-left: 62px;
+    width: 400px;
 }
 
 #contact .phone {
