@@ -5,15 +5,19 @@
 	background: #fff;
 	padding: 0px 15vw;
 	padding-bottom: 18px;
-	margin-top:30px;
+	/* margin-top:30px; */
 	font-weight: 300;
 }
 body{
     font-size: 18px;
 }
+.main-content-wrapper
+{
+    padding: 0;
+}
 #layout-page .header-page, #layout-page .header-page h2 {
     background: #fff;
-    padding: 10px 15px 10px 15px;
+    /* padding: 10px 15px 10px 15px; */
     border-bottom: 1px solid #e0e0e0;
     content: "";
     text-transform: uppercase;
