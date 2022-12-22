@@ -2113,11 +2113,15 @@ textarea {
     color: black;
     width: 300px;
 }
+#contact .girl{
+    color: var(--main-color);
+}
 
 #contact .contact-text {
     font: 300 18px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1.9px;
     width: 400px;
+    text-col
 }
 
 #contact .place {
