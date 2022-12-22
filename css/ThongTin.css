@@ -8,7 +8,9 @@
 	margin-top:30px;
 	font-weight: 300;
 }
-
+body{
+    font-size: 18px;
+}
 #layout-page .header-page, #layout-page .header-page h2 {
     background: #fff;
     padding: 10px 15px 10px 15px;
