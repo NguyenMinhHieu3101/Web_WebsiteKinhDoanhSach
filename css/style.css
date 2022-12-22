@@ -1084,6 +1084,39 @@ p.pro-price-del {
 .icon_list svg path {
     fill: #fff;
 }
+/*BUY */
+.add-buy{
+    background: #336b75;
+    color: #fff !important;
+    margin: 8px 0px;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 14px;
+    font-weight: 500;
+
+}
+.add-buy:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.click-collect{
+    background: #9e866b;
+    color: #fff !important;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 14px;
+    font-weight: 500;
+}
+.click-collect:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.buy-book{
+    display: none;
+}
+.display-buybook{
+    display: block;
+}
 
 /* HOME POLICY */
 
