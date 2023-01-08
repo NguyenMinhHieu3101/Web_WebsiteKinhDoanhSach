@@ -53,9 +53,9 @@ html{
     color: rgb(249, 9, 9);
 }
 .header--img > img{
-    width: 450px;
-    height: 78px;
-    margin-top: 22px;
+    width: 18%;
+    /* height: 78px; */
+    margin-top: 15px;
 }
 .search{
     display: flex;
