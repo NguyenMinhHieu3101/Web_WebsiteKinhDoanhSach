@@ -503,8 +503,7 @@ input#Quantity {
 
 #surround {
   position: relative; }
-  #surround img {
-    width: auto; }
+
   #surround .sold-out {
     position: absolute;
     z-index: 999;

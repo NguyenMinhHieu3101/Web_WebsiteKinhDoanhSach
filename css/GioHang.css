@@ -1,10 +1,4 @@
-.boxcenter {
-    width: 100vw;
-    margin: 0 auto;
-    text-align: center;
-    size: 1.4vw;
-    border-color: var(--main-color);
-}
+
 .title{
     background-color: var(--main-color);
     height: 5vw;
@@ -13,32 +7,17 @@
     align-content: center;
     padding-top:2vw;
 }
-.box1 {
-    float: left;
-    width: 50vw;
-    margin-left: 5vw;
-    border-color: var(--main-color);
-
-}
-.box2{ 
-    float: right;
-    width: 45vw;
-    height:50vw;
-    border-color: var(--main-color);
-}
 .body{
     font-size: 1.4vw;
     border-color: var(--main-color);
 }
-
-
 
 input {
     text-align: right;
     border-radius: 1vw;
     padding: 0.5vw 1vw;
     text-align: center;
-    border-color: var(--main-color);
+    border-color: var(--main-color)!important;
 }
 .add_btn{
     background-color:var(--main-color);
@@ -50,16 +29,19 @@ td img {
     height: 8vw;
 }
 
-table {
+table, td, tr{
     width: 20vw;
-    border-collapse: collapse;
     margin-bottom: 2vw;
-    border-color: var(--main-color);
-
+    border: var(--main-color) 1px solid!important;
+ 
+}
+th{
+    border: white 1px solid!important;
 }
 
 th {
     background-color: var(--main-color);
+    border-collapse: collapse;
 }
 
 th,td {
