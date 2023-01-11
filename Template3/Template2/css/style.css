@@ -13,18 +13,21 @@ html {
 }
 .home {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
 .home .header {
     display: flex;
     width: 100vw;
-    height: 80px;
+    height: 85px;
+    padding: 10px 0px 5px;
 }
 .home .header .logo {
     display: flex;
-
+    height: 70px;
+    padding-right: 15px;
+    padding-left: 15px;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
@@ -32,6 +35,9 @@ html {
 /* start */
 .home .header .search_box {
     display: flex;
+
+    padding-right: 15px;
+    padding-left: 15px;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
@@ -74,6 +80,9 @@ html {
 
 .home .header .end {
     display: flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 70px;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
@@ -251,10 +260,45 @@ html {
         text-align: left;
     }
 }
-/* Slice*/
-.mySlides {
+/* Tag*/
+.home .tag {
     width: 100vw;
+    height: 250px;
+    display: flex;
+    justify-content: center;
 }
+.home .tag div {
+    padding: 10px 30px;
+    margin: 25px 25px 25px 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 300px;
+    color: white;
+}
+.home h2 {
+    text-align:center;
+}
+#tag1 {
+    background: rgba(73, 186, 207, 0.85);
+}
+#tag2 {
+    background: rgba(147, 100, 141, 0.85);
+    margin-right: 50px;
+    margin-left: 50px;t
+}
+#tag3 {
+    background: rgba(241, 103, 69, 0.85);
+}
+i::before {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
 /* end  */
 
 /* css cho content */
