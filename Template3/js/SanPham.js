@@ -30,17 +30,17 @@ let sach = [
         del: '192.000',
     },
 ];
-// localStorage.clear();
-// localStorage.setItem('sach', JSON.stringify(sach));
+localStorage.clear();
+localStorage.setItem('sach', JSON.stringify(sach));
 
-// var books = JSON.parse(localStorage.getItem('sach'));
+var books = JSON.parse(localStorage.getItem('sach'));
 
 var List1 = document.getElementById('list-1');
 var List2 = document.getElementById('list-2');
 var List3 = document.getElementById('list-3');
 List1.innerHTML = '';
 
-sach.map((book, index) => {
+books.map((book, index) => {
     List1.innerHTML +=
         '<div class="book read">' +
         '   <div class="cover">' +
