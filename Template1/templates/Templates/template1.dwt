@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="../templates/Templates/template1.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- InstanceBeginEditable name="doctitle_link_css" -->
-    <title>Giỏ Hàng</title>
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../css/GioHang.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <!-- TemplateBeginEditable name="doctitle_link_css" -->
+    <title>Document</title> 
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <!-- InstanceEndEditable -->
+  <!-- TemplateEndEditable -->
 </head>
 
 
@@ -25,7 +21,7 @@
         <div class="nav-bar">
             <ul class="nav-list">
                 <li class="nav-item">DOFLAMINGO</li>
-            </ul>
+            </ul> 
             <ul class="nav-list">
                 <li class="nav-item"><a class="link" href="DangNhap.html" title="Đăng nhập">Đăng nhập</a></li>
                 <li class="nav-item"><span class="sep">|</span></li>
@@ -43,8 +39,8 @@
                         <h1>
                             <a href="file:///C|/Users/PC/Documents/GitHub/Web_WebsiteKinhDoanhSach/html/index.html">
                                 <!-- <img class="img-responsive" src="https://theme.hstatic.net/200000287623/1000800165/14/logo.png?v=203" alt="">  -->
-                                <img style="width: 140px; height: 70px;" class="img-responsive"
-                                    src="../templates/images/newyear/logo_tet2.png" alt="">
+                                <img style="width: 140px; height: 70px;" class="img-responsive" 
+                                    src="../images/newyear/logo_tet2.png" alt=""> 
 
                             </a>
                         </h1>
@@ -94,7 +90,7 @@
                     <div class="header-cart">
                         <div class="topbar-cart">
                             <div class="shopping_cart">
-                                <a href="GioHang.html" title="giỏ hàng" rel="nofollow">
+                                <a href="" title="giỏ hàng" rel="nofollow">
                                     <p class="cart-icon">
                                         <i class="icon_list">
                                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -134,148 +130,44 @@
                 </div>
             </div>
         </div>
-        <style>
-            a:hover {
-                text-decoration: none !important;
-            }
-        </style>
+
         <!-- NAVIGATION -->
 
 
         <div class="main">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <!-- InstanceBeginEditable name="nav-bar" -->
-                    <div id="bar" class="col-12 main-bar w-100">
-                        <ul class="main-list w-100">
-                            <li class="main-item text-decoration-none">
-                                <a style="text-decoration:none !important;" title="Trang chủ"
-                                    href="Home.html"><span>Trang
-                                        chủ</span></a>
+					 <!-- TemplateBeginEditable name="nav-bar" -->
+                    <div id="bar" class="main-bar">
+                        <ul class="main-list">
+                            <li class="main-item">
+                                <a title="Trang chủ" href="Home.html"><span>Trang chủ</span></a>
                             </li>
                             <li class="main-item">
-                                <a style="text-decoration:none !important;" title="Sản phẩm"
-                                    href="SanPham.html"><span>Sản phẩm</span></a>
+                                <a title="Sản phẩm" href="SanPham.html"><span>Sản phẩm</span></a>
                             </li>
                             <li class="main-item">
-                                <a style="text-decoration:none !important;" title="Tin tức" href="TinTuc.html"><span>Tin
-                                        tức</span></a>
+                                <a title="Tin tức" href="TinTuc.html"><span>Tin tức</span></a>
                             </li>
                             <li class="main-item">
-                                <a style="text-decoration:none !important;" title="Thông tin"
-                                    href="ThongTin.html"><span>Thông tin</span></a>
+                                <a title="Thông tin" href="ThongTin.html"><span>Thông tin</span></a>
                             </li>
                             <li class="main-item">
-                                <a style="text-decoration:none !important;" title="Liên hệ"
-                                    href="LienHe.html"><span>Liên hệ</span></a>
+                                <a title="Liên hệ" href="LienHe.html"><span>Liên hệ</span></a>
                             </li>
                         </ul>
                     </div>
-                    <!-- InstanceEndEditable -->
+					<!-- TemplateEndEditable -->
                 </div>
             </div>
         </div>
-
 
         <!-- MAIN -->
-        <!-- InstanceBeginEditable name="content" -->
-        <div class="container">
-            <!-- Begin empty cart -->
-
-            <!-- Begin cart -->
-            <div class="row my-2">
-
-                <div class="col-12" style="overflow-x:auto; ">
-                    <table class="table" style="margin-top: 3vw;">
-                        <tr class="text-center align-middle text-light" style="font-size:x-large">
-                            <th>Mã</th>
-                            <th>Hình</th>
-                            <th>Tên</th>
-                            <th>Số lượng</th>
-                            <th>Đơn giá</th>
-                            <th>Thành tiền</th>
-                        </tr>
-                        <tbody id="dssp">
-                            <tr class="text-center align-middle">
-                                <td class="text-center align-middle">H01</td>
-                                <td class="justify-content-center">
-                                    <div>
-                                        <img style="width:20vw;" class="img-fluid"
-                                            src="../images/newyear/hai_so_phan.jpg" alt="">
-                                    </div>
-                                </td>
-                                <td class="text-center align-middle">HAI SỐ PHẬN</td>
-                                <td class="text-center align-middle"><input type="number" min="1" max="10" value="1"
-                                        name=""></td>
-                                <td class="text-center align-middle"><span>1000</span>đ</td>
-                                <td class="text-center align-middle"><span>1000</span>đ</td>
-
-                            </tr>
-                            <tr>
-                                <td class="text-center align-middle">H02</td>
-                                <td class="text-center align-middle"><img style="width:20vw;"
-                                        class="img-fluid" src="../images/newyear/nui_chuot_quet.jpg" alt=""></td>
-                                <td class="text-center align-middle">NÚI CHUỘT QUÉT</td>
-                                <td class="text-center align-middle"><input type="number" min="1" max="10" value="1"
-                                        name=""></td>
-                                <td class="text-center align-middle"><span>2000</span>đ</td>
-                                <td class="text-center align-middle"><span>2000</span>đ</td>
-
-                            </tr>
-                            <tr>
-                                <td class="text-center align-middle">H03</td>
-                                <td class="text-center align-middle"><img style="width:20vw;"
-                                        class="img-fluid" src="../images/newyear/tet_la_day.png" alt="">
-                                </td>
-                                <td class="text-center align-middle">TẾT LÀ ĐÂY</td>
-                                <td class="text-center align-middle"><input type="number" min="1" max="10" value="1"
-                                        name=""></td>
-                                <td class="text-center align-middle"><span>3000</span>đ</td>
-                                <td class="text-center align-middle"><span>3000</span>đ</td>
-
-
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-12" style="text-align:right">
-                    <label for="note" style="color: var(--main-color);">TỔNG TIỀN: </label> <span
-                        style="font-size: 20px;">3000</span>đ</td><br>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12" style="text-align:right">
-                    <label for="note" style="color: var(--main-color);">Ghi chú </label><br>
-                    <textarea id="note" name="note" class="bg-light text-dark" rows="8" cols="50"></textarea>
-                </div>
-            </div>
-
-            <div class="row justify-content-end mb-3 ">
-                <button style="margin-right: 25px;margin-top:15px; background-color:var(--main-color);" type="submit"
-                    id="checkout" class="col-auto btn text-light" name="checkout" value="">Thanh toán</button>
-                <button style="margin-right: 75px;margin-top:15px; background-color:white; color: var(--main-color)!important; border-color: var(--main-color)!important;" type="submit"
-                    id="update-cart" class="col-auto btn text-light " name="update" value="">Cập
-                    nhật</button>
-            </div>
-
-            <div class="row justify-content-center ">
-                <a href="SanPham.html" class="align-middle" style="color: var(--main-color); margin-bottom:15px">
-                    Tiếp tục mua hàng
-                </a>
-            </div>
-
-        </div>
-    </div>
- 
-
-    <!-- InstanceEndEditable -->
-    </div>
+<!-- TemplateBeginEditable name="content" -->
+       <div>Content</div>
+	           
+<!-- TemplateEndEditable -->
+	</div>
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
@@ -283,11 +175,11 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- Custom Script -->
-    <!-- InstanceBeginEditable name="js" -->
-    <script src="../templates/js/scripts.js"></script>
-
-    <!-- InstanceEndEditable -->
-
+	<!-- TemplateBeginEditable name="js" -->
+  		<script src="../js/scripts.js"></script>
+	           
+<!-- TemplateEndEditable -->
+  
 
     <!-- FOOTET -->
 
@@ -297,8 +189,8 @@
                 <div class="contact-footer">
                     <div class="footer-logo">
                         <a href="#">
-                            <img style="width: 180px; height: 90px;" class="img-responsive"
-                                src="../templates/images/newyear/logo_tet2.png" alt="Doflamingo Bookstore">
+                            <img style="width: 180px; height: 90px;" class="img-responsive" src="../images/newyear/logo_tet2.png"
+                                alt="Doflamingo Bookstore">
                         </a>
                     </div>
 
@@ -333,9 +225,9 @@
                         </div>
 
                         <div class="policy">
-                            <h4>Chính sách</h4>
+                            <h4>Chính sách</h4> 
                             <div>
-                                <ul>
+                                <ul> 
                                     <li><a href="">Chính sách bảo mật</a></li>
                                     <li><a href="">Chính sách thanh toán</a></li>
                                     <li><a href="">Chính sách vận chuyển</a></li>
@@ -347,7 +239,7 @@
                     <div class-="email-group">
                         <div class="email">
                             <h4>Đăng ký nhận tin</h4>
-                            <p>Hãy nhập email của bạn vào ô dưới đây để có thể nhận được tất cả tin tức mới nhất của
+                            <p>Hãy nhập email của bạn vào ô dưới đây để có thể nhận được tất cả tin tức mới nhất của 
                                 ABC</p>
                             <div class="input-group">
                                 <form action="">
@@ -357,7 +249,7 @@
                                 </form>
                                 <button type="submit" class="button-btn1" name="subscribe" id="subscribe">Đăng
                                     ký</button>
-                            </div>
+                            </div>  
                         </div>
                     </div>
                 </div>
@@ -378,13 +270,12 @@
                         </div>
                     </div>
 
-                    <img style="width: 200px; height: 200px; margin-top: 50px;"
-                        src="../templates/images/newyear/happy-new-year.png" alt="">
-                </div>
+                    <img style="width: 200px; height: 200px; margin-top: 50px;" src="../images/newyear/happy-new-year.png" alt="">
+                </div>               
             </div>
         </div>
     </footer>
-
+    
     <!-- HIỆU ỨNG HOA MAI -->
 
     <script type="text/javascript">
@@ -393,7 +284,7 @@
      * Visit Dynamic Drive DHTML code library (http://www.dynamicdrive.com/) for full source code
      * Last updated Nov 9th, 05' by DD. This notice must stay intact for use
      ******************************************/
-        function openwindow() {
+        function openwindow() { 
             window.open("autumn_effect.htm", "", "width=350,height=500")
         }
 
@@ -488,7 +379,5 @@
 
     </script>
 </body>
-
-<!-- InstanceEnd -->
 
 </html>

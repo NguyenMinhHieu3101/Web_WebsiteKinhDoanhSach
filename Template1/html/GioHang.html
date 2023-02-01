@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="../templates/Templates/template1.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- InstanceBeginEditable name="doctitle_link_css" -->
+    <title>Giỏ Hàng</title>
+    <script src="../js/SanPham.js"></script>
+    <script src="../js/scripts.js"></script>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../css/GioHang.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- InstanceEndEditable -->
+</head>
+
+
+<body>
+    <div class="first-half">
+
+        <!-- TOP BAR -->
+
+        <div class="nav-bar">
+            <ul class="nav-list">
+                <li class="nav-item">DOFLAMINGO</li>
+            </ul>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="link" href="DangNhap.html" title="Đăng nhập">Đăng nhập</a></li>
+                <li class="nav-item"><span class="sep">|</span></li>
+                <li class="nav-item"><a class="link" href="DangKy.html" title="Đăng ký">Đăng ký</a></li>
+
+            </ul>
+        </div>
+
+        <!-- HEADER -->
+
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header-logo col-hd-lg">
+                        <h1>
+                            <a href="file:///C|/Users/PC/Documents/GitHub/Web_WebsiteKinhDoanhSach/html/index.html">
+                                <!-- <img class="img-responsive" src="https://theme.hstatic.net/200000287623/1000800165/14/logo.png?v=203" alt="">  -->
+                                <img style="width: 140px; height: 70px;" class="img-responsive"
+                                    src="../templates/images/newyear/logo_tet2.png" alt="">
+
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="header-search">
+                        <form id="searchForm" class="search-form" action="">
+                            <label for="search" class="hide"></label>
+                            <input type="hidden" name="type" value="product">
+                            <input class="search-text" name="q" type="search" id="search" placeholder="Tìm kiếm...">
+                            <!-- <button type="submit" class="search-btn">
+                            <i class="icon_list">
+                            </i>
+                        </button> -->
+                            <button type="submit" class="search-btn">
+                                <i class="icon_list">
+                                    <!--?xml version="1.0" ?-->
+                                    <svg height="64px" id="SVGRoot" version="1.1" viewBox="0 0 64 64" width="64px"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                        xmlns:svg="http://www.w3.org/2000/svg">
+                                        <defs id="defs3848"></defs>
+                                        <g id="layer1">
+                                            <g id="g5183" style="stroke:#000000" transform="translate(25.5,-27)">
+                                                <circle class="fil0 str1" cx="0.73810571" cy="53.392174" id="circle15"
+                                                    r="20.063322"
+                                                    style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.00005412;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+                                                </circle>
+                                                <line class="fil0 str2" id="line25"
+                                                    style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.99974346;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+                                                    x1="15.617603" x2="30.305107" y1="68.559662" y2="83.151169"></line>
+                                                <path class="fil0 str0"
+                                                    d="m -12.701441,53.392174 c 0,-7.391751 6.047795,-13.439547 13.43954602,-13.439547"
+                                                    id="path281"
+                                                    style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.00005412;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </i>
+                            </button>
+                        </form>
+
+                    </div>
+                    <div class="header-cart">
+                        <div class="topbar-cart">
+                            <div class="shopping_cart">
+                                <a href="GioHang.html" title="giỏ hàng" rel="nofollow">
+                                    <p class="cart-icon">
+                                        <i class="icon_list">
+                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                width="446.843px" height="446.843px" viewBox="0 0 446.843 446.843"
+                                                style="enable-background:new 0 0 446.843 446.843;" xml:space="preserve">
+
+                                                <path d="M444.09,93.103c-2.698-3.699-7.006-5.888-11.584-5.888H109.92c-0.625,0-1.249,0.038-1.85,0.119l-13.276-38.27
+                                            c-1.376-3.958-4.406-7.113-8.3-8.646L19.586,14.134c-7.374-2.887-15.695,0.735-18.591,8.1c-2.891,7.369,0.73,15.695,8.1,18.591
+                                            l60.768,23.872l74.381,214.399c-3.283,1.144-6.065,3.663-7.332,7.187l-21.506,59.739c-1.318,3.663-0.775,7.733,1.468,10.916
+                                            c2.24,3.183,5.883,5.078,9.773,5.078h11.044c-6.844,7.616-11.044,17.646-11.044,28.675c0,23.718,19.298,43.012,43.012,43.012
+                                            s43.012-19.294,43.012-43.012c0-11.029-4.2-21.059-11.044-28.675h93.776c-6.847,7.616-11.048,17.646-11.048,28.675
+                                            c0,23.718,19.294,43.012,43.013,43.012c23.718,0,43.012-19.294,43.012-43.012c0-11.029-4.2-21.059-11.043-28.675h13.433
+                                            c6.599,0,11.947-5.349,11.947-11.948c0-6.599-5.349-11.947-11.947-11.947H143.647l13.319-36.996
+                                            c1.72,0.724,3.578,1.152,5.523,1.152h210.278c6.234,0,11.751-4.027,13.65-9.959l59.739-186.387
+                                            C447.557,101.567,446.788,96.802,444.09,93.103z M169.659,409.807c-10.543,0-19.116-8.573-19.116-19.116
+                                            s8.573-19.117,19.116-19.117s19.116,8.574,19.116,19.117S180.202,409.807,169.659,409.807z M327.367,409.807
+                                            c-10.543,0-19.117-8.573-19.117-19.116s8.574-19.117,19.117-19.117c10.542,0,19.116,8.574,19.116,19.117
+                                            S337.909,409.807,327.367,409.807z M402.52,148.149h-73.161V115.89h83.499L402.52,148.149z M381.453,213.861h-52.094v-37.038
+                                            h63.967L381.453,213.861z M234.571,213.861v-37.038h66.113v37.038H234.571z M300.684,242.538v31.064h-66.113v-31.064H300.684z
+                                            M139.115,176.823h66.784v37.038h-53.933L139.115,176.823z M234.571,148.149V115.89h66.113v32.259H234.571z M205.898,115.89v32.259
+                                            h-76.734l-11.191-32.259H205.898z M161.916,242.538h43.982v31.064h-33.206L161.916,242.538z M329.359,273.603v-31.064h42.909
+                                            l-9.955,31.064H329.359z"></path>
+                                            </svg>
+                                        </i>
+                                        <span class="cart_quantity">0</span>
+                                    </p>
+                                    <p>
+                                        <span class="top-cart">Giỏ hàng</span>
+                                        <span class="ajax_cart_no_product ajax_cart_quantity">0</span> sản phẩm
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <style>
+            a:hover {
+                text-decoration: none !important;
+            }
+        </style>
+        <!-- NAVIGATION -->
+
+
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- InstanceBeginEditable name="nav-bar" -->
+                    <div id="bar" class="col-12 main-bar w-100">
+                        <ul class="main-list w-100">
+                            <li class="main-item text-decoration-none">
+                                <a style="text-decoration:none !important;" title="Trang chủ"
+                                    href="Home.html"><span>Trang
+                                        chủ</span></a>
+                            </li>
+                            <li class="main-item">
+                                <a style="text-decoration:none !important;" title="Sản phẩm"
+                                    href="SanPham.html"><span>Sản phẩm</span></a>
+                            </li>
+                            <li class="main-item">
+                                <a style="text-decoration:none !important;" title="Tin tức" href="TinTuc.html"><span>Tin
+                                        tức</span></a>
+                            </li>
+                            <li class="main-item">
+                                <a style="text-decoration:none !important;" title="Thông tin"
+                                    href="ThongTin.html"><span>Thông tin</span></a>
+                            </li>
+                            <li class="main-item">
+                                <a style="text-decoration:none !important;" title="Liên hệ"
+                                    href="LienHe.html"><span>Liên hệ</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- InstanceEndEditable -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MAIN -->
+        <!-- InstanceBeginEditable name="content" -->
+        <div class="container">
+            <!-- Begin empty cart -->
+
+            <!-- Begin cart -->
+            <div class="row my-2">
+
+                <div class="col-12" style="overflow-x:auto; ">
+                    <table class="table" style="margin-top: 3vw;">
+                        <tr class="text-center align-middle text-light" style="font-size:x-large">
+                            <th>Mã</th>
+                            <th>Hình</th>
+                            <th>Tên</th>
+                            <th>Số lượng</th>
+                            <th>Đơn giá</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                        <tbody id="dssp">
+                            <tr class="text-center align-middle">
+                                <td class="text-center align-middle">H01</td>
+                                <td class="justify-content-center">
+                                    <div>
+                                        <img style="width:20vw;" class="img-fluid"
+                                            src="../images/newyear/hai_so_phan.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle">HAI SỐ PHẬN</td>
+                                <td class="text-center align-middle"><input type="number" min="1" max="10" value="1"
+                                        name=""></td>
+                                <td class="text-center align-middle"><span>1000</span>đ</td>
+                                <td class="text-center align-middle"><span>1000</span>đ</td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">H02</td>
+                                <td class="text-center align-middle"><img style="width:20vw;" class="img-fluid"
+                                        src="../images/newyear/nui_chuot_quet.jpg" alt=""></td>
+                                <td class="text-center align-middle">NÚI CHUỘT QUÉT</td>
+                                <td class="text-center align-middle"><input type="number" min="1" max="10" value="1"
+                                        name=""></td>
+                                <td class="text-center align-middle"><span>2000</span>đ</td>
+                                <td class="text-center align-middle"><span>2000</span>đ</td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">H03</td>
+                                <td class="text-center align-middle"><img style="width:20vw;" class="img-fluid"
+                                        src="../images/newyear/tet_la_day.png" alt="">
+                                </td>
+                                <td class="text-center align-middle">TẾT LÀ ĐÂY</td>
+                                <td class="text-center align-middle"><input type="number" min="1" max="10" value="1"
+                                        name=""></td>
+                                <td class="text-center align-middle"><span>3000</span>đ</td>
+                                <td class="text-center align-middle"><span>3000</span>đ</td>
+
+
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12" style="text-align:right">
+                    <label for="note" style="color: var(--main-color);">TỔNG TIỀN: </label> <span
+                        style="font-size: 20px;">3000</span>đ</td><br>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" style="text-align:right">
+                    <label for="note" style="color: var(--main-color);">Ghi chú </label><br>
+                    <textarea id="note" name="note" class="bg-light text-dark" rows="8" cols="50"></textarea>
+                </div>
+            </div>
+
+            <div class="row justify-content-end mb-3 ">
+                <button style="margin-right: 25px;margin-top:15px; background-color:var(--main-color);" type="submit"
+                    id="checkout" class="col-auto btn text-light" name="checkout" value="">Thanh toán</button>
+                <button
+                    style="margin-right: 75px;margin-top:15px; background-color:white; color: var(--main-color)!important; border-color: var(--main-color)!important;"
+                    type="submit" id="update-cart" class="col-auto btn text-light " name="update" value="">Cập
+                    nhật</button>
+            </div>
+
+            <div class="row justify-content-center ">
+                <a href="SanPham.html" class="align-middle" style="color: var(--main-color); margin-bottom:15px">
+                    Tiếp tục mua hàng
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+        var gioHang_tr = document.createElement("tr");
+
+
+        //tạo mã
+        var gioHang_td = document.createElement("td");
+        var gioHang_td_mssp = document.createTextNode("H01");
+        
+        gioHang_td.appendChild(gioHang_td_mssp);
+        gioHang_tr.appendChild(gioHang_td);
+        //tạo hình ảnh
+        var gioHang_td = document.createElement("td");
+        var gioHang_td_hinh = document.createElement("img");
+        gioHang_td_hinh.src = "../images/newyear/tet_la_day.png";
+        gioHang_td.appendChild(gioHang_td_hinh);
+        gioHang_tr.appendChild(gioHang_td);
+
+        
+        var giohang = document.getElementById('dssp')
+        var giohang_tds = giohang.children;
+        console.log(giohang_tds);
+        giohang.appendChild(gioHang_tr);
+    </script>
+
+    <!-- InstanceEndEditable -->
+    </div>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Slick Carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Custom Script -->
+    <!-- InstanceBeginEditable name="js" -->
+    <script src="../templates/js/scripts.js"></script>
+
+    <!-- InstanceEndEditable -->
+
+
+    <!-- FOOTET -->
+
+    <footer class="footer-position">
+        <div class="side-footer">
+            <div class="container">
+                <div class="contact-footer">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img style="width: 180px; height: 90px;" class="img-responsive"
+                                src="../templates/images/newyear/logo_tet2.png" alt="Doflamingo Bookstore">
+                        </a>
+                    </div>
+
+                    <p class="marker-first">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Khu Phố 6, Phường Linh Trung, TP. Thủ Đức, TP. HCM</span>
+                    </p>
+                    <p class="marker-first">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Hotline: 0123456789</span>
+                    </p>
+                    <p class="marker-first">
+                        <i class="far fa-envelope"></i>
+                        <span>Email: abc.bookstore@gmail.com</span>
+                    </p>
+                    <p>
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Giấy phép DKKD số 0123456789, cấp lần thứ 6 năm 2019</span>
+                    </p>
+                </div>
+
+                <div user-footer>
+                    <div class="support">
+                        <div class="support-user">
+                            <h4>Hỗ trợ khách hàng</h4>
+                            <div>
+                                <ul>
+                                    <li><a href="">Câu hỏi thường gặp</a></li>
+                                    <li><a href="">Điều khoản dịch vụ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="policy">
+                            <h4>Chính sách</h4>
+                            <div>
+                                <ul>
+                                    <li><a href="">Chính sách bảo mật</a></li>
+                                    <li><a href="">Chính sách thanh toán</a></li>
+                                    <li><a href="">Chính sách vận chuyển</a></li>
+                                    <li><a href="">Chính sách đổi trả</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class-="email-group">
+                        <div class="email">
+                            <h4>Đăng ký nhận tin</h4>
+                            <p>Hãy nhập email của bạn vào ô dưới đây để có thể nhận được tất cả tin tức mới nhất của
+                                ABC</p>
+                            <div class="input-group">
+                                <form action="">
+                                    <input type="email" value="" placeholder="Nhập email của bạn..."
+                                        name="contact[email]" id="Email" class="input-group-field" autocorrect="off"
+                                        autocapitalize="off">
+                                </form>
+                                <button type="submit" class="button-btn1" name="subscribe" id="subscribe">Đăng
+                                    ký</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="connect-footer">
+                    <div class="connect">
+                        <h4>Kết nối với chúng tôi</h4>
+                        <div class="icon-footer">
+                            <a href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <img style="width: 200px; height: 200px; margin-top: 50px;"
+                        src="../templates/images/newyear/happy-new-year.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- HIỆU ỨNG HOA MAI -->
+
+    <script type="text/javascript">
+        /******************************************
+     * Snow Effect Script- By Altan d.o.o. (http://www.altan.hr/snow/index.html)
+     * Visit Dynamic Drive DHTML code library (http://www.dynamicdrive.com/) for full source code
+     * Last updated Nov 9th, 05' by DD. This notice must stay intact for use
+     ******************************************/
+        function openwindow() {
+            window.open("autumn_effect.htm", "", "width=350,height=500")
+        }
+
+        //Configure below to change URL path to the snow image
+        var snowsrc = "../images/newyear/apricot (1).png"
+        // Configure below to change number of snow to render
+        var no = 30;
+        // Configure whether snow should disappear after x seconds (0=never):
+        var hidesnowtime = 0;
+        // Configure how much snow should drop down before fading ("windowheight" or "pageheight")
+        var snowdistance = "pageheight";
+
+        ///////////Stop Config//////////////////////////////////
+
+        var ie4up = (document.all) ? 1 : 0;
+        var ns6up = (document.getElementById && !document.all) ? 1 : 0;
+
+        function iecompattest() {
+            return (document.compatMode && document.compatMode != "BackCompat") ? document.documentElement : document.body
+        }
+
+        var dx, xp, yp;    // coordinate and position variables
+        var am, stx, sty;  // amplitude and step variables
+        var i, doc_width = 800, doc_height = 600;
+
+        if (ns6up) {
+            doc_width = self.innerWidth;
+            doc_height = self.innerHeight;
+        } else if (ie4up) {
+            doc_width = iecompattest().clientWidth;
+            doc_height = iecompattest().clientHeight;
+        }
+
+        dx = new Array();
+        xp = new Array();
+        yp = new Array();
+        am = new Array();
+        stx = new Array();
+        sty = new Array();
+        snowsrc = (snowsrc.indexOf("dynamicdrive.com") != -1) ? "snow.gif" : snowsrc
+        for (i = 0; i < no; ++i) {
+            dx[i] = 0;                        // set coordinate variables
+            xp[i] = Math.random() * (doc_width - 50);  // set position variables
+            yp[i] = Math.random() * doc_height;
+            am[i] = Math.random() * 20;         // set amplitude variables
+            stx[i] = 0.02 + Math.random() / 10; // set step variables
+            sty[i] = 0.7 + Math.random();     // set step variables
+            if (ie4up || ns6up) {
+                if (i == 0) {
+                    document.write("<div id=\"dot" + i + "\" style=\"POSITION: absolute; Z-INDEX: " + i + "; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dynamicdrive.com\"><img src='" + snowsrc + "' border=\"0\"><\/a><\/div>");
+                } else {
+                    document.write("<div id=\"dot" + i + "\" style=\"POSITION: absolute; Z-INDEX: " + i + "; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='" + snowsrc + "' border=\"0\"><\/div>");
+                }
+            }
+        }
+
+        function snowIE_NS6() {  // IE and NS6 main animation function
+            doc_width = ns6up ? window.innerWidth - 10 : iecompattest().clientWidth - 10;
+            doc_height = (window.innerHeight && snowdistance == "windowheight") ? window.innerHeight : (ie4up && snowdistance == "windowheight") ? iecompattest().clientHeight : (ie4up && !window.opera && snowdistance == "pageheight") ? iecompattest().scrollHeight : iecompattest().offsetHeight;
+            if (snowdistance == "windowheight") {
+                doc_height = window.innerHeight || iecompattest().clientHeight
+            }
+            else {
+                doc_height = iecompattest().scrollHeight
+            }
+            for (i = 0; i < no; ++i) {  // iterate for every dot
+                yp[i] += sty[i];
+                if (yp[i] > doc_height - 50) {
+                    xp[i] = Math.random() * (doc_width - am[i] - 30);
+                    yp[i] = 0;
+                    stx[i] = 0.02 + Math.random() / 10;
+                    sty[i] = 0.7 + Math.random();
+                }
+                dx[i] += stx[i];
+                document.getElementById("dot" + i).style.top = yp[i] + "px";
+                document.getElementById("dot" + i).style.left = xp[i] + am[i] * Math.sin(dx[i]) + "px";
+            }
+            snowtimer = setTimeout("snowIE_NS6()", 10);
+        }
+
+        function hidesnow() {
+            if (window.snowtimer) clearTimeout(snowtimer)
+            for (i = 0; i < no; i++) document.getElementById("dot" + i).style.visibility = "hidden"
+        }
+
+
+        if (ie4up || ns6up) {
+            snowIE_NS6();
+            if (hidesnowtime > 0)
+                setTimeout("hidesnow()", hidesnowtime * 1000)
+        }
+
+    </script>
+</body>
+
+<!-- InstanceEnd -->
+
+</html>
