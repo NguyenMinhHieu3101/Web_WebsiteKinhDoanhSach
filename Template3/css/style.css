@@ -295,7 +295,7 @@ html {
 #tag3 {
     background: rgba(241, 103, 69, 0.85);
 }
-i::before {
+.tag i::before {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    padding: 70px 250px;
+    background-color: #f6f7f1;
+}
+
+.main-content .contact {
+    /* border: 1px solid green; */
+    padding: 30px 30px 30px 50px;
+    background-color: white;
+}
+
+.main-content .contact p {
+    margin: 15px 0;
+}
+
+.main-content .contact h2 {
+    color: #1b4e64;
+}
+
+.main-content .contact .title {
+    margin-bottom: 5px;
+    color: #1b4e64;
+}
+
+.main-content .contact .fill {
+    background-color: #e0e1db;
+    border: 0;
+    border-radius: 2px;
+    width: 350px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.main-content .contact .fill.box {
+    height: 30px;
+}
+
+.main-content button {
+    margin: 0 0 10px 0;
+    color: white;
+    font-weight: bold;
+    background-color: #f1554b;
+    float: left;
+    width: 100px;
+    height: 30px;
+    border: 0;
+    border-radius: 3px;
+    border-bottom: 3px solid #a03931;
+    cursor: pointer
+}
+
+.main-content .info {
+    /* border: 1px solid blue; */
+    margin-right: 30px;
+    padding: 40px 25px;
+    border: 15px solid white;
+}
+
+.main-content .info h5 {
+    color: #f1554b;
+    margin-bottom: 5px;
+}
+
+.main-content .info p {
+    margin-bottom: 25px
+}
+
+.main-content .icon {
+    margin-top: 30px;
+    display: flex;
+}
+
+.main-content .icon a {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: white;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 20px;
+    text-align: center;
+    transition: all 0.1s;
+}
+
+.main-content .icon .fb {
+    background: #345c98;
+    border-bottom: 3px solid #24406b;
+}
+
+.main-content .icon .tw {
+    background: #00c4f8;
+    border-bottom: 3px solid #0099c2;
+}
+
+.main-content .icon .yt {
+    background: #f1554b;
+    border-bottom: 3px solid #a03931;
+}
+
+.main-content .icon a:hover {
+    transform: scale(1.2);
+}
+
+.map {
+    text-align: center;
+    margin: 75px 0;
+}
+
+.map hr {
+    width: 200px;
+    margin: auto;
+}
+
+.map h2 {
+    margin: 15px 0;
+    color: #1b4e64;
+}
+
+.map #map {
+    border: 0;
+    width: 55%;
+    height: 500px;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 70px 250px;
+        background-color: #f6f7f1;
+    }
+}
