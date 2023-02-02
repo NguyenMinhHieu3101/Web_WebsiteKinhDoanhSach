@@ -88,7 +88,7 @@ signIn.onmouseout = function(){
 
 var book = [
   {
-    Hinhanh:'./images/brief_answers_to_the_big_questions_1_2019_03_07_16_03_27.jpg',
+    Hinhanh:'../images/brief_answers_to_the_big_questions_1_2019_03_07_16_03_27.jpg',
     Ten: 'Brief Answers to...',
     Gia:'$12.54',
     Daban: 245,
@@ -99,7 +99,7 @@ var book = [
     Noidung:'Khoa hoc',
   },
   {
-    Hinhanh:'./images/apollo.jpeg',
+    Hinhanh:'../images/apollo.jpeg',
     Ten: 'Apollo Remastered',
     Gia:'£53.99',
     Daban: 423,
@@ -110,7 +110,7 @@ var book = [
     Noidung:'Khoa hoc',
   },
   {
-    Hinhanh:'./images/carlorovelli.jpeg',
+    Hinhanh:'../images/carlorovelli.jpeg',
     Ten: 'Helgoland',
     Gia:'£8.99',
     Daban: 245,
@@ -121,7 +121,7 @@ var book = [
     Noidung:'Khoa hoc',
   },
   {
-    Hinhanh:'./images/concorde.jpeg',
+    Hinhanh:'../images/concorde.jpeg',
     Ten: 'Concorde',
     Gia:'£20.00',
     Daban: 126,
@@ -132,7 +132,7 @@ var book = [
     Noidung:'Khoa hoc',
   },
   {
-    Hinhanh:'./images/lift3.0.jpeg',
+    Hinhanh:'../images/lift3.0.jpeg',
     Ten: 'Life 3.0',
     Gia:'£12.99',
     Daban:534,
@@ -143,7 +143,7 @@ var book = [
     Noidung:'Khoa hoc',
   },
   {
-    Hinhanh:'./images/starrymessenger.jpeg',
+    Hinhanh:'../images/starrymessenger.jpeg',
     Ten: 'Starry Messenger',
     Gia:'£16.99',
     Daban: 234,
@@ -155,7 +155,7 @@ var book = [
   },
   //hang sach thu 2
   {
-    Hinhanh:'./images/theyearinspace.jpeg',
+    Hinhanh:'../images/theyearinspace.jpeg',
     Ten: 'The Year in Space',
     Gia:'£12.99',
     Daban: 106,
@@ -166,7 +166,7 @@ var book = [
     Noidung:'Khoa hoc',
   },
   {
-    Hinhanh:'./images/spineofthedragon.jpg',
+    Hinhanh:'../images/spineofthedragon.jpg',
     Ten: 'Spine of the Dragon',
     Gia:'£53.99',
     Daban: 120,
@@ -177,7 +177,7 @@ var book = [
     Noidung:'Khoa hoc',
   },
   {
-    Hinhanh:'./images/thedevilyounow.jpeg',
+    Hinhanh:'../images/thedevilyounow.jpeg',
     Ten: 'The Devil You Know',
     Gia:'£7.49',
     Daban: 122,
@@ -188,7 +188,7 @@ var book = [
     Noidung:'Khoa hoc',
   },
   {
-    Hinhanh:'./images/tamthe.jpg',
+    Hinhanh:'../images/tamthe.jpg',
     Ten: 'Tam Thể',
     Gia:'£5.00',
     Daban: 110,
@@ -199,7 +199,7 @@ var book = [
     Noidung:'Khoa hoc',
   },
   {
-    Hinhanh:'./images/cacthegioisongsong.jpg',
+    Hinhanh:'../images/cacthegioisongsong.jpg',
     Ten: 'Các Thế Giới Song...',
     Gia:'94.100đ',
     Daban: 110,
@@ -210,7 +210,7 @@ var book = [
     Noidung:'Khoa hoc',
   },
   {
-    Hinhanh:'./images/frozenplanet2.jpeg',
+    Hinhanh:'../images/frozenplanet2.jpeg',
     Ten: 'Frozen Planet II',
     Gia:'£55.00',
     Daban: 110,
@@ -222,7 +222,7 @@ var book = [
   },
   // hang sach thu 3
   {
-    Hinhanh:'./images/2022_11_03_09_31_40_1-390x510.jpg',
+    Hinhanh:'../images/2022_11_03_09_31_40_1-390x510.jpg',
     Ten: "An Astronaut's...",
     Gia:'311.400đ',
     Daban: 108,
@@ -233,7 +233,7 @@ var book = [
     Noidung:'Khoa hoc',
   },
   {
-    Hinhanh:'./images/haivandamduoidaybien.jpg',
+    Hinhanh:'../images/haivandamduoidaybien.jpg',
     Ten: 'Hai Vạn Dặm...',
     Gia:'89.000đ',
     Daban: 123,
@@ -245,7 +245,7 @@ var book = [
   },
   
   {
-    Hinhanh:'./images/luattamthuc.jpg',
+    Hinhanh:'../images/luattamthuc.jpg',
     Ten: 'LUẬT TÂM THỨC',
     Gia:'211.000đ',
     Daban: 110,
@@ -256,7 +256,7 @@ var book = [
     Noidung:'Khoa hoc',
   },
   {
-    Hinhanh:'./images/PhatMinhCuoiCung.jpg',
+    Hinhanh:'../images/PhatMinhCuoiCung.jpg',
     Ten: 'Phát Minh Cuối...',
     Gia:'138.750đ',
     Daban: 113,
@@ -267,7 +267,7 @@ var book = [
     Noidung:'Khoa hoc',
   },
   {
-    Hinhanh:'./images/2020_05_12_15_48_16_1-390x510.jpg',
+    Hinhanh:'../images/2020_05_12_15_48_16_1-390x510.jpg',
     Ten: 'The Evolutionary...',
     Gia:'₹2,736.95',
     Daban: 100,
@@ -278,7 +278,7 @@ var book = [
     Noidung:'Khoa hoc',
   },
   {
-    Hinhanh:'./images/thebiggesstideasintheuniverse.jpeg',
+    Hinhanh:'../images/thebiggesstideasintheuniverse.jpeg',
     Ten: 'The Biggest Ideas...',
     Gia:'£16.99',
     Daban: 128,
