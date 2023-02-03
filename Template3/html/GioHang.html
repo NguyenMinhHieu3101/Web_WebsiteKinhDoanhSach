@@ -1,973 +1,289 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
-<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
-<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
-<!--[if gt IE 8]><!-->
+<!DOCTYPE html>
 <html lang="en">
-<!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/GioHang.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<head>
-    <link rel="shortcut icon" href="//theme.hstatic.net/1000376556/1000707101/14/favicon.png?v=265" type="image/png" />
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
-    <title>
-        Giỏ hàng của bạn
-    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <title>Giỏ Hàng</title>
+    </head>
+    <body>
+        <div class="home">
+            <div class="header">
+                <div class="logo">
+                    <img
+                        class="img_logo"
+                        src="//theme.hstatic.net/1000376556/1000707101/14/logo.png?v=198"
+                        alt="hikaru shop"
+                        title="hikaru shop"
+                    />
+                </div>
 
-    <meta name="keywords" content="Ba lô, balo, túi xách, ví, balo hàn quốc, túi đeo chéo" />
-
-
-    <meta name="description" content="Giỏ hàng của bạn - Hikaru Shop" />
-
-    <script>
-        var is_iPad = navigator.userAgent.match(/iPad/i) != null;
-        if (is_iPad) {
-            document.write('<meta content="width=1280px" name="viewport">');
-        } else {
-            document.write('<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">');
-        }
-    </script>
-    <link rel="canonical" href="https://www.hikaru.vn/cart" />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Giỏ hàng của bạn - Hikaru Shop" />
-    <meta property="og:image" content="http://theme.hstatic.net/1000376556/1000707101/14/share_fb_home.png?v=265" />
-    <meta property="og:image" content="https://theme.hstatic.net/1000376556/1000707101/14/share_fb_home.png?v=265" />
-    <meta property="og:description" content="Giỏ hàng của bạn - Hikaru Shop" />
-    <meta property="og:url" content="https://www.hikaru.vn/cart" />
-    <meta property="og:site_name" content="Hikaru Shop" />
-
-    <link rel="stylesheet" href="../css/GioHang.css">
-
-    <!---------------- Javascript ----------------->
-    <script src='//theme.hstatic.net/1000376556/1000707101/14/jquery-1.12.4.min.js?v=265'
-        type='text/javascript'></script>
-    <script src="//hstatic.net/0/0/global/option_selection.js"></script>
-    <script src="//hstatic.net/0/0/global/api.jquery.js"></script>
-    <script src="//theme.hstatic.net/1000376556/1000707101/14/imagesloaded.pkgd.min.js?v=265"></script>
-    <script async src="//theme.hstatic.net/1000376556/1000707101/14/bootstrap.min.js?v=265"></script>
-    <script src="//theme.hstatic.net/1000376556/1000707101/14/owl.carousel_v2.0.0-beta.2.4.js?v=265"></script>
-    <script src="//theme.hstatic.net/1000376556/1000707101/14/jquery.countdown.min.js?v=265"></script>
-    <script async src="//theme.hstatic.net/1000376556/1000707101/14/velocity.js?v=265"></script>
-
-
-    <script>
-        var formatMoney = '{{amount}}₫';
-    </script>
-
-
-    <script src="//theme.hstatic.net/1000376556/1000707101/14/script.js?v=265"></script>
-
-
-    <!---------------- CSS ----------------->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css' media='all' />
-    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300,400,500" rel="stylesheet">
-    <link href='//theme.hstatic.net/1000376556/1000707101/14/style.css?v=265' rel='stylesheet' type='text/css'
-        media='all' />
-    <script src='//theme.hstatic.net/1000376556/1000707101/14/readmore.min.js?v=265' type='text/javascript'></script>
-
-    <link href='//theme.hstatic.net/1000376556/1000707101/14/custom.css?v=265' rel='stylesheet' type='text/css'
-        media='all' />
-    <script type='text/javascript'>
-        //<![CDATA[
-        if ((typeof Haravan) === 'undefined') {
-            Haravan = {};
-        }
-        Haravan.culture = 'vi-VN';
-        Haravan.shop = 'hikaruvn.myharavan.com';
-        Haravan.theme = { "name": "Bản sao chép của 27/04/2021 An 271168.", "id": 1000707101, "role": "main" };
-        Haravan.domain = 'www.hikaru.vn';
-//]]>
-    </script>
-    <script>
-        //<![CDATA[
-        (function () { function asyncLoad() { var urls = ["https://file.hstatic.net/1000300983/file/ega.addon-logo-bct.v1.0.exec.min_3f29390a249547419b968046cfd04dc0.js", "https://file.hstatic.net/1000300983/file/ega-code-scanner.exec.min_7701dfc2916d4326a1919f8464549cc2.js", "https://file.hstatic.net/1000405773/file/ega.addon-delivery-time.v1.1.0.exec.min_e109b850085a4221a43a3e56cd5f879c.js", "//hstatic.net/556/1000376556/20/2021/4-24/noname_76a59b0059b54effbce841e828d6bcb8.js", "https://app.haraloyalty.com/api/assets/webpopup.js?scope=all&v=1656668215"]; for (var i = 0; i < urls.length; i++) { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = urls[i]; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } } window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false); })();
-//]]>
-    </script>
-    <script defer src='https://stats.hstatic.net/beacon.min.js' hrv-beacon-t='1000376556'></script>
-    <style>
-        .grecaptcha-badge {
-            visibility: hidden;
-        }
-    </style>
-    <script type='text/javascript'>
-        window.HaravanAnalytics = window.HaravanAnalytics || {};
-        window.HaravanAnalytics.meta = window.HaravanAnalytics.meta || {};
-        window.HaravanAnalytics.meta.currency = 'VND';
-        var meta = { "page": { "pageType": "cart" } };
-        for (var attr in meta) {
-            window.HaravanAnalytics.meta[attr] = meta[attr];
-        }
-        window.HaravanAnalytics.AutoTrack = true;
-    </script>
-    <script>
-        window.HaravanAnalytics.fb = "2106860316217133";
-        //<![CDATA[
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            }; if (!f._fbq) f._fbq = n;
-            n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
-        }(window,
-            document, 'script', '//connect.facebook.net/en_US/fbevents.js');
-        // Insert Your Facebook Pixel ID below. 
-        fbq('init', window.HaravanAnalytics.fb, {}, { 'agent': 'plharavan' });
-        fbq('track', 'PageView');
-//]]>
-    </script>
-    <noscript><img height='1' width='1' style='display:none'
-            src='https://www.facebook.com/tr?id=2106860316217133&amp;ev=PageView&amp;noscript=1' /></noscript>
-    <script>(function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-</head>
-
-<body>
-
-    <!-- Header -->
-    <header id="header">
-        <div id="header_main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-8">
-                        <!--logo-->
-
-                        <div class="pull-left">
-                            <a href="/" class="logo" title="hikaru shop">
-                                <img src="../images/logo_tet2.png" alt="hikaru shop"
-                                    title="hikaru shop" />
-                            </a>
-                        </div>
-
-                        <!-- end logo -->
+                <div class="search_box">
+                    <div class="search">
+                        <input type="text" class="searchTerm" placeholder="Tìm kiếm sản phẩm" />
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
                     </div>
-                    <div class="col-lg-6 col-md-5 col-sm-4 hidden-xs">
-                        <!-- Search -->
-                        <form autocomplete="off" class="search_box" action="/search" method="get" data-role="search">
-                            <div class="search_wrapper">
-                                <input type="hidden" name="type" value="product" />
-                                <input type="text" name="q" value="" class="index_input_search"
-                                    placeholder="Nhập từ khóa tìm kiếm">
-                                <button class="btn_search_submit btn " type="submit"><span>Tìm ngay</span></button>
-                            </div>
-                        </form>
-                        <!-- End Search -->
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <!-- Cart -->
-                        <div class="cart_header">
-                            <a href="/cart" title="Giỏ hàng">
-                                <span class="cart_header_icon"></span>
-                                <span class="box_text">
-                                    <strong class="cart_header_count">Giỏ hàng (<span
-                                            class="cart_header_count2">2</span>)</strong>
-                                    <span class="cart_price">100,000₫</span>
-                                </span>
-                            </a>
+                </div>
 
-                        </div>
-                        <!-- End Cart -->
-                        <!-- Account -->
-                        <div class="user_login">
-                            <div class="user_login_icon"></div>
-                            <div class="box_text">
-                                <strong>Tài khoản</strong>
-                                <!--<span class="cart_price">Đăng nhập, đăng ký</span>-->
-                            </div>
-                            <div class="user_box">
-                                <ul>
-                                    <li><a href="#modal_register" data-toggle="modal" data-target="#modal_login">Đăng
-                                            nhập</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- End account -->
+                <div class="end">
+                    <div class="login_div_icon">
+                        <i class="fa fa-user login_icon fa-lg"></i>
                     </div>
+                    <div class="login_div_text">
+                        <strong class="login_text">Tài khoản</strong>
+                    </div>
+                    <div class="cart_div_icon">
+                        <i class="fa-solid fa-cart-plus fa-lg cart_icon"></i>
+                    </div>
+                    <div class="cart_div_text">
+                        <strong class="login_text">Giỏ hàng</strong>
+                    </div>
+                </div>
+
+                <!-- End account -->
+            </div>
+
+            <div class="topnav">
+                <a href="">TRANG CHỦ</a>
+                <a href="">SẢN PHẨM</a>
+                <a href="">BLOG</a>
+                <a href="">SỰ KIỆN</a>
+                <a href="">TRỢ GIÚP</a>
+                <a href="">GIỚI THIỆU</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="">TRANG CHỦ</a>
+                    <a href="">SẢN PHẨM</a>
+                    <a href="">BLOG</a>
+                    <a href="">SỰ KIỆN</a>
+                    <a href="">TRỢ GIÚP</a>
+                    <a href="">GIỚI THIỆU</a>
                 </div>
             </div>
         </div>
-        <div id="header_mobile">
-            <div class="container">
-                <div class="row">
-                    <!-- Menu mobile -->
-                    <button type="button" class="navbar-toggle collapsed" id="trigger_click_mobile">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div id="mobile_wrap_menu" class="visible-xs visible-sm">
-                        <div class="user_mobile">
-                            <div class="icon_user_mobile">
-                                <img src="//theme.hstatic.net/1000376556/1000707101/14/user_mobile.png?v=265"
-                                    alt="account" />
-                            </div>
-                            <div class="login_mobile">
 
 
-                                <a href="/account/login" class="login-btn">Đăng nhập </a><a href="/account/register"
-                                    class="login-btn"> / Đăng ký</a>
-
-
-                            </div>
-                            <div class="close_menu"></div>
-                        </div>
-                        <div class="content_menu">
-                            <ul>
-
-
-
-                                <li><a href="/collections/all">Danh Mục</a><span class="more" data-toggle="collapse"
-                                        data-target="#menu_child_1"><i class="fa fa-plus"></i></span>
-                                    <ul class="collapse" id="menu_child_1">
-
-
-                                        <li><a href="/collections/truyen-tranh-2">Truyện Tranh</a><span class="more"
-                                                data-toggle="collapse" data-target="#menu_child_1_1"><i
-                                                    class="fa fa-plus"></i></span>
-                                            <ul class="collapse" id="menu_child_1_1">
-
-                                                <li><a href="/">Truyện Tranh Hàn Quốc</a></li>
-
-                                                <li><a href="/collections/truyen-tranh-nhat-ban">Truyện Tranh Nhật
-                                                        Bản</a></li>
-
-                                                <li><a href="/">Truyện Tranh Phương Tây</a></li>
-
-                                                <li><a href="/">Truyện Tranh Trung Quốc</a></li>
-
-                                                <li><a href="/">Truyện Tranh Việt Nam</a></li>
-
-                                            </ul>
-                                        </li>
-
-
-
-                                        <li><a href="/collections/light-novel">Truyện Chữ</a><span class="more"
-                                                data-toggle="collapse" data-target="#menu_child_1_2"><i
-                                                    class="fa fa-plus"></i></span>
-                                            <ul class="collapse" id="menu_child_1_2">
-
-                                                <li><a href="/">Truyện Chữ Hàn Quốc</a></li>
-
-                                                <li><a href="/collections/truyen-chu-nhat-ban">Truyện Chữ Nhật Bản</a>
-                                                </li>
-
-                                                <li><a href="/">Truyện Chữ Phương Tây</a></li>
-
-                                                <li><a href="/">Truyện Chữ Trung Quốc</a></li>
-
-                                                <li><a href="/">Truyện Chữ Việt Nam</a></li>
-
-                                            </ul>
-                                        </li>
-
-
-
-                                        <li><a href="/">Vật Phẩm - Quà Tặng</a><span class="more" data-toggle="collapse"
-                                                data-target="#menu_child_1_3"><i class="fa fa-plus"></i></span>
-                                            <ul class="collapse" id="menu_child_1_3">
-
-                                                <li><a href="/">Lịch</a></li>
-
-                                                <li><a href="/">Móc Khóa</a></li>
-
-                                                <li><a href="/">Thẻ Bài</a></li>
-
-                                                <li><a href="/">Khác</a></li>
-
-                                            </ul>
-                                        </li>
-
-
-
-                                        <li><a href="/">Khác</a><span class="more" data-toggle="collapse"
-                                                data-target="#menu_child_1_4"><i class="fa fa-plus"></i></span>
-                                            <ul class="collapse" id="menu_child_1_4">
-
-                                                <li><a href="/">Artbook</a></li>
-
-                                                <li><a href="/">Truyện Trọn Bộ</a></li>
-
-                                            </ul>
-                                        </li>
-
-
-                                    </ul>
-                                </li>
-
-
-
-
-                                <li><a href="/blogs/lich-phat-hanh">Lịch Phát Hành</a></li>
-
-
-
-
-                                <li><a href="/">Thành Viên</a></li>
-
-
-
-
-                                <li><a href="/">Đổi Điểm</a></li>
-
-
-
-
-                                <li><a href="/blogs/tin-tuc">Tin Tức</a></li>
-
-
-
-
-                                <li><a href="/blogs/huong-dan">Hướng Dẫn Cần Biết</a></li>
-
-
-
-
-                                <li><a href="/pages/about-us">Về Hikaru</a></li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End menu mobile -->
-                    <div class="pull-right mobile-menu-icon-wrapper">
-                        <!-- Logo mobile -->
-                        <div class="logo logo-mobile">
-                            <a href="/" title="Hikaru Shop">
-                                <img src="//theme.hstatic.net/1000376556/1000707101/14/logo.png?v=265"
-                                    alt="hikaru shop">
+        <!-- content -->
+        <div class="container">
+            <!-- Begin empty cart -->
+
+            <!-- Begin cart -->
+            <div class="row my-2">
+
+                <div class="col-12" style="overflow-x:auto; ">
+                    <table class="table" style="margin-top: 3vw;">
+                        <tr class="text-center align-middle text-light" style="font-size:x-large">
+                            <th>Mã</th>
+                            <th>Hình</th>
+                            <th>Tên</th>
+                            <th>Số lượng</th>
+                            <th>Đơn giá</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                        <tbody id="dssp">
+                            <tr class="text-center align-middle">
+                                <td class="text-center align-middle">H01</td>
+                                <td class="justify-content-center">
+                                    <div>
+                                        <img style="width:20vw;" class="img-fluid"
+                                            src="../images/bia_co-may-tri-giac (1).jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle">HAI SỐ PHẬN</td>
+                                <td class="text-center align-middle"><input type="number" min="1" max="10" value="1"
+                                        name=""></td>
+                                <td class="text-center align-middle"><span>1000</span>đ</td>
+                                <td class="text-center align-middle"><span>1000</span>đ</td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">H02</td>
+                                <td class="text-center align-middle"><img style="width:20vw;" class="img-fluid"
+                                        src="../images/autumn-books-and-coffee-vector.jpg" alt=""></td>
+                                <td class="text-center align-middle">NÚI CHUỘT QUÉT</td>
+                                <td class="text-center align-middle"><input type="number" min="1" max="10" value="1"
+                                        name=""></td>
+                                <td class="text-center align-middle"><span>2000</span>đ</td>
+                                <td class="text-center align-middle"><span>2000</span>đ</td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">H03</td>
+                                <td class="text-center align-middle"><img style="width:20vw;" class="img-fluid"
+                                        src="../images/frozenplanet2.jpeg" alt="">
+                                </td>
+                                <td class="text-center align-middle">TẾT LÀ ĐÂY</td>
+                                <td class="text-center align-middle"><input type="number" min="1" max="10" value="1"
+                                        name=""></td>
+                                <td class="text-center align-middle"><span>3000</span>đ</td>
+                                <td class="text-center align-middle"><span>3000</span>đ</td>
+
+
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12" style="text-align:left">
+                    <label for="note" style="color: var(--main-color);">TỔNG TIỀN: </label> <span
+                        style="font-size: 20px;">3000</span>đ</td><br>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" style="text-align:left">
+                    <label for="note" style="color: var(--main-color);">Ghi chú </label><br>
+                    <textarea id="note" name="note" class="bg-light text-dark" rows="8" cols="50"></textarea>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-3 ">
+                <button style="margin-right: 25px;margin-top:15px; background-color:var(--main-color);" type="submit"
+                    id="checkout" class="col-auto btn text-light" name="checkout" value="">Thanh toán</button>
+                <button
+                    style="margin-right: 75px;margin-top:15px; background-color:white; color: var(--main-color)!important; border-color: var(--main-color)!important;"
+                    type="submit" id="update-cart" class="col-auto btn text-light " name="update" value="">Cập
+                    nhật</button>
+            </div>
+
+            <div class="row justify-content-center ">
+                <a href="SanPham.html" class="align-middle" style="color: var(--main-color); margin-bottom:15px">
+                    Tiếp tục mua hàng
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer-position">
+            <div class="side-footer">
+                <div class="container">
+                    <div class="contact-footer">
+                        <div class="footer-logo">
+                            <a href="/">
+                                <img
+                                    src="https://theme.hstatic.net/200000287623/1000800165/14/footer_logo.png?v=203"
+                                    alt="ABC Bookstore"
+                                />
                             </a>
                         </div>
-                        <!-- End Logo mobile -->
-                        <!-- Cart mobile -->
-                        <div class="cart_header" id="cart-target">
-                            <a href="/cart" title="Giỏ hàng">
-                                <div class="cart_header_icon"></div>
-                                <div class="box_text">
-                                    <strong class="cart_header_count"><span>2</span></strong>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- End Cart mobile -->
-                    </div>
-                    <div class="clearfix"></div>
-                    <!-- Search mobile -->
-                    <div class="search_mobile col-md-12">
-                        <form autocomplete="off" class="search_box" action="/search" method="get" data-role="search">
-                            <div class="search_wrapper">
-                                <input type="hidden" name="type" value="product" />
-                                <input type="text" name="q" value="" class="index_input_search"
-                                    placeholder="Nhập từ khóa tìm kiếm">
-                                <button class="btn_search_submit btn " type="submit"><span><i
-                                            class="fa fa-search"></i></span></button>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- End search mobile -->
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- Main menu -->
-    <nav class="navbar-main">
-        <div id="mb_mainnav">
-            <div class="container">
-                <div class="row">
-                    <nav class="col-md-12 col-sm-12 col-xs-12 p-l-0">
-                        <div class="menu-wrapper" role="navigation">
-                            <ul class="nav" role="menubar">
-                                <!--c1,c2-->
-                                <ul class="nav navbar-nav menu_hori">
-
-                                    <li role="has_child">
-                                        <a href="Home.html">TRANG CHỦ</a>
-                                  
-                                    </li>
-
-                                    <li class="has_child">
-                                        <a href="SanPham.html">SẢN PHẨM</a>
-                                    </li>
-
-
-
-                                    <li class="has_child">
-                                        <a href="TinTuc.html">BLOGS</a>
-                                    </li>
-
-
-
-                                    <li class="has_child">
-                                        <a href="SuKien.html">SỰ KIỆN</a>
-                                    </li>
-
-
-
-                                    <li class="has_child">
-                                        <a href="TroGiup.html">TRỢ GIÚP</a>
-                                    </li>
-
-
-                                    <li class="has_child">
-                                        <a href="GioiThieu.html">Về DOFLAMINGO</a>
-                                    </li>
-
-
-                                </ul>
-                                <!--c3-->
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- End main menu -->
-    <script>
-
-    </script>
-    <!-- End header -->
-    <div id="modal_login" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div id="login_x">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <div class="head">
-                            <h2 class="modal-title">Đăng nhập</h2>
-                            <p>
-                                <span>Bạn chưa có tài khoản?</span>
-                                <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal_register">Đăng
-                                    ký</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <div>
-                            <form accept-charset='UTF-8' action='/account/login' id='customer_login' method='post'>
-                                <input name='form_type' type='hidden' value='customer_login'>
-                                <input name='utf8' type='hidden' value='✓'>
-
-
-                                <div class="form-group">
-                                    <label for="login-form-email">Email:</label>
-                                    <input required type="email" id="login-form-email" name="email"
-                                        class="form-control" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="login-form-password">Mật khẩu:</label>
-                                    <input required type="password" id="login-form-password" name="password"
-                                        class="form-control" />
-                                </div>
-                                <div class="form-group">
-                                    Quên mật khẩu? Nhấn vào <a href="#"
-                                        onclick="showRecoverPasswordForm_x();return false;">đây</a>
-                                </div>
-                                <div class="form-group nomargin">
-                                    <button class="btn btn-primary" id="login-form-submit" name="login-form-submit"
-                                        type='submit' value="login">Đăng nhập</button>
-                                </div>
-                                <!--</form>-->
-
-                                <input id='cfcfdfd14f854075981b37c413caf3f1' name='g-recaptcha-response' type='hidden'>
-                                <script
-                                    src='https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-'></script>
-                                <script>grecaptcha.ready(function () { grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', { action: 'submit' }).then(function (token) { document.getElementById('cfcfdfd14f854075981b37c413caf3f1').value = token; }); });</script>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- forgot password -->
-                <div id="recover_password_x" style="display:none; max-width: 550px;" class="userbox">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <div class="head_recover">
-                            <h2 class="modal-title"> Quên mật khẩu?</h2>
-                            <p>
-                                Vui lòng gửi email. Chúng tôi sẽ gửi link khởi tạo mật khẩu mới qua email của bạn.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <form accept-charset="UTF-8" action="/account/recover" class="form_recover" method="post">
-                            <input name="form_type" type="hidden" value="recover_customer_password">
-                            <input name="utf8" type="hidden" value="true">
-                            <div class="form-group ">
-                                <label for="recover-email">Email:</label>
-                                <input required type="email" id="recover-email" name="email" value=""
-                                    class="form-control" />
-                            </div>
-
-                            <div class="form-group nomargin">
-                                <button class="btn btn-primary" type="submit">Gửi</button>
-                                <button class="btn btn-primary nomargin"
-                                    onclick="hideRecoverPasswordForm_x(); return false;" name="cancel">Hủy</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- end forgot password -->
-                <script type="text/javascript">
-                    function showRecoverPasswordForm_x() {
-                        document.getElementById('recover_password_x').style.display = 'block';
-                        document.getElementById('login_x').style.display = 'none';
-                    }
-
-                    function hideRecoverPasswordForm_x() {
-                        document.getElementById('recover_password_x').style.display = 'none';
-                        document.getElementById('login_x').style.display = 'block';
-                    }
-                    if (window.location.hash == '#recover') { showRecoverPasswordForm_x() }
-                </script>
-
-
-            </div>
-
-        </div>
-    </div>
-    <div id="modal_register" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <div class="head">
-                        <h2 class="modal-title">Đăng ký</h2>
+                        <p class="marker-first">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Khu Phố 6, Phường Linh Trung, TP. Thủ Đức, TP. HCM</span>
+                        </p>
+                        <p class="marker-first">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Hotline: 0123456789</span>
+                        </p>
+                        <p class="marker-first">
+                            <i class="far fa-envelope"></i>
+                            <span>Email: abc.bookstore@gmail.com</span>
+                        </p>
                         <p>
-                            <span>Bạn đã có tài khoản?</span>
-                            <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal_login">Đăng
-                                nhập</a>
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Giấy phép DKKD số 0123456789, cấp lần thứ 6 năm 2019</span>
                         </p>
                     </div>
-                </div>
-                <div class="modal-body">
-                    <form accept-charset='UTF-8' action='/account' id='create_customer' method='post'>
-                        <input name='form_type' type='hidden' value='create_customer'>
-                        <input name='utf8' type='hidden' value='✓'>
 
-
-
-                        <div class="form-group">
-                            <label for="register-form-firstname">Tên:</label>
-                            <input required type="text" id="register-form-firstname" placeholder="Tên"
-                                name="customer[first_name]" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="register-form-lastname">Họ:</label>
-                            <input required type="text" id="register-form-lastname" placeholder="Họ"
-                                name="customer[last_name]" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="register-form-email">Email:</label>
-                            <input required type="email" id="register-form-email" placeholder="Email"
-                                name="customer[email]" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label for="register-form-password">Mật khẩu:</label>
-                            <input required type="password" id="register-form-password" placeholder="Mật khẩu"
-                                name="customer[password]" class="form-control" />
-                        </div>
-                        <div class="form-group nomargin">
-                            <button class="btn btn-primary" id="register-form-submit" name="register-form-submit"
-                                type='submit' value="register">Đăng ký</button>
-                        </div>
-
-                        <input id='9e5b709fc2f24a798e4638946193893d' name='g-recaptcha-response' type='hidden'>
-                        <script
-                            src='https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-'></script>
-                        <script>grecaptcha.ready(function () { grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', { action: 'submit' }).then(function (token) { document.getElementById('9e5b709fc2f24a798e4638946193893d').value = token; }); });</script>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="header-navigate clearfix mb15">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <ol style="text-transform:uppercase;" class="breadcrumb breadcrumb-arrow" itemscope=""
-                        itemtype="http://data-vocabulary.org/Breadcrumb">
-                        <li><a href="/" itemprop="url" target="_self">TRANG CHỦ</a></li>
-
-                        <li><i class="fa fa-angle-right"></i></li>
-                        <li class="active"><span itemprop="title">Giỏ hàng</span></li>
-
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section id="cart">
-        <div class="container">
-            <div class="row" id="cart">
-                <div class="col-xs-12">
-                    <h1 class="title-head-cart">Giỏ hàng của bạn</h1>
-                </div>
-                <div class="col-xs-12">
-
-                    <form action="/cart" method="post" id="cartform">
-                        <h4 class="cart-number">
-                            Bạn đang có <span style="color: #58b3f0">2 sản phẩm</span> trong giỏ hàng.
-                        </h4>
-                        <div class="clearfix overflow-cart mb15">
-                            <table id="table-cart">
-                                <tr class="hidden-xs">
-                                    <th class="text-left" colspan="2">Sản phẩm</th>
-                                    <th>Đơn giá</th>
-                                    <th>Số lượng</th>
-                                    <th>Thành tiền</th>
-                                    <th></th>
-                                </tr>
-
-                                <tr>
-                                    <td class="image">
-                                        <a href="/products/anh-em-phi-hanh-gia-tap-41">
-                                            <img src="//product.hstatic.net/1000376556/product/nxbtre_full_30422022_084258_e9b69b2573c9497fbaf067bdce0384b5_small.jpg"
-                                                alt="Anh Em Phi Hành Gia Tập 41" />
-                                        </a>
-                                    </td>
-                                    <td class="infor">
-                                        <a href="/products/anh-em-phi-hanh-gia-tap-41">
-                                            <div>
-                                                <h3 class="product-title">Anh Em Phi Hành Gia Tập 41</h3>
-                                            </div>
-
-                                            <div class="price visible-xs">45,000₫</div>
-
-                                        </a>
-                                    </td>
-                                    <td class="price hidden-xs">45,000₫</td>
-                                    <td class="qty">
-
-                                        <input type="number" class="form-control" size="4" name="updates[]" min="1"
-                                            id="updates_1098139728" value="1" onfocus="this.select();"
-                                            class="tc item-quantity" />
-                                    </td>
-                                    <td class="price hidden-xs">45,000₫</td>
-                                    <td class="remove">
-                                        <a href="/cart/change?line=1&quantity=0" class="cart">
-                                            <svg class="svg-next-icon svg-next-icon-size-24">
-                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                    xlink:href="#track_cart"></use>
-                                            </svg>
-                                            Xóa
-                                        </a>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="image">
-                                        <a href="/products/seki-ban-ben-tap-1">
-                                            <img src="//product.hstatic.net/1000376556/product/seki_ban_ben_1_-_bia_1_9a0beaccd94d430db0bbd6d569c1fdef_small.jpg"
-                                                alt="Seki bàn bên tập 1" />
-                                        </a>
-                                    </td>
-                                    <td class="infor">
-                                        <a href="/products/seki-ban-ben-tap-1">
-                                            <div>
-                                                <h3 class="product-title">Seki bàn bên tập 1</h3>
-                                            </div>
-
-                                            <div class="variant-title">[Bản đặt biệt]</div>
-
-                                            <div class="price visible-xs">55,000₫</div>
-
-                                        </a>
-                                    </td>
-                                    <td class="price hidden-xs">55,000₫</td>
-                                    <td class="qty">
-
-
-
-                                        <input type="number" class="form-control" size="4" name="updates[]" min="1"
-                                            id="updates_1098174400" value="1" onfocus="this.select();"
-                                            class="tc item-quantity" />
-                                    </td>
-                                    <td class="price hidden-xs">55,000₫</td>
-                                    <td class="remove">
-                                        <a href="/cart/change?line=2&quantity=0" class="cart">
-                                            <svg class="svg-next-icon svg-next-icon-size-24">
-                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                    xlink:href="#track_cart"></use>
-                                            </svg>
-                                            Xóa
-                                        </a>
-                                    </td>
-                                </tr>
-
-                            </table>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6 col-xs-12">
-                                <div class="checkout-buttons clearfix mb15">
-                                    <p class="note_cart">Ghi chú:</p>
-                                    <textarea id="note" name="note" rows="8" class="form-control" value=""></textarea>
+                    <div user-footer>
+                        <div class="support">
+                            <div class="support-user">
+                                <h4>Hỗ trợ khách hàng</h4>
+                                <div>
+                                    <ul>
+                                        <li><a href="">Câu hỏi thường gặp</a></li>
+                                        <li><a href="">Điều khoản dịch vụ</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-xs-12">
-                                <div class="text-right total-cart-money">
-                                    Thành tiền: <span>100,000₫</span>
-                                </div>
-                                <div class="text-right">
-                                    <a class="continue-shopping" title="Mua tiếp" href="https://www.hikaru.vn">Tiếp tục
-                                        mua hàng</a>
-                                    <button id="update-cart" name="submit" class="update-cart mb10 mt10">Cập nhật giỏ
-                                        hàng</button>
-                                    <a href="javascript:void(0);" onclick="Nobita.UpdateCartNoteToCheckout('cartform')"
-                                        id="checkout" name="checkout" class="btn-checkout mb20">Thanh toán</a>
+
+                            <div class="policy">
+                                <h4>Chính sách</h4>
+                                <div>
+                                    <ul>
+                                        <li><a href="">Chính sách bảo mật</a></li>
+                                        <li><a href="">Chính sách thanh toán</a></li>
+                                        <li><a href="">Chính sách vận chuyển</a></li>
+                                        <li><a href="">Chính sách đổi trả</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </form>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="section-map">
-    </section>
-    <footer>
-        <div class="footer-center">
-            <div class="container no-padding">
-                <div class="row">
-
-
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                        <div class="box-footer-colum">
-                            <img src="//theme.hstatic.net/1000376556/1000707101/14/logo-footer.png?v=265" alt="logo">
-                        </div>
-
-                        <div class="box-footer-colum">
-                            <h4 class="">WEBSITE THUỘC QUYỀN</h4>
-                            <ul class="footer-list-menu">
-                                <li>Công Ty Cổ Phần Xuất Bản và Thương mại Hikaru</li>
-                                <li>Mã Số Thuế: 0317420275, do Sở Kế Hoạch và Đầu Tư TP. Hồ Chí cấp ngày 05/08/2022</li>
-                                <li></li>
-                            </ul>
-                        </div>
-
-                        <div class="wrap-bct">
-                            <a href="http://online.gov.vn/Home/WebDetails/97914" target="_blank">
-                                <img src="//theme.hstatic.net/1000376556/1000707101/14/logo_bct.png?v=265" width="180">
-                            </a>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="box-footer-colum">
-                            <h4 class="">LIÊN HỆ</h4>
-                            <ul class="footer-list-menu">
-                                <li>
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i><a>140 Đường Số 3, Cư Xá Lữ Gia,
-                                        Phường 15, Quận 11, TP. Hồ Chí Minh</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-phone" aria-hidden="true"></i><a> 0909982873</a><br>
-                                    <a class="ml28"></a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i><a>cskh.hikaru.vn@gmail.com</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="box-footer-colum email">
-                            <h4 class="">Đăng ký nhận tin</h4>
-                            <div class="block-content">
-                                <form id="newsletter_form" accept-charset="UTF-8" action="/account/contact"
-                                    class="m-b-20 contact-form" method="post">
-                                    <input name="form_type" type="hidden" value="customer">
-                                    <input name="utf8" type="hidden" value="✓">
-                                    <input type="hidden" id="contact_tags" name="contact[tags]"
-                                        value="khách hàng tiềm năng,Bản tin">
-                                    <input type="hidden" id="newsletter_first_name" name="contact[first_name]" value="">
-                                    <div class="input-group">
-                                        <input required type="email" id="contact_email" name="contact[email]"
-                                            autocomplete="off" class="form-control"
-                                            placeholder="Vui lòng nhập địa chỉ email">
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-subcribe" type="submit"><span>Gửi</span></button>
-                                        </span>
-                                    </div>
-                                </form>
-
-                                <script>
-                                    /*---  Email newsletter ---*/
-                                    var $regForm = $('#newsletter_form');
-                                    $regForm.submit(function (e) {
-                                        $.post('/account/contact', {
-                                            form_type: "contact",
-                                            utf8: "✓",
-                                            "contact": {
-                                                "email": 'email'
-                                            }
-                                        }, function (r) {
-                                            alert('Cám ơn bạn đã đăng ký nhận tin !');
-                                        });
-                                    });  
-                                </script>
+                        <div class-="email-group">
+                            <div class="email">
+                                <h4>Đăng ký nhận tin</h4>
+                                <p>
+                                    Hãy nhập email của bạn vào ô dưới đây để có thể nhận được tất cả tin tức mới nhất
+                                    của ABC
+                                </p>
+                                <div class="input-group">
+                                    <form action="">
+                                        <input
+                                            type="email"
+                                            value=""
+                                            placeholder="Nhập email của bạn..."
+                                            name="contact[email]"
+                                            id="Email"
+                                            class="input-group-field"
+                                            autocorrect="off"
+                                            autocapitalize="off"
+                                        />
+                                    </form>
+                                    <button type="submit" class="button-btn1" name="subscribe" id="subscribe">
+                                        Đăng ký
+                                    </button>
+                                </div>
                             </div>
                         </div>
-
                     </div>
 
-
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                        <div class="box-footer-colum">
-                            <h4 class="">CHÍNH SÁCH CHUNG</h4>
-                            <ul class="footer-list-menu">
-
-                                <li>
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i><a
-                                        href="/pages/dieu-khoan-su-dung" title="Điều khoản sử dụng">Điều khoản sử
-                                        dụng</a>
-                                </li>
-
-                                <li>
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i><a
-                                        href="https://www.hikaru.vn/pages/thanh-toan"
-                                        title="Chính Sách Thanh Toán">Chính Sách Thanh Toán</a>
-                                </li>
-
-                                <li>
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i><a
-                                        href="/pages/chinh-sach-bao-mat" title="Chính sách bảo mật">Chính sách bảo
-                                        mật</a>
-                                </li>
-
-                                <li>
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i><a
-                                        href="https://www.hikaru.vn/pages/chinh-sach-giao-hang"
-                                        title="Chính Sách Giao Hàng">Chính Sách Giao Hàng</a>
-                                </li>
-
-                                <li>
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i><a
-                                        href="https://www.hikaru.vn/pages/chinh-sach-doi-tra"
-                                        title="Chính Sách Đổi Trả">Chính Sách Đổi Trả</a>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-
-                        <div class="box-footer-colum mb15">
-                            <h4 class="">FANPAGE</h4>
-                            <div class="social">
-
-                                <ul class="list-unstyled clearfix">
-
-                                    <li class="facebook">
-                                        <a target="_blank" href="https://www.facebook.com/www.hikaru.vn"
-                                            class="fa fa-facebook"></a>
-                                    </li>
-
-
-
-
-
-                                </ul>
+                    <div class="connect-footer">
+                        <div class="connect">
+                            <h4>Kết nối với chúng tôi</h4>
+                            <div class="icon-footer">
+                                <a href="">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
                             </div>
                         </div>
-
-
-                        <div class="dkbocongthuong">
-                            <div class="fb-page" data-href="https://www.facebook.com/www.hikaru.vn" data-width="380"
-                                data-hide-cover="false" data-show-facepile="false" adapt_container_width="true"></div>
-                        </div>
-
                     </div>
                 </div>
-
             </div>
-        </div>
-        <div class="container-fluid" id="copyright">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 text-center">
-                    <p>Copyright © 2018 Designed by <a
-                            href="https://themes.haravan.com/search?type=product&q=izi&ref=kadi">Woizi</a> | <a
-                            href="https://www.haravan.com/?ref=kadi">Power by Haravan</a> </p>
-                </div>
-            </div>
-        </div>
-
-    </footer>
-    <div id="nova_phone_div" data-toggle="modal" data-target="#myModal_phone"
-        class="nova-phone nova-green nova-show nova-static">
-        <a href="tel:">
-            <div class="nova-ph-circle"></div>
-            <div class="nova-ph-circle-fill"></div>
-            <div class="nova-ph-img-circle"></div>
-        </a>
-    </div>
-    <script>
-        jQuery(window).load(function () {
-            var tid = setTimeout(Ring, 5000);
-            var flag = false;
-            function Ring() {
-                if (flag) {
-                    flag = !flag;
-                    jQuery("#nova_phone_div").addClass("nova-static");
-                    tid = setTimeout(Ring, 10000);
-                }
-                else {
-                    flag = !flag; jQuery("#nova_phone_div").removeClass("nova-static"); tid = setTimeout(Ring, 2000);
-                }
-            }
-        });
-    </script>
-
-
-
-
-    <div class="back-to-top">
-        <a href="javascript:void(0);">
-            <svg class="svg-next-icon svg-next-icon-size-30" style="fill:#58b3f0">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-scrollUp-bottom"></use>
-            </svg>
-        </a>
-    </div>
-
-
-
-
-
-
-    <div class="sweettooth-widget" data-widget-type="tab" data-channel-key="pk_b24b05c0a2cc11e98cc04786876b86e2"
-        data-channel-customer-id="" data-digest=""></div>
-    <script>
-        if (typeof Haravan == undefined) {
-            Haravan = {};
-        }
-
-    </script>
-
-
-
-
-
-    </div>
-
-</body>
-
+        </footer>
+        <script src="./js/main.js"></script>
+    </body>
 </html>
