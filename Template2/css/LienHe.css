@@ -7,7 +7,7 @@
 }
 
 section#content {
-    background-color: #86c9eaa8;
+    background-color: #f7f7f7;
     overflow: hidden;
 }
 #content .section-header{
@@ -39,6 +39,15 @@ section#content {
     color: #333;
 }
 
+.content-left{
+    max-width: 600px;
+
+}
+.content-right{
+    margin-top: 50px;
+    width: 600px;
+    margin-bottom: 20px;
+}
 #contact-form {
     flex-basis: 58%;
     flex-grow: 0;
@@ -46,7 +55,7 @@ section#content {
 }
 
 #contact-form.form-horizontal {
-    background: linear-gradient(to right, #ffabaa, #fdcdc0) !important;
+    background: linear-gradient(to right, #e7e7e7, #eeeeee) !important;
     color: #333;
     margin: 10px 0 20px;
     font-size: 14px;
@@ -98,7 +107,7 @@ section#content {
     color: #333;
     letter-spacing: 0.01em;
     margin: 20px 0px 10px 20px;
-    
+    padding-top: 20px;
 }
 
 #contact-form .Thongtin label,
