@@ -2091,7 +2091,7 @@ a.next span {
 }
 
 #map {
-    height: 70vh;
+    height: 100%;
     width: 100%;
     margin: auto;
     padding: 0;
@@ -2125,7 +2125,7 @@ a.next span {
 #contact .contact-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     padding: 20px;
     position: relative;
@@ -2497,12 +2497,29 @@ textarea {
         height: 60px;
         line-height: 60px;
     }
-
+    .Thongtin{
+        flex-direction: column !important;
+    }
+    .hoten,.email-lienhe{
+        max-width: 100% !important;
+    }
+    /* .content-left{
+        width: 400px !important;
+    } */
     #map{
         height: 40vh;
     }
     #contact-form{
-        width: 600px;
+        max-width: 600px;
+    }
+    .content-wrapper{
+        flex-direction: column;
+    }
+    .content-right{
+        margin-top: 20px !important;
+    }
+    .email-lienhe label {
+        margin-top: 16px;
     }
     footer .container{
         flex-direction: column !important;
@@ -2583,7 +2600,7 @@ textarea {
         text-align: center;
     }
     #contact .contact-wrapper{
-        padding: 40px !important;
+        padding: 40px 20px !important;
     }
 
     #section .box .square:nth-child(1){
@@ -2601,6 +2618,15 @@ textarea {
     }
     .header-search{
         margin-left: 0px;
+    }
+    .content-right{
+        max-width: 100%;
+    }
+    #content .section-header{
+        padding-top: 0px !important;
+    }
+    .content-wrapper{
+        margin: 30px 20px 20px 20px !important;
     }
     /* footer */
     footer{

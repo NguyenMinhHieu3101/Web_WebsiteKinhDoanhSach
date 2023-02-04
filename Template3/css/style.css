@@ -121,6 +121,12 @@ html {
     border: 1px solid #b1154a;
     border-radius: 50%;
 }
+.home .header .cart_div_icon{
+    margin-right: 4px;
+}
+.home .header .login_div_icon{
+    margin-right: 4px;
+}
 .home .header .cart_icon {
     position: absolute;
     top: 50%;
@@ -171,7 +177,7 @@ html {
     font-size: 17px;
 }
 
-//start drop
+/* start drop */
 
 .topnav .icon {
     display: none;
@@ -225,7 +231,7 @@ html {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-//end drop
+/* end drop */
 
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child),
@@ -321,7 +327,7 @@ html {
     height: 240px;
     overflow: hidden;
 }
-//example
+/* example */
 .example .list-1 {
     width: 100%;
 }
@@ -613,7 +619,7 @@ footer h4 {
 }
 /* end footer */
 
-/// responsive home
+ /* responsive home */
 @media (max-width: 700px) {
 }
 

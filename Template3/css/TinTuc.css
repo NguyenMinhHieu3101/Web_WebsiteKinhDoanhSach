@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+*{
+    font-family:Roboto, Montserrat, sans-serif;
+}
+
+.content-tintuc{
+    margin: 0px 60px;
+    display: flex;
+}
+.content-tintuc a{
+    color: #ea6016;
+    text-decoration: none;
+}
+.content-tintuc span{
+    color:#808080 ;
+}
+.content-tintuc .content-left {
+    flex: 1.8;
+    padding: 20px;
+}
+.content-tintuc .content-right{
+    flex: 1;
+}
+.content-tintuc .content-right img{
+    width: 248px;
+    height: 160px;
+}
+
+.pops-detail-title{
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.cover-img img{
+    width: 100%;
+    
+}
+p{
+    color: #616060;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 10px 0px;
+}
+.toc-container{
+    width: 50%;
+    border: 2px solid #8f8f8f;
+}
+.toc-list{
+    list-style: none;
+    padding: 20px;
+}
+.toc-list li{
+    margin-bottom: 10px;
+}
+.toc-list li:hover a{
+    text-decoration: underline;
+}
+.toc-title{
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0px 10px 0;
+    color: #808080;
+}
+.title-truyen{
+    margin: 20px 0px;
+}
+.title-truyen a{
+    color: #000;
+}
+.information-truyen{
+    color: #8c8c8c;
+    margin-left: 40px;
+}
+.information-truyen li{
+    margin-top: 5px;
+}
+figure{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+figcaption{
+    color: #8c8c8c;
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0px;
+}
+iframe{
+    margin-top: 20px;
+    width: 100% !important;
+    height: 500px !important;
+}
+section > span{
+    text-transform: uppercase;
+}
+
+.baiviet-phobien > span{
+    margin: 40px 0px 10px 0px;
+    display: block;
+}
+.baiviet-moinhat > span{
+    display: block;
+    margin-bottom: 10px;
+}
+.items-tintuc{
+    display: flex;
+    margin-bottom: 40px;
+}
+.left-item{
+    margin-right: 20px;
+}
+.title-item>span{
+    color: #434242;
+}
+.right-item>h3{
+    margin: 10px 0 15px 0;
+}
+
+/* responsive */
+/* PC */
+@media (min-width:1024px) {}
+
+/* tablet */
+@media (min-width:740px) and (max-width: 1023px) {
+    .content-left img{
+        width: 100%;
+        
+    }
+    .content-tintuc{
+        margin: 0px 10px;
+    }
+    .items-tintuc{
+        flex-direction: column;
+    }
+    .pops-detail-title{
+        font-size: 30px;
+    }
+    .toc-container{
+        width: 70%;
+    }
+    iframe{
+        height: 300px !important;
+    }
+    .title-item{
+        margin-top: 6px;
+    }
+    .right-item>h3{
+        margin: 8px 0 6px 0;
+    }
+    /* footer */
+    .connect-footer{
+        margin-top: 20px;
+    }
+    .support{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+/* mobile */
+@media (max-width: 740px) {
+    .content-tintuc{
+        flex-direction: column;
+    }
+    .content-left img{
+        width: 100%;
+        
+    }
+    .content-tintuc{
+        margin: 0px 10px;
+    }
+    .pops-detail-title{
+        font-size: 30px;
+    }
+    .toc-container{
+        width: 100%;
+    }
+    iframe{
+        height: 200px !important;
+    }
+    .content-right{
+        padding:0 20px;
+    }
+    .baiviet-phobien>span{
+        margin-top: 20px;
+    }
+    .items-tintuc{
+        flex-direction: column;
+    }
+    .left-item{
+        margin-right: 0px;
+    }
+    .left-item img{
+        width: 100% !important;
+        height: auto !important;
+    }
+    .title-item{
+        margin-top: 6px;
+    }
+    .right-item>h3{
+        margin: 8px 0 6px 0;
+    }
+    .home .header .search{
+        width: 80%;
+    }
+
+    /* footer */
+    .footer-position{
+        padding: 30px 10px;
+    }
+    footer .container{
+        padding: 0px;
+    }
+    .connect-footer{
+        margin-top: 20px;
+    }
+    .support{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

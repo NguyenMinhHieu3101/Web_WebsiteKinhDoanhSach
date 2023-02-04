@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+*{
+    font-family:Roboto, Montserrat, sans-serif;
+}
+
+.content-chitiettintuc{
+    margin: 40px 100px 40px 200px;
+    display: flex;
+}
+.content-chitiettintuc .content-left{
+    flex:1.8;
+    margin-right:100px;
+}
+.content-chitiettintuc .content-right{
+    flex: 1;
+}
+
+.content-right img{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+.theloai,.nuocsanxuat,.danhmuc{
+    color: #ea6016;
+}
+
+ul li{
+    margin-top: 20px;
+    color: #888888;
+}
+.tenkhac,.namphathanh,.xephang,.noidungboi{
+    color: #333;
+}
+.pops-detail-title{
+    margin-top: 30%;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.tapmoi{
+    color: #888888;
+}
+.tapphim{
+    color: #ea6016;
+
+}
+.tapphim:hover{
+    cursor: pointer;
+}
+.list-tapphim{
+    font-size: 18px !important;
+}
+.description-truyen{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.description-truyen span{
+    color:#888888;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.share{
+    padding:8px 12px;
+    border: 2px solid #333;
+    border-radius: 50%;
+}
+.qrcode{
+    margin-left: 30px;
+    font-size: 24px;
+}
+.share,.qrcode:hover{
+    cursor: pointer;
+}
+.dot-tapphim{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.dot-tapphim i{
+    font-size: 6px;
+    color: #ccc;
+    vertical-align:middle
+}
+
+/* responsive */
+/* PC */
+@media (min-width:1024px) {}
+
+/* tablet */
+@media (min-width:740px) and (max-width: 1023px) {
+    .content-chitiettintuc {
+        margin: 40px 20px 40px 20px;
+    }
+    .content-chitiettintuc .content-left{
+        margin-right: 30px;
+    }
+    .description-truyen{
+        font-size: 18px;
+    }
+    /* footer */
+    .connect-footer{
+        margin-top: 20px;
+    }
+    .support{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }   
+}
+/* mobile */
+@media (max-width: 740px) {
+    .content-chitiettintuc{
+        margin: 40px 30px 40px 40px;
+        flex-direction: column-reverse;
+
+    }
+    .content-chitiettintuc .content-left{
+        margin-right: 0px;
+        border-top: 2px solid #ccc;
+    }
+    .pops-detail-title{
+        margin-top: 40px;
+    }
+    .content-right{
+        margin-bottom: 20px;
+    }
+    .description-truyen{
+        font-size: 16px;
+    }
+    .home .header .search{
+        width: 80%;
+    }
+    /* footer */
+    .footer-position{
+        padding: 30px 10px;
+    }
+    footer .container{
+        padding: 0px;
+    }
+    .connect-footer{
+        margin-top: 20px;
+    }
+    .support{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
