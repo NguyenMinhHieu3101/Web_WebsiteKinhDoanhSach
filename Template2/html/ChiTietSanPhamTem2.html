@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/chitietsanphamtem2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chi Tiết Sản Phẩm</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__header">
+            <div class="nav">
+                <ul>
+                    <li class="nav-sub">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-sub">
+                        <a href="../Template2/html/SanPhamTem2.html">SẢN PHẨM</a>
+                    </li>
+                    <li class="nav-sub">
+                        <a href="">BLOG</a>
+                    </li>
+                    <li class="nav-sub">
+                        <a href="">SỰ KIỆN</a>
+                    </li>
+                    <li class="nav-sub">
+                        <a href="">TRỢ GIÚP</a>
+                    </li>
+                    <li class="nav-sub">
+                        <a href="">GIỚI THIỆU</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="login_register">
+                <i class="fa-solid fa-user"></i>
+                <a href="">Sign in / Register</a>
+            </div>
+        </div>
+        <div class="header--img">
+            <img src="../images/logo_tem2.png" alt="">
+        </div>
+        <div class="search-basket">
+            <div class="search">
+                <input type="text" placeholder="Title, author, keyword or ISBN">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="basket">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="wrapper__banner">
+        <img class="mySlides" src="../images/Home.webp">
+        <img class="mySlides" src="../images/so2.webp">
+        <img class="mySlides" src="../images/so3.webp">
+    </div> -->
+    <!-- <div class="wrapper__bottom-banner">
+        <div class="bottom-banner bottom-banner--one">
+            <span class="info-free">Free</span>
+            <span class="info-big">UK Standard Delivery</span>
+            <span class="info-small">On all orders over £25</span>
+        </div>
+        <div class="bottom-banner bottom-banner--two">
+            <span class="info-big">Order in time for Christmas</span>
+            <span class="info-small">
+                19<sup>th</sup>
+                December by 3pm
+                <span class="small-1st">1st</span>
+                Class
+            </span>
+        </div>
+        <div class="bottom-banner bottom-banner--three">
+            <span class="info-free">Free</span>
+            <span class="info-big">Click & Collect to shops</span>
+            <span class="info-small">From 2 hours after you order*</span>
+        </div>
+    </div> -->
+
+    <!-- content -->
+    <!-- <div class="content">
+        <div class="content__first">
+            <div class="content__first__top">
+                <h2>Our Bestsellers</h2>
+                <div class="list-items-book">
+                    <div class="item-book item-bookdisplay">
+                        <div class="img-book">
+                            <img src="../images/brief_answers_to_the_big_questions_1_2019_03_07_16_03_27.jpg">  
+                            <div class="buy-book">
+                                <div class="add-buy">
+                                    ADD TO BASKET
+                                </div>
+                                <div class="click-collect">
+                                    CLICK & COLLECT
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="info-book">
+                            <span class="info-name-book">Brief Answers to the Big Questions</span>
+                            <span class="info-author">Stephen Hawking</span>
+                            <span class="info-gia">$12.54</span>
+                            <span class="info-material">Hardcover</span>
+                        </div>
+                    </div>
+                    <div class="item-book item-bookdisplay">
+                        <div class="img-book">
+                            <img src="../images/apollo.jpeg">   
+                            <div class="buy-book">
+                                <div class="add-buy">
+                                    ADD TO BASKET
+                                </div>
+                                <div class="click-collect">
+                                    CLICK & COLLECT
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-book">
+                            <span class="info-name-book">Apollo Remastered</span>
+                            <span class="info-author">Andy Saunders</span>
+                            <span class="info-gia">£53.99</span>
+                            <span class="info-material">Hardback</span>
+                        </div>
+                    </div>
+                    <div class="item-book item-bookdisplay">
+                        <div class="img-book">
+                         <img src="../images/carlorovelli.jpeg">  
+                         <div class="buy-book">
+                            <div class="add-buy">
+                                ADD TO BASKET
+                            </div>
+                            <div class="click-collect">
+                                CLICK & COLLECT
+                            </div>
+                        </div> 
+                        </div>
+                        <div class="info-book">
+                            <span class="info-name-book">Helgoland</span>
+                            <span class="info-author">Carlo Rovelli</span>
+                            <span class="info-gia">£8.99</span>
+                            <span class="info-material">Paperback</span>
+                        </div>
+                    </div>
+                    <div class="item-book item-bookdisplay">
+                        <div class="img-book">
+                         <img src="../images/concorde.jpeg">  
+                         <div class="buy-book">
+                            <div class="add-buy">
+                                ADD TO BASKET
+                            </div>
+                            <div class="click-collect">
+                                CLICK & COLLECT
+                            </div>
+                        </div>
+                        </div>
+                        <div class="info-book">
+                            <span class="info-name-book">Concorde</span>
+                            <span class="info-author">Mike Bannister</span>
+                            <span class="info-gia">£20.00</span>
+                            <span class="info-material">Hardback</span>
+                        </div>
+                    </div>
+                    <div class="item-book item-bookdisplay">
+                        <div class="img-book">
+                         <img src="../images/lift3.0.jpeg">   
+                         <div class="buy-book">
+                            <div class="add-buy">
+                                ADD TO BASKET
+                            </div>
+                            <div class="click-collect">
+                                CLICK & COLLECT
+                            </div>
+                        </div>
+                        </div>
+                        <div class="info-book">
+                            <span class="info-name-book">Life 3.0</span>
+                            <span class="info-author">Max Tegmark</span>
+                            <span class="info-gia">£12.99</span>
+                            <span class="info-material">Hardback</span>
+                        </div>
+                    </div>
+                    <div class="item-book item-bookdisplay">
+                        <div class="img-book">
+                         <img src="../images/starrymessenger.jpeg">
+                         <div class="buy-book">
+                            <div class="add-buy">
+                                ADD TO BASKET
+                            </div>
+                            <div class="click-collect">
+                                CLICK & COLLECT
+                            </div>
+                        </div>  
+                        </div>
+                        <div class="info-book">
+                            <span class="info-name-book">Starry Messenger</span>
+                            <span class="info-author">Neil deGrasse Tyson</span>
+                            <span class="info-gia">£16.99</span>
+                            <span class="info-material">Hardback</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <div class="content__first__bottom">
+                <div class="banner">
+                    <div class="banner-first">
+                        <img src="../images/giftbook.png" alt="">
+                    </div>
+                    <div class="banner-second">
+                        <img src="../images/game.png" alt="">
+                    </div>
+                    <div class="banner-three">
+                        <img src="../images/halfprice.png" alt="">
+                    </div>
+                </div>
+                <h2>Signed & Special Editions</h2>
+                <div class="list-items-book">
+                    <div class="item-book item-bookdisplay">
+                        <div class="img-book">
+                         <img src="../images/theyearinspace.jpeg"> 
+                         <div class="buy-book">
+                            <div class="add-buy">
+                                ADD TO BASKET
+                            </div>
+                            <div class="click-collect">
+                                CLICK & COLLECT
+                            </div>
+                        </div>  
+                        </div>
+                        <div class="info-book">
+                            <span class="info-name-book">The Year in Space</span>
+                            <span class="info-author">The Supermassive Podcast</span>
+                            <span class="info-gia">£12.99</span>
+                            <span class="info-material">Hardback</span>
+                        </div>
+                    </div>
+                    <div class="item-book item-bookdisplay">
+                        <div class="img-book">
+                         <img src="../images/spineofthedragon.jpg"> 
+                         <div class="buy-book">
+                            <div class="add-buy">
+                                ADD TO BASKET
+                            </div>
+                            <div class="click-collect">
+                                CLICK & COLLECT
+                            </div>
+                        </div>  
+                        </div>
+                        <div class="info-book">
+                            <span class="info-name-book">Spine of the Dragon</span>
+                            <span class="info-author">Kevin J. Anderson</span>
+                            <span class="info-gia">£53.99</span>
+                            <span class="info-material">Hardback</span>
+                        </div>
+                    </div>
+                    <div class="item-book item-bookdisplay">
+                        <div class="img-book">
+                         <img src="../images/thedevilyounow.jpeg">  
+                         <div class="buy-book">
+                            <div class="add-buy">
+                                ADD TO BASKET
+                            </div>
+                            <div class="click-collect">
+                                CLICK & COLLECT
+                            </div>
+                        </div> 
+                        </div>
+                        <div class="info-book">
+                            <span class="info-name-book">The Devil You Know</span>
+                            <span class="info-author">Gwen Adshead</span>
+                            <span class="info-gia">£7.49</span>
+                            <span class="info-material">Paperback</span>
+                        </div>
+                    </div>
+                    <div class="item-book item-bookdisplay">
+                        <div class="img-book">
+                            <img src="../images/tamthe.jpg">  
+                            <div class="buy-book ">
+                                <div class="add-buy">
+                                    ADD TO BASKET
+                                </div>
+                                <div class="click-collect">
+                                    CLICK & COLLECT
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="info-book">
+                            <span class="info-name-book">Tam Thể</span>
+                            <span class="info-author">Lưu Từ Hân</span>
+                            <span class="info-gia">£5.00</span>
+                            <span class="info-material">Paperback</span>
+                        </div>
+                    </div>
+                    <div class="item-book item-bookdisplay">
+                        <div class="img-book">
+                            <img src="../images/cacthegioisongsong.jpg"> 
+                            <div class="buy-book ">
+                                <div class="add-buy">
+                                    ADD TO BASKET
+                                </div>
+                                <div class="click-collect">
+                                    CLICK & COLLECT
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="info">
+                            <span class="info-name-book">Các Thế Giới Song Song</span>
+                            <span class="info-author">Michio Kaku</span>
+                            <span class="info-gia">94.100đ</span>
+                            <span class="info-material">Paperback</span>
+                        </div>
+                    </div>
+                    <div class="item-book item-bookdisplay">
+                        <div class="img-book">
+                         <img src="../images/frozenplanet2.jpeg">  
+                         <div class="buy-book ">
+                            <div class="add-buy">
+                                ADD TO BASKET
+                            </div>
+                            <div class="click-collect">
+                                CLICK & COLLECT
+                            </div>
+                        </div> 
+                        </div>
+                        <div class="info_book">
+                            <span class="info-name-book">Frozen Planet II</span>
+                            <span class="info-author">Mark Brownlow</span>
+                            <span class="info-gia">£55.00</span>
+                            <span class="info-material">Hardback</span>
+                        </div>
+                    </div>
+
+                </div>  
+            </div>
+            <hr>
+        </div>
+
+        <div class="content__second">
+            <div class="banner2">
+                <div class="banner2--first">
+                    <img src="../images/banner2.webp" alt="">
+                </div>
+            </div>
+            <h2>Great Value Manga Boxsets</h2>
+            <div class="list-items-book">
+                <div class="item-book item-bookdisplay">
+                    <div class="img-book">
+                     <img src="../images/2022_11_03_09_31_40_1-390x510.jpg"> 
+                     <div class="buy-book ">
+                        <div class="add-buy">
+                            ADD TO BASKET
+                        </div>
+                        <div class="click-collect">
+                            CLICK & COLLECT
+                        </div>
+                    </div> 
+                    </div>
+                    <div class="info-book">
+                        <span class="info-name-book">An Astronaut's Guide to Life on Earth</span>
+                        <span class="info-author">Chris Hadfield</span>
+                        <span class="info-gia">311.400đ</span>
+                        <span class="info-material">Paperback</span>
+                    </div>
+                </div>
+                <div class="item-book item-bookdisplay">
+                    <div class="img-book">
+                     <img src="../images/haivandamduoidaybien.jpg">  
+                     <div class="buy-book ">
+                        <div class="add-buy">
+                            ADD TO BASKET
+                        </div>
+                        <div class="click-collect">
+                            CLICK & COLLECT
+                        </div>
+                    </div> 
+                    </div>
+                    <div class="info-book">
+                        <span class="info-name-book">Hai Vạn Dặm Dưới Biển</span>
+                        <span class="info-author">Jules Verne</span>
+                        <span class="info-gia">89.000đ</span>
+                        <span class="info-material">Paperback</span>
+                    </div>
+                </div>
+                <div class="item-book item-bookdisplay">
+                    <div class="img-book">
+                     <img src="../images/luattamthuc.jpg">  
+                     <div class="buy-book ">
+                        <div class="add-buy">
+                            ADD TO BASKET
+                        </div>
+                        <div class="click-collect">
+                            CLICK & COLLECT
+                        </div>
+                    </div> 
+                    </div>
+                    <div class="info-book">
+                        <span class="info-name-book">LUẬT TÂM THỨC</span>
+                        <span class="info-author">Ngô Sa Thạch</span>
+                        <span class="info-gia">211.000đ</span>
+                        <span class="info-material">Paperback</span>
+                    </div>
+                </div>
+                <div class="item-book item-bookdisplay">
+                    <div class="img-book">
+                     <img src="../images/PhatMinhCuoiCung.jpg"> 
+                     <div class="buy-book ">
+                        <div class="add-buy">
+                            ADD TO BASKET
+                        </div>
+                        <div class="click-collect">
+                            CLICK & COLLECT
+                        </div>
+                    </div>  
+                    </div>
+                    <div class="info-book">
+                        <span class="info-name-book">Phát Minh Cuối Cùng</span>
+                        <span class="info-author">James Barrat</span>
+                        <span class="info-gia">138.750đ</span>
+                        <span class="info-material">Paperback</span>
+                    </div>
+                </div>
+                <div class="item-book item-bookdisplay">
+                    <div class="img-book">
+                     <img src="../images/2020_05_12_15_48_16_1-390x510.jpg"> 
+                       
+                     <div class="buy-book ">
+                        <div class="add-buy">
+                            ADD TO BASKET
+                        </div>
+                        <div class="click-collect">
+                            CLICK & COLLECT
+                        </div>
+                    </div>
+                    </div>
+                    <div class="info-book">
+                        <span class="info-name-book">The Evolutionary Origins of...</span>
+                        <span class="info-author">Nicholas A. Christakis</span>
+                        <span class="info-gia">₹2,736.95</span>
+                        <span class="info-material">Hardcover</span>
+                    </div>
+                </div>
+                <div class="item-book item-bookdisplay">
+                    <div class="img-book">
+                     <img src="../images/thebiggesstideasintheuniverse.jpeg">  
+                     <div class="buy-book ">
+                        <div class="add-buy">
+                            ADD TO BASKET
+                        </div>
+                        <div class="click-collect">
+                            CLICK & COLLECT
+                        </div>
+                    </div> 
+                    </div>
+                    <div class="info-book">
+                        <span class="info-name-book">The Biggest Ideas in the Universe 1</span>
+                        <span class="info-author">Sean Carroll</span>
+                        <span class="info-gia">£16.99</span>
+                        <span class="info-material">Hardback</span>
+                    </div>
+                </div>
+
+            </div>  
+        </div>
+        <hr>
+        Slogan and icon -->
+    <!-- <div class="slogan-icon">
+            <h2 style="font-size: 42px;">Science world, universe...</h2>
+            <div class="icon">
+                <img src="../images/pngwing.com (14).png" alt="">
+                <img src="../images/hand.png" alt="">
+                <img src="../images/atom.png" alt="">
+            </div>     -->
+    <!-- </div>
+    </div> -->
+
+    <!-- Footer -->
+
+    <!-- Content -->
+    <div class="main-page row">
+
+        <div itemscope="" itemtype="http://schema.org/Book">
+            <link itemprop="additionalType" href="http://schema.org/Product">
+            <section class="book-detail span12 alpha omega">
+                <div class="book-image span5 mobile-span12 text-center">
+                    <div class="preview-flip-container">
+                        <div class="book-image-outer">
+                            <div class="book-image-wrap">
+                                <div class="book-image-main">
+                                    <img itemprop="image" id="scope_book_image" class="js-open-modal"
+                                        data-modal-id="zoomModal"
+                                        src="https://cdn.waterstones.com/bookjackets/large/9781/5291/9781529158922.jpg"
+                                        data-zoom-src="https://cdn.waterstones.com/bookjackets/large/9781/5291/9781529158922.jpg"
+                                        alt="Godmersham Park (Paperback)" onerror="imgError(this)">
+
+                                    <ul class="inner multi-img">
+                                        <li>
+                                            <img src="https://cdn.waterstones.com/bookjackets/large/9781/5291/9781529158922.jpg"
+                                                data-zoom-src="https://cdn.waterstones.com/bookjackets/large/9781/5291/9781529158922.jpg"
+                                                class="js-open-modal" data-modal-id="zoomModal"
+                                                alt="Godmersham Park (Paperback)" onerror="imgError(this)">
+                                        </li>
+                                        <li>
+                                            <img src="https://cdn.waterstones.com/images/00252469-400x400.jpeg"
+                                                class="js-open-modal" data-modal-id="zoomModal"
+                                                data-zoom-src="https://cdn.waterstones.com/images/00252469-1200x1200.jpeg"
+                                                alt="Godmersham Park (Paperback)" onerror="imgError(this)">
+                                        </li>
+                                        <li>
+                                            <img src="https://cdn.waterstones.com/images/00252467-400x400.jpeg"
+                                                class="js-open-modal" data-modal-id="zoomModal"
+                                                data-zoom-src="https://cdn.waterstones.com/images/00252467-1200x1200.jpeg"
+                                                alt="Godmersham Park (Paperback)" onerror="imgError(this)">
+                                        </li>
+                                        <li>
+                                            <img src="https://cdn.waterstones.com/images/00252468-400x400.jpeg"
+                                                class="js-open-modal" data-modal-id="zoomModal"
+                                                data-zoom-src="https://cdn.waterstones.com/images/00252468-1200x1200.jpeg"
+                                                alt="Godmersham Park (Paperback)" onerror="imgError(this)">
+                                        </li>
+                                    </ul>
+
+                                    <!-- <div class="button-book-zoom icon js-open-modal" data-modal-id="zoomModal">zoom
+                                    </div> -->
+                                </div>
+
+                                <div class="bullets">
+                                    <div class="bullet active"></div>
+                                    <div class="bullet"></div>
+                                    <div class="bullet"></div>
+                                    <div class="bullet"></div>
+                                </div>
+
+                                <div class="additional-images">
+                                    <img src="https://cdn.waterstones.com/images/00252469-400x400.jpeg"
+                                        data-zoom-src="https://cdn.waterstones.com/images/00252469-1200x1200.jpeg"
+                                        alt="Godmersham Park (Paperback)" class="js-open-modal"
+                                        data-modal-id="zoomModal" onerror="imgError(this)">
+                                    <img src="https://cdn.waterstones.com/images/00252467-400x400.jpeg"
+                                        data-zoom-src="https://cdn.waterstones.com/images/00252467-1200x1200.jpeg"
+                                        alt="Godmersham Park (Paperback)" class="js-open-modal"
+                                        data-modal-id="zoomModal" onerror="imgError(this)">
+                                    <img src="https://cdn.waterstones.com/images/00252468-400x400.jpeg"
+                                        data-zoom-src="https://cdn.waterstones.com/images/00252468-1200x1200.jpeg"
+                                        alt="Godmersham Park (Paperback)" class="js-open-modal"
+                                        data-modal-id="zoomModal" onerror="imgError(this)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-image-thumbs carousel next-enabled">
+                        <div class="wrapper" style="width: 240px;">
+                            <div class="inner clearfix" style="width: 320px;">
+                                <div class="book-thumb">
+                                    <div class="book-thumb-inner" data-index="-1">
+                                        <img src="https://cdn.waterstones.com/bookjackets/small/9781/5291/9781529158922.jpg"
+                                            alt="Godmersham Park (Paperback)" onerror="imgError(this)">
+                                    </div>
+                                </div>
+                                <div class="book-thumb">
+                                    <div class="book-thumb-inner" data-index="0">
+                                        <img src="https://cdn.waterstones.com/images/00252469-70x70.jpeg"
+                                            alt="Godmersham Park (Paperback)" onerror="imgError(this)">
+                                    </div>
+                                </div>
+                                <div class="book-thumb">
+                                    <div class="book-thumb-inner" data-index="1">
+                                        <img src="https://cdn.waterstones.com/images/00252467-70x70.jpeg"
+                                            alt="Godmersham Park (Paperback)" onerror="imgError(this)">
+                                    </div>
+                                </div>
+                                <div class="book-thumb">
+                                    <div class="book-thumb-inner" data-index="2">
+                                        <img src="https://cdn.waterstones.com/images/00252468-70x70.jpeg"
+                                            alt="Godmersham Park (Paperback)" onerror="imgError(this)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="carousel-control carousel-control-small next"></div>
+                        <div class="carousel-control carousel-control-small prev inactive"></div> -->
+                    </div>
+                </div>
+
+                <div class="span7 mobile-span12 alpha tablet-alpha">
+                    <div class="book-info">
+
+
+                        <a href="" class="product-sticker"
+                            style="background-image: url(https://cdn.waterstones.com/images/00073531-70x70.png);">
+                            <div class="product-sticker-hover"
+                                style="background-image: url(https://cdn.waterstones.com/images/00073532-70x70.png);">
+                            </div>
+                        </a>
+
+                        <h1 class="title"><span class="book-title" itemprop="name" id="scope_book_title">Godmersham Park
+                                (Paperback)</span></h1>
+                        <span class="contributors">
+                            <a href="" class="text-gold"><b><span itemprop="author">Gill
+                                        Hornby</span></b></a><span class="text-primary"> (author)</span> </span>
+                        <div class="rating" itemprop="aggregateRating" itemscope=""
+                            itemtype="" id="scope_product_rating">
+
+
+                            <div class="star-rating">
+                                <span class="star-icon full">★</span>
+                                <span class="star-icon full">★</span>
+                                <span class="star-icon full">★</span>
+                                <span class="star-icon full">★</span>
+                                <span class="star-icon half">★</span>
+                            </div>
+
+
+                            <a class="reviews-trigger" href="#reviews">23 Reviews</a>
+
+                            <a href=""
+                                class="icon-pencil">Sign in to write a review</a>
+                            <meta itemprop="ratingValue" content="5">
+                            <meta itemprop="reviewCount" content="23">
+                        </div>
+                    </div><!-- /book-info -->
+
+
+
+                    <div class="book-actions">
+                        <div class="buy-container ">
+
+
+                            <div class="formats-list">
+
+                                <div class="book-format clearfix">
+
+                                    <div class="price">
+                                        <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                            <b class="price-rrp">£9.99</b>
+                                            <b itemprop="price">£8.49</b>
+                                            <meta itemprop="availability" content="In stock">
+                                        </div>
+                                    </div>
+
+                                    <div class="info">
+                                        <span class="name" itemprop="bookFormat">
+                                            Paperback
+                                        </span>
+                                        <span class="subtitle">
+                                            <span itemprop="numberOfPages">432</span> Pages /
+
+                                            Published:
+                                            <meta itemprop="datePublished" content="2023-01-05">05/01/2023
+                                        </span>
+                                    </div>
+
+                                    <div class="perk-container">
+
+                                        <ul class="perk-list">
+                                            <li class="icon-checkmark">Save £1.50</li>
+
+                                            <li class="feature-good">
+                                                <span id="scope_offer_availability">10+ in stock</span>
+                                            </li>
+
+                                        </ul>
+
+                                        <p class="stock-message">
+                                            Usually dispatched within 48 hours
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <form action="/checkout/setbasketitemqty" method="post" class="basket-form">
+                                <div class="pre-add buy-inner">
+                                    <div class="button-container">
+                                        <input type="hidden" name="mode" value="add">
+                                        <input type="hidden" name="productid" value="11810514">
+                                        <input type="hidden" name="redirect"
+                                            value="/book/godmersham-park/gill-hornby/9781529158922">
+
+                                        <label>Quantity</label>
+                                        <input type="tel" name="quantity" maxlength="3" value="1"
+                                            class="input quantity">
+
+                                        <button type="submit" class="button button-teal button-buy">Add to
+                                            basket</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="post-add buy-inner text-center">
+                                    <ul class="perk-list">
+                                        <li class="feature-good">This item has been added to your basket</li>
+                                    </ul>
+                                    <div class="button-container">
+                                        <a href="" class="button button-gold">View basket</a>
+                                        <a href="" class="button button-teal">Checkout</a>
+                                    </div>
+                                </div>
+
+                                <div class="pre-add buy-inner">
+                                    <div class="collect-message">Your local Waterstones may have stock of this item.
+                                        Please check by using <span>Click &amp; Collect</span></div>
+                                    <button href="#" data-modal-id="collectModal" data-isbn="9781529158922"
+                                        class="button button-gold js-open-modal">Click <span class="light">&amp;</span>
+                                        Collect</button>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <script type="text/javascript">
+
+                        $(function () {
+                            $(".collect-form:not(.has-shop)").on("submit.getGeo", function () {
+                                var $thisForm = $(this);
+                                if ($thisForm.has('.get-location-button').length && $thisForm.find("[name=lat]").val() !== '' && $thisForm.find("[name=lng]").val() !== '') {
+
+                                    $thisForm.off("submit.getGeo").submit();
+                                } else {
+                                    var geocoder = new google.maps.Geocoder();
+                                    var searchBounds = new google.maps.LatLngBounds(
+                                        new google.maps.LatLng(49.439556958940855, -11.77734375),
+                                        new google.maps.LatLng(59.512029386502704, 7.470703125));
+                                    geocoder.geocode({ 'address': $thisForm.find("[name=search]").val() + ', Europe', bounds: searchBounds, 'region': 'EU' }, function (results, status) {
+                                        if (results.length > 0) {
+                                            $thisForm.find("[name=lat]").val(results[0].geometry.location.lat());
+                                            $thisForm.find("[name=lng]").val(results[0].geometry.location.lng());
+                                        }
+                                        $thisForm.off("submit.getGeo").submit();
+                                    });
+                                    return false;
+                                }
+                            });
+
+                            $(".book-detail-cnc-switch").on("click", function () {
+                                $(".book-detail-cnc-postcode").show();
+                                $(".book-detail-cnc-saved").hide();
+                            });
+                        });
+
+                    </script>
+
+                    <div class="top-bar email-share">
+
+                        <div class="action-icon action-share-container">
+                            <div class="share-array" style="">
+                                <a href="http://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.waterstones.com%2Fbook%2Fgodmersham-park%2Fgill-hornby%2F9781529158922"
+                                    class="icon-facebook" target="_blank" title="Facebook"></a>
+                                <a href="http://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.waterstones.com%2Fbook%2Fgodmersham-park%2Fgill-hornby%2F9781529158922&amp;text=Godmersham%20Park%20by%20Gill%20Hornby%20%7C%20Waterstones"
+                                    class="icon-twitter" target="_blank" title="Twitter"></a>
+                                <a href="http://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fcdn.waterstones.com%2Fbookjackets%2Flarge%2F9781%2F5291%2F9781529158922.jpg&amp;description=Godmersham%20Park%20by%20Gill%20Hornby%20%7C%20Waterstones"
+                                    class="icon-pinterest" target="_blank" title="Pinterest"></a>
+                            </div>
+                            <a class="action-icon icon-share" title="Share"></a>
+                        </div>
+
+
+                        <a href="#" onclick="return false;"
+                            class="action-icon icon-heart no-user secure-login init tooltipstered"></a>
+                    </div>
+
+
+                    <div class="book-detail book-format"
+                        style="border:0px; width:100%; text-align:left; margin-left:0px; padding-left:0px; padding-right:0px; font-size:17px;">
+                        <span class="stock-message" style="display:inline;">
+                            <a href="" rel="nofollow">View other formats
+                                and editions</a>
+                        </span>
+                    </div>
+                    <div style="clear:both;"></div>
+
+                </div>
+            </section>
+
+            <section class="book-info-tabs ws-tabs span12">
+                <div class="tabs-header">
+                    <a class="active" data-tab="synopsis">Synopsis</a>
+                    <div class="tab-content content-text tab-content-synopsis active" data-tab="synopsis">
+                        <div class="two-columns">
+                            <div class="pdp-waterstones-says">
+                                <img class="logo-waterstones-says"
+                                    src="https://static.waterstones.com/1.49.5/img/waterstones-says.png"
+                                    alt="Waterstones Says">
+                                <div class="clearfix"></div>
+                                <p></p>
+                                <p>The author of <em>Miss Austen</em> returns to the life of the celebrated Regency
+                                    novelist with an elegant, atmospheric account of a young governess forming a firm
+                                    friendship with the literary genius.</p>
+                                <p></p>
+                            </div>
+
+                            <div itemprop="description" id="scope_book_description">
+                                <p><strong><a href="">Waterstones Fiction Book of the
+                                            Month</a> for January 2023</strong></p>
+                                <p>On 21 January 1804, Anne Sharpe arrives at Godmersham Park in Kent to take up the
+                                    position of governess. At 31 years old, she has no previous experience of either
+                                    teaching or fine country houses. Her mother has died, and she has nowhere else to
+                                    go. Anne is left with no choice. For her new charge - twelve-year-old Fanny Austen -
+                                    Anne's arrival is all novelty and excitement.</p>
+                                <p>The governess role is a uniquely awkward one. Anne is neither one of the servants,
+                                    nor one of the family, and to balance a position between the 'upstairs' and
+                                    'downstairs' members of the household is a diplomatic chess game. One wrong move may
+                                    result in instant dismissal. Anne knows that she must never let down her guard.</p>
+                                <p>When Mr Edward Austen's family comes to stay, Anne forms an immediate attachment to
+                                    Jane. They write plays together, and enjoy long discussions. However, in the
+                                    process, Anne reveals herself as not merely pretty, charming and competent; she is
+                                    clever too. Even her sleepy, complacent mistress can hardly fail to notice.</p>
+                                <p>Meanwhile Jane's brother, Henry, begins to take an unusually strong interest in the
+                                    lovely young governess...</p>
+                                <p>And from now on, Anne's days at Godmersham Park are numbered.</p>
+                            </div>
+
+                            <p class="spec">
+                                <i>Publisher: <span itemprop="publisher">Cornerstone</span></i>
+                                <br>
+                                <i>ISBN: <span itemprop="isbn">9781529158922</span></i>
+                                <br>
+                                <i>Number of pages: <span itemprop="numberOfPages">432</span></i>
+                                <br>
+                                <i>Weight: <span itemprop="weight">298 g</span></i>
+                                <br>
+                                <i>Dimensions: <span><span itemprop="height">198</span> x <span
+                                            itemprop="width">129</span> x <span itemprop="depth">26</span> mm</span></i>
+                            </p>
+                        </div>
+                        <hr>
+                        <span class="pdp-media-reviews">MEDIA REVIEWS</span>
+                        <div class="show-desc">
+                            <p>'Displays a keen sense of wit and rich characterisation ... a thoroughly enjoyable book'
+                                - <em>The Observer</em></p>
+                            <p>'So envious of anyone yet to read this. A triumph!' - Nigella Lawson</p>
+                            <p>'A masterly piece of storytelling.' - Helena Kelly</p>
+                            <p>'The great writer is brought to life in this clever, well-researched piece of fiction' -
+                                <em>The Times</em></p>
+                            <p>'Thoroughly entertaining, Godmersham Park has some of the same understated wit and sharp
+                                observation as Austen's novels' - <em>The Sunday Times</em></p>
+                            <p>'If you love Jane Austen you're sure to enjoy Gill Hornby's stylish glimpse into the life
+                                of young governess Anne Sharp ... this elegantly written tale skilfully recreates a
+                                world where governesses are midway between the family upstairs and the servants
+                                downstairs.' - <em>The Independent</em></p>
+                            <p>'Utterly absorbing and illuminating ... Gill Hornby's best book yet.' - Esther Freud</p>
+                            <p>'I read it straight through without looking up.' - Karen Joy Fowler</p>
+                            <p>'Meticulously researched, Hornby's absorbing novel revels in the joys and tensions of
+                                life above and below stairs.' - <em>The Mail on Sunday</em></p>
+                            <p>'An invigorating riff on an author whose life and works keep on giving, and an ideal
+                                companion for your beach towel this summer.' - <em>Metro</em></p>
+                        </div>
+                    </div>
+                    <a data-tab="events">Events</a>
+                    <div class="tab-content tab-content-events" data-tab="events">
+
+                        <div class="span12 alpha omega search-result-row events-result">
+                            <a href="" class="event-preview">
+                                <img src="https://cdn.waterstones.com/bookjackets/large/9781/5291/9781529158922.jpg"
+                                    alt="An Evening with Gill Hornby">
+                            </a>
+
+                            <div class="events-result-content">
+                                <div class="author-preview-details">
+                                    <h2><a href="" class="link-invert">An
+                                            Evening with Gill Hornby</a></h2>
+                                    <p class="subtitle">
+                                        <span class="location">
+                                            <b>Cambridge</b>
+                                        </span><br>
+
+                                        Wednesday 18th January 18:00 - 19:15
+                                    </p>
+
+                                    <p>
+                                        Join Gill Hornby as she discusses her novel Godmersham Park – a powerful and
+                                        moving novel featuring Jane Austen's closest friend and confidante. Skillfully
+                                        recreating a world where governesses are midway between the family upstairs and
+                                        the servants downstairs, Hornby's well-researched novel revels in the joys and
+                                        tensions of the Georgian era home. She will be in conversation with Tory Young.
+
+                                        Book signing to follow.
+                                    </p>
+
+                                    <p>
+
+                                    </p>
+                                    <a class="button button-teal"
+                                        href="">View</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="span12 alpha omega search-result-row events-result">
+                            <a href="" class="event-preview">
+                                <img src="https://cdn.waterstones.com/bookjackets/large/9781/5291/9781529158922.jpg"
+                                    alt="Book Club - Feb '23">
+                            </a>
+
+                            <div class="events-result-content">
+                                <div class="author-preview-details">
+                                    <h2><a href="" class="link-invert">Book Club - Feb
+                                            '23</a></h2>
+                                    <p class="subtitle">
+                                        <span class="location">
+                                            <b>Derby</b>
+                                        </span><br>
+
+                                        Wednesday 1st February 18:00 - 19:00
+                                    </p>
+
+                                    <p>
+                                        Come along to our friendly and informal book club to chat about
+                                        the best new fiction. Everyone welcome! February's picks are Godmersham Park by
+                                        Gill Hornby and Harlem Shuffle By Colson Whitehead.
+                                    </p>
+
+                                    <p>
+
+                                    </p>
+                                    <a class="button button-teal" href="">View</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tabs-content-container clearfix">
+                    <div class="tab-content content-text tab-content-synopsis active" data-tab="synopsis">
+                        <div class="two-columns">
+                            <div class="pdp-waterstones-says">
+                                <img class="logo-waterstones-says"
+                                    src="https://static.waterstones.com/1.49.5/img/waterstones-says.png"
+                                    alt="Waterstones Says">
+                                <div class="clearfix"></div>
+                                <p></p>
+                                <p>The author of <em>Miss Austen</em> returns to the life of the celebrated Regency
+                                    novelist with an elegant, atmospheric account of a young governess forming a firm
+                                    friendship with the literary genius.</p>
+                                <p></p>
+                            </div>
+
+                            <div itemprop="description" id="scope_book_description">
+                                <p><strong><a href="">Waterstones Fiction Book of the
+                                            Month</a> for January 2023</strong></p>
+                                <p>On 21 January 1804, Anne Sharpe arrives at Godmersham Park in Kent to take up the
+                                    position of governess. At 31 years old, she has no previous experience of either
+                                    teaching or fine country houses. Her mother has died, and she has nowhere else to
+                                    go. Anne is left with no choice. For her new charge - twelve-year-old Fanny Austen -
+                                    Anne's arrival is all novelty and excitement.</p>
+                                <p>The governess role is a uniquely awkward one. Anne is neither one of the servants,
+                                    nor one of the family, and to balance a position between the 'upstairs' and
+                                    'downstairs' members of the household is a diplomatic chess game. One wrong move may
+                                    result in instant dismissal. Anne knows that she must never let down her guard.</p>
+                                <p>When Mr Edward Austen's family comes to stay, Anne forms an immediate attachment to
+                                    Jane. They write plays together, and enjoy long discussions. However, in the
+                                    process, Anne reveals herself as not merely pretty, charming and competent; she is
+                                    clever too. Even her sleepy, complacent mistress can hardly fail to notice.</p>
+                                <p>Meanwhile Jane's brother, Henry, begins to take an unusually strong interest in the
+                                    lovely young governess...</p>
+                                <p>And from now on, Anne's days at Godmersham Park are numbered.</p>
+                            </div>
+
+                            <p class="spec">
+                                <i>Publisher: <span itemprop="publisher">Cornerstone</span></i>
+                                <br>
+                                <i>ISBN: <span itemprop="isbn">9781529158922</span></i>
+                                <br>
+                                <i>Number of pages: <span itemprop="numberOfPages">432</span></i>
+                                <br>
+                                <i>Weight: <span itemprop="weight">298 g</span></i>
+                                <br>
+                                <i>Dimensions: <span><span itemprop="height">198</span> x <span
+                                            itemprop="width">129</span> x <span itemprop="depth">26</span> mm</span></i>
+                            </p>
+                        </div>
+                        <hr>
+                        <span class="pdp-media-reviews">MEDIA REVIEWS</span>
+                        <div class="show-desc show-container show-more" style="height: 124px;">
+                            <p>'Displays a keen sense of wit and rich characterisation ... a thoroughly enjoyable book'
+                                - <em>The Observer</em></p>
+                            <p>'So envious of anyone yet to read this. A triumph!' - Nigella Lawson</p>
+                            <p>'A masterly piece of storytelling.' - Helena Kelly</p>
+                            <p>'The great writer is brought to life in this clever, well-researched piece of fiction' -
+                                <em>The Times</em></p>
+                            <p>'Thoroughly entertaining, Godmersham Park has some of the same understated wit and sharp
+                                observation as Austen's novels' - <em>The Sunday Times</em></p>
+                            <p>'If you love Jane Austen you're sure to enjoy Gill Hornby's stylish glimpse into the life
+                                of young governess Anne Sharp ... this elegantly written tale skilfully recreates a
+                                world where governesses are midway between the family upstairs and the servants
+                                downstairs.' - <em>The Independent</em></p>
+                            <p>'Utterly absorbing and illuminating ... Gill Hornby's best book yet.' - Esther Freud</p>
+                            <p>'I read it straight through without looking up.' - Karen Joy Fowler</p>
+                            <p>'Meticulously researched, Hornby's absorbing novel revels in the joys and tensions of
+                                life above and below stairs.' - <em>The Mail on Sunday</em></p>
+                            <p>'An invigorating riff on an author whose life and works keep on giving, and an ideal
+                                companion for your beach towel this summer.' - <em>Metro</em></p>
+                            <div class="show-button">Show more</div>
+                        </div>
+                    </div>
+                    <div class="tab-content tab-content-events" data-tab="events">
+
+                        <div class="span12 alpha omega search-result-row events-result">
+                            <a href="" class="event-preview">
+                                <img src="https://cdn.waterstones.com/bookjackets/large/9781/5291/9781529158922.jpg"
+                                    alt="An Evening with Gill Hornby">
+                            </a>
+
+                            <div class="events-result-content">
+                                <div class="author-preview-details">
+                                    <h2><a href="" class="link-invert">An
+                                            Evening with Gill Hornby</a></h2>
+                                    <p class="subtitle">
+                                        <span class="location">
+                                            <b>Cambridge</b>
+                                        </span><br>
+
+                                        Wednesday 18th January 18:00 - 19:15
+                                    </p>
+
+                                    <p>
+                                        Join Gill Hornby as she discusses her novel Godmersham Park – a powerful and
+                                        moving novel featuring Jane Austen's closest friend and confidante. Skillfully
+                                        recreating a world where governesses are midway between the family upstairs and
+                                        the servants downstairs, Hornby's well-researched novel revels in the joys and
+                                        tensions of the Georgian era home. She will be in conversation with Tory Young.
+
+                                        Book signing to follow.
+                                    </p>
+
+                                    <p>
+
+                                    </p>
+                                    <a class="button button-teal"
+                                        href="">View</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="span12 alpha omega search-result-row events-result">
+                            <a href="" class="event-preview">
+                                <img src="https://cdn.waterstones.com/bookjackets/large/9781/5291/9781529158922.jpg"
+                                    alt="Book Club - Feb '23">
+                            </a>
+
+                            <div class="events-result-content">
+                                <div class="author-preview-details">
+                                    <h2><a href="" class="link-invert">Book Club - Feb
+                                            '23</a></h2>
+                                    <p class="subtitle">
+                                        <span class="location">
+                                            <b>Derby</b>
+                                        </span><br>
+
+                                        Wednesday 1st February 18:00 - 19:00
+                                    </p>
+
+                                    <p>
+                                        Come along to our friendly and informal book club to chat about
+                                        the best new fiction. Everyone welcome! February's picks are Godmersham Park by
+                                        Gill Hornby and Harlem Shuffle By Colson Whitehead.
+                                    </p>
+
+                                    <p>
+
+                                    </p>
+                                    <a class="button button-teal" href="">View</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="book-recommends mobile-section span12" name="recommends">
+                <h2 class="heading-fg">You may also be interested in...</h2>
+                <!-- Swiper -->
+                <div class="swiper-container swiper-container-horizontal">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide book-preview swiper-slide-active book0" data-carousel-position="0"
+                            data-isbn="9781408891384" data-productid="8224240" data-preorder="0" data-buy="1"
+                            data-cnc="1" data-plusexclusive="0" style="width: 153.2px; margin-right: 20px;">
+
+                            <div title="The Song of Achilles">
+                                <div class="image-wrap">
+                                    <div class="image-container">
+                                        <a href="">
+                                            <img src="https://cdn.waterstones.com/override/v1/large/9781/4088/9781408891384.jpg"
+                                                alt="The Song of Achilles" class="swiper-lazy swiper-lazy-loaded"
+                                                onerror="this.src='/images/cover404.png'">
+
+                                        </a>
+                                        <!-- <div class="added-basket">
+                                            <div>
+                                                <i class="icon-tick sprite-icon"></i>
+                                                <span>Added to basket</span>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="first-click-overlay"></div>
+                                    <div class="hover-layer">
+                                        <div class="hover-item"></div>
+                                    </div>
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="title-wrap">
+                                        <a href=""
+                                            class="title link-invert">The Song of Achilles</a>
+                                    </div>
+                                    <div class="author-wrap">
+                                        <span class="authors"><a
+                                                href=""
+                                                class="text-gold"><b>Madeline Miller</b></a> </span>
+                                    </div>
+                                    <div class="book-price">
+                                        <div>
+                                            <span class="price">£9.99</span>
+                                        </div>
+                                        <span class="format">
+                                            Paperback
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide book-preview swiper-slide-next book1" data-carousel-position="1"
+                            data-isbn="9781408890042" data-productid="8927533" data-preorder="0" data-buy="1"
+                            data-cnc="1" data-plusexclusive="0" style="width: 153.2px; margin-right: 20px;">
+                            <div title="Circe">
+                                <div class="image-wrap">
+                                    <div class="image-container">
+                                        <a href="">
+                                            <img src="https://cdn.waterstones.com/bookjackets/large/9781/4088/9781408890042.jpg"
+                                                alt="Circe" class="swiper-lazy swiper-lazy-loaded"
+                                                onerror="this.src='/images/cover404.png'">
+
+                                        </a>
+                                        <!-- <div class="added-basket">
+                                            <div>
+                                                <i class="icon-tick sprite-icon"></i>
+                                                <span>Added to basket</span>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="first-click-overlay"></div>
+                                    <div class="hover-layer">
+                                        <div class="hover-item"></div>
+                                    </div>
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="title-wrap">
+                                        <a href=""
+                                            class="title link-invert">Circe</a>
+                                    </div>
+                                    <div class="author-wrap">
+                                        <span class="authors"><a href=""
+                                                class="text-gold"><b>Madeline Miller</b></a> </span>
+                                    </div>
+                                    <div class="book-price">
+                                        <div>
+                                            <span class="price">£9.99</span>
+                                        </div>
+                                        <span class="format">
+                                            Paperback
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide book-preview book2" data-carousel-position="2" data-isbn="9781838930509"
+                            data-productid="9659134" data-preorder="0" data-buy="1" data-cnc="1" data-plusexclusive="0"
+                            style="width: 153.2px; margin-right: 20px;">
+
+                            <div title="Pachinko">
+                                <div class="image-wrap">
+                                    <div class="image-container">
+                                        <a href="">
+                                            <img src="https://cdn.waterstones.com/bookjackets/large/9781/8389/9781838930509.jpg"
+                                                alt="Pachinko" class="swiper-lazy swiper-lazy-loaded"
+                                                onerror="this.src='/images/cover404.png'">
+
+                                        </a>
+                                        <!-- <div class="added-basket">
+                                            <div>
+                                                <i class="icon-tick sprite-icon"></i>
+                                                <span>Added to basket</span>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="first-click-overlay"></div>
+                                    <div class="hover-layer">
+                                        <div class="hover-item">
+                                            <form class="basket-form" method="post" action="/checkout/setbasketitemqty">
+                                                <!-- <div class="pre-add"><input type="hidden" name="mode" value="add"
+                                                        tabindex="0"><input type="hidden" name="productid"
+                                                        value="9659134" tabindex="0"><input type="hidden"
+                                                        name="quantity" value="1" tabindex="0"><input type="hidden"
+                                                        name="redirect" value="/" tabindex="0"><button
+                                                        class="button-buy button button-teal button-small" type="submit"
+                                                        tabindex="0">Add to Basket</button><button
+                                                        class="button button-gold button-small js-open-modal"
+                                                        tabindex="0" data-modal-id="collectModal"
+                                                        data-isbn="9781838930509">Click <span class="light">&amp;</span>
+                                                        Collect</button></div>
+                                                <div class="post-add" style="display:none;"><a
+                                                        class="button button-gold button-basket button-small"
+                                                        href="">View basket</a><a
+                                                        class="button button-teal button-basket button-small"
+                                                        href="">Checkout</a></div> -->
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="title-wrap">
+                                        <a href=""
+                                            class="title link-invert">Pachinko</a>
+                                    </div>
+                                    <div class="author-wrap">
+                                        <span class="authors"><a href=""
+                                                class="text-gold"><b>Min Jin Lee</b></a> </span>
+                                    </div>
+                                    <div class="book-price">
+                                        <div>
+                                            <span class="price">£8.99</span>
+                                        </div>
+                                        <span class="format">
+                                            Paperback
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide book-preview book3" data-carousel-position="3" data-isbn="9781784162122"
+                            data-productid="6367931" data-preorder="0" data-buy="1" data-cnc="1" data-plusexclusive="0"
+                            style="width: 153.2px; margin-right: 20px;">
+
+                            <div title="The Book Thief">
+                                <div class="image-wrap">
+                                    <div class="image-container">
+                                        <a href="">
+                                            <img src="https://cdn.waterstones.com/bookjackets/large/9781/7841/9781784162122.jpg"
+                                                alt="The Book Thief" class="swiper-lazy swiper-lazy-loaded"
+                                                onerror="this.src='/images/cover404.png'">
+
+                                        </a>
+                                        <!-- <div class="added-basket">
+                                            <div>
+                                                <i class="icon-tick sprite-icon"></i>
+                                                <span>Added to basket</span>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="first-click-overlay"></div>
+                                    <div class="hover-layer">
+                                        <div class="hover-item"></div>
+                                    </div>
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="title-wrap">
+                                        <a href=""
+                                            class="title link-invert">The Book Thief</a>
+                                    </div>
+                                    <div class="author-wrap">
+                                        <span class="authors"><a href="/book/the-book-thief/markus-zusak/9781784162122"
+                                                class="text-gold"><b>Markus Zusak</b></a> </span>
+                                    </div>
+                                    <div class="book-price">
+                                        <div>
+                                            <span class="price">£8.99</span>
+                                        </div>
+                                        <span class="format">
+                                            Paperback
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide book-preview book4" data-carousel-position="4" data-isbn="9781472223821"
+                            data-productid="10108892" data-preorder="0" data-buy="1" data-cnc="1" data-plusexclusive="0"
+                            style="width: 153.2px; margin-right: 20px;">
+
+                            <div title="Hamnet">
+                                <div class="image-wrap">
+                                    <div class="image-container">
+                                        <a href="/book/hamnet/maggie-ofarrell/9781472223821">
+                                            <img src="https://cdn.waterstones.com/bookjackets/large/9781/4722/9781472223821.jpg"
+                                                alt="Hamnet" class="swiper-lazy swiper-lazy-loaded"
+                                                onerror="this.src='/images/cover404.png'">
+
+                                        </a>
+                                        <!-- <div class="added-basket">
+                                            <div>
+                                                <i class="icon-tick sprite-icon"></i>
+                                                <span>Added to basket</span>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="first-click-overlay"></div>
+                                    <div class="hover-layer">
+                                        <div class="hover-item"></div>
+                                    </div>
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="title-wrap">
+                                        <a href="/book/hamnet/maggie-ofarrell/9781472223821"
+                                            class="title link-invert">Hamnet</a>
+                                    </div>
+                                    <div class="author-wrap">
+                                        <span class="authors"><a href="/book/hamnet/maggie-ofarrell/9781472223821"
+                                                class="text-gold"><b>Maggie O'Farrell</b></a> </span>
+                                    </div>
+                                    <div class="book-price">
+                                        <div>
+                                            <span class="price">£9.99</span>
+                                        </div>
+                                        <span class="format">
+                                            Paperback
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide book-preview book" data-carousel-position="5" data-isbn="9781472223821"
+                            data-productid="10108892" data-preorder="0" data-buy="1" data-cnc="1" data-plusexclusive="0"
+                            style="width: 153.2px; margin-right: 20px;">
+
+                            <div title="Hamnet">
+                                <div class="image-wrap">
+                                    <div class="image-container">
+                                        <a href="/book/hamnet/maggie-ofarrell/9781472223821">
+                                            <img src="https://cdn.waterstones.com/bookjackets/large/9781/4722/9781472223821.jpg"
+                                                alt="Hamnet" class="swiper-lazy swiper-lazy-loaded"
+                                                onerror="this.src='/images/cover404.png'">
+
+                                        </a>
+                                        <!-- <div class="added-basket">
+                                            <div>
+                                                <i class="icon-tick sprite-icon"></i>
+                                                <span>Added to basket</span>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="first-click-overlay"></div>
+                                    <div class="hover-layer">
+                                        <div class="hover-item"></div>
+                                    </div>
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="title-wrap">
+                                        <a href="/book/hamnet/maggie-ofarrell/9781472223821"
+                                            class="title link-invert">Hamnet</a>
+                                    </div>
+                                    <div class="author-wrap">
+                                        <span class="authors"><a href="/book/hamnet/maggie-ofarrell/9781472223821"
+                                                class="text-gold"><b>Maggie O'Farrell</b></a> </span>
+                                    </div>
+                                    <div class="book-price">
+                                        <div>
+                                            <span class="price">£9.99</span>
+                                        </div>
+                                        <span class="format">
+                                            Paperback
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide book-preview book6" data-carousel-position="6" data-isbn="9781472223821"
+                            data-productid="10108892" data-preorder="0" data-buy="1" data-cnc="1" data-plusexclusive="0"
+                            style="width: 153.2px; margin-right: 20px;">
+
+                            <div title="Hamnet">
+                                <div class="image-wrap">
+                                    <div class="image-container">
+                                        <a href="/book/hamnet/maggie-ofarrell/9781472223821">
+                                            <img src="https://cdn.waterstones.com/bookjackets/large/9781/4722/9781472223821.jpg"
+                                                alt="Hamnet" class="swiper-lazy swiper-lazy-loaded"
+                                                onerror="this.src='/images/cover404.png'">
+
+                                        </a>
+                                        <!-- <div class="added-basket">
+                                            <div>
+                                                <i class="icon-tick sprite-icon"></i>
+                                                <span>Added to basket</span>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="first-click-overlay"></div>
+                                    <div class="hover-layer">
+                                        <div class="hover-item"></div>
+                                    </div>
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="title-wrap">
+                                        <a href="/book/hamnet/maggie-ofarrell/9781472223821"
+                                            class="title link-invert">Hamnet</a>
+                                    </div>
+                                    <div class="author-wrap">
+                                        <span class="authors"><a href="/book/hamnet/maggie-ofarrell/9781472223821"
+                                                class="text-gold"><b>Maggie O'Farrell</b></a> </span>
+                                    </div>
+                                    <div class="book-price">
+                                        <div>
+                                            <span class="price">£9.99</span>
+                                        </div>
+                                        <span class="format">
+                                            Paperback
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- Navigation -->
+                    <div class="swiper-button-next swiper-button-black"></div>
+                    <div class="swiper-button-prev swiper-button-black swiper-button-disabled"></div>
+                </div>
+            </section>
+
+
+            <div class="book-reviews mobile-section span12">
+                <div class="reviews-header anchor-fix" id="reviews">
+                    <a id="write-review"></a>
+                    <h2 class="heading-fg review-header-title">Reviews</h2>
+                    <a href="/reviews/godmersham-park/gill-hornby/9781529158922">View all</a>
+                    <a href="/signin?ov=1&amp;continue=/book/godmersham-park/gill-hornby/9781529158922%23write-review"
+                        class="pdp-write-review">Sign In To Write A Review</a>
+
+                </div>
+                <div class="row reviews-list">
+                    <div class="span12 alpha omega reviews-row">
+                        <div class="book-review span4 tablet-span6 mobile-span12 mobile-alpha mobile-omega alpha"
+                            itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                            <div class="review-text-wrap" style="min-height: 214px;">
+                                <div class="review-top review-list-item clearfix">
+                                    <div class="avatar-placeholder user-picture pull-left"></div>
+
+                                    <h3 class="intro" itemprop="name">“A wonderful historical novel..”</h3>
+                                </div>
+
+
+                                <p class="p-medium" itemprop="description">
+                                    ‘Miss Austen’ introduced us to the inner circle of Jane Austen and her sister
+                                    Cassandra. In ‘Godmersham Park’ Hornby carries on telling us more about Jane’s
+                                    world. In this book we are introduced to Anne Sharp who...
+                                    <a href="/books/reviews/isbn/9781529158922#review-251074">More</a>
+                                </p>
+                            </div>
+
+                            <div class="meta">
+                                <div style="float:left; margin-top:0px; margin-right:5px;">Hardback edition</div>
+                                <div class="star-rating" itemprop="reviewRating" itemscope=""
+                                    itemtype="http://schema.org/Rating">
+                                    <meta itemprop="worstRating" content="1">
+                                    <meta itemprop="ratingValue" content="5">
+                                    <meta itemprop="bestRating" content="5">
+
+                                    <span class="star-icon full active">★</span>
+                                    <span class="star-icon full active">★</span>
+                                    <span class="star-icon full active">★</span>
+                                    <span class="star-icon full active">★</span>
+                                    <span class="star-icon full active">★</span>
+                                    <!-- <div class="active"></div>
+                                    <div class="active"></div>
+                                    <div class="active"></div>
+                                    <div class="active"></div>
+                                    <div class="active"></div> -->
+                                </div>
+
+                                <a class="rec-count"
+                                    href="/reviews/godmersham-park/gill-hornby/9781529125894/251074#review-251074">1
+                                    similar book recommended</a>
+
+                                <div>
+                                    <a class="user link-invert" itemprop="author"
+                                        href="/reviews/user/id/2536823/emine-at-bromley">Emine at Bromley</a>
+                                </div>
+
+                                <div class="review-item-small-functions">
+                                    <div class="comment-bottom">
+                                        <div itemprop="datePublished">11th May 2022</div>
+                                        <div>
+                                            <a
+                                                href="/signin/?ov=1&amp;continue=/books/reviews/isbn/9781529158922/replies/251074#review-251074">Comment
+                                                (0)</a>
+                                        </div>
+                                        <div>
+                                            <a href="/signin?ov=1&amp;continue=/book/godmersham-park/gill-hornby/9781529158922"
+                                                class="icon-pencil">Report (Sign in)</a>
+                                        </div>
+
+                                        <span>
+                                            <span>Helpful?</span>
+                                            <span class="comment-vote-container">
+                                                <a class="comment-vote vote-up  "
+                                                    href="/books/reviewvote/id/251074/positive/1" rel="nofollow"
+                                                    title="Thumbs up">Upvote</a>
+                                                <b class="vote-count vote-count-up">40</b>
+
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-review span4 tablet-span6 mobile-span12 mobile-alpha mobile-omega tablet-omega"
+                            itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                            <div class="review-text-wrap" style="min-height: 214px;">
+                                <div class="review-top review-list-item clearfix">
+                                    <div class="avatar-placeholder user-picture pull-left"></div>
+
+                                    <h3 class="intro" itemprop="name">“Charming”</h3>
+                                </div>
+
+                                <div class="bookseller-review-tag"></div>
+
+                                <p class="p-medium" itemprop="description">
+                                    Godmersham Park follows Anne Sharpe, the real life friend of Jane austen , who
+                                    falling on hard times was forced to seek employment as a governess in the home of
+                                    Jane's brother Edward. Although based on a...
+                                    <a href="/books/reviews/isbn/9781529158922#review-249335">More</a>
+                                </p>
+                            </div>
+
+                            <div class="meta">
+                                <div style="float:left; margin-top:0px; margin-right:5px;">Hardback edition</div>
+                                <div class="star-rating" itemprop="reviewRating" itemscope=""
+                                    itemtype="http://schema.org/Rating">
+                                    <meta itemprop="worstRating" content="1">
+                                    <meta itemprop="ratingValue" content="5">
+                                    <meta itemprop="bestRating" content="5">
+
+                                    <span class="star-icon full active">★</span>
+                                    <span class="star-icon full active">★</span>
+                                    <span class="star-icon full active">★</span>
+                                    <span class="star-icon full active">★</span>
+                                    <span class="star-icon full active">★</span>
+                                </div>
+
+
+                                <div>
+                                    <a class="user link-invert" itemprop="author"
+                                        href="/reviews/user/id/5529526/emily-curnow">emily curnow</a>
+                                </div>
+
+                                <div class="review-item-small-functions">
+                                    <div class="comment-bottom">
+                                        <div itemprop="datePublished">27th April 2022</div>
+                                        <div>
+                                            <a
+                                                href="/signin/?ov=1&amp;continue=/books/reviews/isbn/9781529158922/replies/249335#review-249335">Comment
+                                                (0)</a>
+                                        </div>
+                                        <div>
+                                            <a href="/signin?ov=1&amp;continue=/book/godmersham-park/gill-hornby/9781529158922"
+                                                class="icon-pencil">Report (Sign in)</a>
+                                        </div>
+
+                                        <span>
+                                            <span>Helpful?</span>
+                                            <span class="comment-vote-container">
+                                                <a class="comment-vote vote-up  "
+                                                    href="/books/reviewvote/id/249335/positive/1" rel="nofollow"
+                                                    title="Thumbs up">Upvote</a>
+                                                <b class="vote-count vote-count-up">20</b>
+
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-review span4 tablet-span6 mobile-span12 mobile-alpha mobile-omega omega tablet-hide mobile-show"
+                            itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                            <div class="review-text-wrap" style="min-height: 214px;">
+                                <div class="review-top review-list-item clearfix">
+                                    <div class="avatar-placeholder user-picture pull-left"></div>
+
+                                    <h3 class="intro" itemprop="name">“A beautifully written novel”</h3>
+                                </div>
+
+                                <div class="bookseller-review-tag"></div>
+
+                                <p class="p-medium" itemprop="description">
+                                    I loved Miss Austen and when I heard about this title, I knew I had to read it!<br>
+                                    Many thanks to the publisher for sending me a proof early <br>
+                                    I really enjoyed this novel, for its well written heroine Anne Sharp and...
+                                    <a href="/books/reviews/isbn/9781529158922#review-250996">More</a>
+                                </p>
+                            </div>
+
+                            <div class="meta">
+                                <div style="float:left; margin-top:0px; margin-right:5px;">Hardback edition</div>
+                                <div class="star-rating" itemprop="reviewRating" itemscope=""
+                                    itemtype="http://schema.org/Rating">
+                                    <meta itemprop="worstRating" content="1">
+                                    <meta itemprop="ratingValue" content="5">
+                                    <meta itemprop="bestRating" content="5">
+
+                                    <span class="star-icon full active">★</span>
+                                    <span class="star-icon full active">★</span>
+                                    <span class="star-icon full active">★</span>
+                                    <span class="star-icon full active">★</span>
+                                    <span class="star-icon full active">★</span>
+                                    <!-- <div class="active"></div>
+                                    <div class="active"></div>
+                                    <div class="active"></div>
+                                    <div class="active"></div>
+                                    <div class="active"></div> -->
+                                </div>
+
+
+                                <div>
+                                    <a class="user link-invert" itemprop="author"
+                                        href="/reviews/user/id/11946623/ruth-barkley">Ruth Barkley</a>
+                                </div>
+
+                                <div class="review-item-small-functions">
+                                    <div class="comment-bottom">
+                                        <div itemprop="datePublished">10th May 2022</div>
+                                        <div>
+                                            <a
+                                                href="/signin/?ov=1&amp;continue=/books/reviews/isbn/9781529158922/replies/250996#review-250996">Comment
+                                                (0)</a>
+                                        </div>
+                                        <div>
+                                            <a href="/signin?ov=1&amp;continue=/book/godmersham-park/gill-hornby/9781529158922"
+                                                class="icon-pencil">Report (Sign in)</a>
+                                        </div>
+
+                                        <span>
+                                            <span>Helpful?</span>
+                                            <span class="comment-vote-container">
+                                                <a class="comment-vote vote-up  "
+                                                    href="/books/reviewvote/id/250996/positive/1" rel="nofollow"
+                                                    title="Thumbs up">Upvote</a>
+                                                <b class="vote-count vote-count-up">9</b>
+
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span12 alpha omega reviews-write">
+                        <p>Please <a
+                                href="/signin?ov=1&amp;continue=/book/godmersham-park/gill-hornby/9781529158922">sign
+                                in</a> to write a review</p>
+                    </div>
+                    <div class="span12 alpha omega reviews-success content-text">
+                        <p class="message">
+                            Your review has been submitted successfully.
+                        </p>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div><!-- book microdata ends -->
+    </div>
+
+
+    <!-- <footer class="footer-position">
+        <div class="side-footer">
+            <div class="container">
+                <div class="contact-footer">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img style="width: 180px; height: 90px;" class="img-responsive" src="../images/logo_tem2.png"
+                                alt="Doflamingo Bookstore">
+                        </a>
+                    </div>
+
+                    <p class="marker-first">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Khu Phố 6, Phường Linh Trung, TP. Thủ Đức, TP. HCM</span>
+                    </p>
+                    <p class="marker-first">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Hotline: 0123456789</span>
+                    </p>
+                    <p class="marker-first">
+                        <i class="far fa-envelope"></i>
+                        <span>Email: abc.bookstore@gmail.com</span>
+                    </p>
+                    <p>
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Giấy phép DKKD số 0123456789, cấp lần thứ 6 năm 2019</span>
+                    </p>
+                </div>
+
+                <div id="support" user-footer>
+                    <div class="support">
+                        <div class="support-user">
+                            <h4>Hỗ trợ khách hàng</h4>
+                            <div>
+                                <ul>
+                                    <li><a href="">Câu hỏi thường gặp</a></li>
+                                    <li><a href="">Điều khoản dịch vụ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="policy">
+                            <h4>Chính sách</h4> 
+                            <div>
+                                <ul> 
+                                    <li><a href="">Chính sách bảo mật</a></li>
+                                    <li><a href="">Chính sách thanh toán</a></li>
+                                    <li><a href="">Chính sách vận chuyển</a></li>
+                                    <li><a href="">Chính sách đổi trả</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class-="email-group">
+                        <div class="email">
+                            <h4>Đăng ký nhận tin</h4>
+                            <p>Hãy nhập email của bạn vào ô dưới đây để có thể nhận được tất cả tin tức mới nhất của 
+                                ABC</p>
+                            <div class="input-group">
+                                <form action="">
+                                    <input type="email" value="" placeholder="Nhập email của bạn..."
+                                        name="contact[email]" id="Email" class="input-group-field" autocorrect="off"
+                                        autocapitalize="off">
+                                </form>
+                                <button type="submit" class="button-btn1" name="subscribe" id="subscribe">Đăng
+                                    ký</button>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="connect-footer">
+                    <div class="connect">
+                        <h4>Kết nối với chúng tôi</h4>
+                        <div class="icon-footer">
+                            <a href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <img style="width: 200px; height: 200px; margin-top: 50px;" src="../images/atom.png" alt="">
+                </div>               
+            </div>
+        </div>
+    </footer>  -->
+  
+    <!-- <script src="../js/main.js"></script> -->
+</body>
+
+</html>

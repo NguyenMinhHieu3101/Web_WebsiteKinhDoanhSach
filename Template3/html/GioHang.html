@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/GioHang.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <title>Giỏ Hàng</title>
+    </head>
+    <body>
+        <div class="home">
+            <div class="header">
+                <div class="logo">
+                    <img
+                        class="img_logo"
+                        src="//theme.hstatic.net/1000376556/1000707101/14/logo.png?v=198"
+                        alt="hikaru shop"
+                        title="hikaru shop"
+                    />
+                </div>
+
+                <div class="search_box">
+                    <div class="search">
+                        <input type="text" class="searchTerm" placeholder="Tìm kiếm sản phẩm" />
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="end">
+                    <div class="login_div_icon">
+                        <i class="fa fa-user login_icon fa-lg"></i>
+                    </div>
+                    <div class="login_div_text">
+                        <strong class="login_text">Tài khoản</strong>
+                    </div>
+                    <div class="cart_div_icon">
+                        <i class="fa-solid fa-cart-plus fa-lg cart_icon"></i>
+                    </div>
+                    <div class="cart_div_text">
+                        <strong class="login_text">Giỏ hàng</strong>
+                    </div>
+                </div>
+
+                <!-- End account -->
+            </div>
+
+            <div class="topnav">
+                <a href="">TRANG CHỦ</a>
+                <a href="">SẢN PHẨM</a>
+                <a href="">BLOG</a>
+                <a href="">SỰ KIỆN</a>
+                <a href="">TRỢ GIÚP</a>
+                <a href="">GIỚI THIỆU</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="">TRANG CHỦ</a>
+                    <a href="">SẢN PHẨM</a>
+                    <a href="">BLOG</a>
+                    <a href="">SỰ KIỆN</a>
+                    <a href="">TRỢ GIÚP</a>
+                    <a href="">GIỚI THIỆU</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- content -->
+        <div class="container">
+            <!-- Begin empty cart -->
+
+            <!-- Begin cart -->
+            <div class="row my-2">
+
+                <div class="col-12" style="overflow-x:auto; ">
+                    <table class="table" style="margin-top: 3vw;">
+                        <tr class="text-center align-middle text-light" style="font-size:x-large">
+                            <th>Mã</th>
+                            <th>Hình</th>
+                            <th>Tên</th>
+                            <th>Số lượng</th>
+                            <th>Đơn giá</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                        <tbody id="dssp">
+                            <tr class="text-center align-middle">
+                                <td class="text-center align-middle">H01</td>
+                                <td class="justify-content-center">
+                                    <div>
+                                        <img style="width:20vw;" class="img-fluid"
+                                            src="../images/bia_co-may-tri-giac (1).jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle">HAI SỐ PHẬN</td>
+                                <td class="text-center align-middle"><input type="number" min="1" max="10" value="1"
+                                        name=""></td>
+                                <td class="text-center align-middle"><span>1000</span>đ</td>
+                                <td class="text-center align-middle"><span>1000</span>đ</td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">H02</td>
+                                <td class="text-center align-middle"><img style="width:20vw;" class="img-fluid"
+                                        src="../images/autumn-books-and-coffee-vector.jpg" alt=""></td>
+                                <td class="text-center align-middle">NÚI CHUỘT QUÉT</td>
+                                <td class="text-center align-middle"><input type="number" min="1" max="10" value="1"
+                                        name=""></td>
+                                <td class="text-center align-middle"><span>2000</span>đ</td>
+                                <td class="text-center align-middle"><span>2000</span>đ</td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">H03</td>
+                                <td class="text-center align-middle"><img style="width:20vw;" class="img-fluid"
+                                        src="../images/frozenplanet2.jpeg" alt="">
+                                </td>
+                                <td class="text-center align-middle">TẾT LÀ ĐÂY</td>
+                                <td class="text-center align-middle"><input type="number" min="1" max="10" value="1"
+                                        name=""></td>
+                                <td class="text-center align-middle"><span>3000</span>đ</td>
+                                <td class="text-center align-middle"><span>3000</span>đ</td>
+
+
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12" style="text-align:left">
+                    <label for="note" style="color: var(--main-color);">TỔNG TIỀN: </label> <span
+                        style="font-size: 20px;">3000</span>đ</td><br>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" style="text-align:left">
+                    <label for="note" style="color: var(--main-color);">Ghi chú </label><br>
+                    <textarea id="note" name="note" class="bg-light text-dark" rows="8" cols="50"></textarea>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-3 ">
+                <button style="margin-right: 25px;margin-top:15px; background-color:var(--main-color);" type="submit"
+                    id="checkout" class="col-auto btn text-light" name="checkout" value="">Thanh toán</button>
+                <button
+                    style="margin-right: 75px;margin-top:15px; background-color:white; color: var(--main-color)!important; border-color: var(--main-color)!important;"
+                    type="submit" id="update-cart" class="col-auto btn text-light " name="update" value="">Cập
+                    nhật</button>
+            </div>
+
+            <div class="row justify-content-center ">
+                <a href="SanPham.html" class="align-middle" style="color: var(--main-color); margin-bottom:15px">
+                    Tiếp tục mua hàng
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer-position">
+            <div class="side-footer">
+                <div class="container">
+                    <div class="contact-footer">
+                        <div class="footer-logo">
+                            <a href="/">
+                                <img
+                                    src="https://theme.hstatic.net/200000287623/1000800165/14/footer_logo.png?v=203"
+                                    alt="ABC Bookstore"
+                                />
+                            </a>
+                        </div>
+
+                        <p class="marker-first">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Khu Phố 6, Phường Linh Trung, TP. Thủ Đức, TP. HCM</span>
+                        </p>
+                        <p class="marker-first">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Hotline: 0123456789</span>
+                        </p>
+                        <p class="marker-first">
+                            <i class="far fa-envelope"></i>
+                            <span>Email: abc.bookstore@gmail.com</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Giấy phép DKKD số 0123456789, cấp lần thứ 6 năm 2019</span>
+                        </p>
+                    </div>
+
+                    <div user-footer>
+                        <div class="support">
+                            <div class="support-user">
+                                <h4>Hỗ trợ khách hàng</h4>
+                                <div>
+                                    <ul>
+                                        <li><a href="">Câu hỏi thường gặp</a></li>
+                                        <li><a href="">Điều khoản dịch vụ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="policy">
+                                <h4>Chính sách</h4>
+                                <div>
+                                    <ul>
+                                        <li><a href="">Chính sách bảo mật</a></li>
+                                        <li><a href="">Chính sách thanh toán</a></li>
+                                        <li><a href="">Chính sách vận chuyển</a></li>
+                                        <li><a href="">Chính sách đổi trả</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class-="email-group">
+                            <div class="email">
+                                <h4>Đăng ký nhận tin</h4>
+                                <p>
+                                    Hãy nhập email của bạn vào ô dưới đây để có thể nhận được tất cả tin tức mới nhất
+                                    của ABC
+                                </p>
+                                <div class="input-group">
+                                    <form action="">
+                                        <input
+                                            type="email"
+                                            value=""
+                                            placeholder="Nhập email của bạn..."
+                                            name="contact[email]"
+                                            id="Email"
+                                            class="input-group-field"
+                                            autocorrect="off"
+                                            autocapitalize="off"
+                                        />
+                                    </form>
+                                    <button type="submit" class="button-btn1" name="subscribe" id="subscribe">
+                                        Đăng ký
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="connect-footer">
+                        <div class="connect">
+                            <h4>Kết nối với chúng tôi</h4>
+                            <div class="icon-footer">
+                                <a href="">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
