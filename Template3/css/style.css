@@ -12,7 +12,7 @@ html {
     color: #000;
 }
 .home {
-    /* width: 100vw; */
+    width: 100vw;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ html {
 .home .header {
     display: flex;
     overflow: hidden;
-    /* width: 100vw; */
+    width: 100vw;
     height: 85px;
     padding: 10px 0px 5px;
 }
