@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/select.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap" rel="stylesheet" />
@@ -92,55 +93,298 @@
                     src="https://theme.hstatic.net/1000376556/1000707101/14/psl_1_r1_slide_img_3.jpg?v=198"
                 />
             </div>
-            <div class="tag">
-                <div id="tag1">
-                    <i class="fa-solid fa-book-medical fa-4x"></i>
-                    <h2>Sách Mới nè</h2>
+            <div>
+                <div class="main-control main-content-wrapper active1">
+                    <div class="collection">
+                        <div class="containter1">
+                            <div class="row1">
+                                <!--  phần hiển thị các tập truyện -->
+                                <div class="col-md-9 col-sm-12 col-xs-12 content-collection">
+                                    <div class="row1">
+                                        <!-- phần trên container -->
+                                        <div class="col-md-12">
+                                            <div class="row1">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div class="browse-tags"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- phần product truyện -->
+                                        <div class="col-md-12 content-product-list">
+                                            <div class="product-list-view row1 grid products-grid">
+                                                <!-- item 1 truyện -->
+                                                <div class="example">
+                                                    <div id="large-th">
+                                                        <div class="container" id="container-1">
+                                                            <h1>Tất cả sản phẩm</h1>
+                                                            <div class="container-select">
+                                                                <div class="top-select">
+                                                                    <span id="sapxeptheo">Sắp xếp theo:</span>
+                                                                    <span
+                                                                        class="custom-dropdown custom-dropdown--white"
+                                                                    >
+                                                                        <select
+                                                                            name=""
+                                                                            id=""
+                                                                            class="sort-by custom-dropdown__select custom-dropdown__select--white"
+                                                                        >
+                                                                            <option class="mauchunhat" value="manual">
+                                                                                Sản phẩm nổi bật
+                                                                            </option>
+                                                                            <option
+                                                                                class="mauchunhat"
+                                                                                value="price-ascending"
+                                                                            >
+                                                                                Giá: Tăng dần
+                                                                            </option>
+                                                                            <option
+                                                                                class="mauchunhat"
+                                                                                value="price-descending"
+                                                                            >
+                                                                                Giá: Giảm dần
+                                                                            </option>
+                                                                            <option
+                                                                                class="mauchunhat"
+                                                                                value="title-ascending"
+                                                                            >
+                                                                                Tên: A-Z
+                                                                            </option>
+                                                                            <option
+                                                                                class="mauchunhat"
+                                                                                value="title-descending"
+                                                                            >
+                                                                                Tên: Z-A
+                                                                            </option>
+                                                                            <option
+                                                                                class="mauchunhat"
+                                                                                value="created-ascending"
+                                                                            >
+                                                                                Cũ nhất
+                                                                            </option>
+                                                                            <option
+                                                                                class="mauchunhat"
+                                                                                value="created-descending"
+                                                                            >
+                                                                                Mới nhất
+                                                                            </option>
+                                                                            <option
+                                                                                class="mauchunhat"
+                                                                                value="best-selling"
+                                                                            >
+                                                                                Bán chạy nhất
+                                                                            </option>
+                                                                        </select>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="top-select" id="danhmuc">
+                                                                    <span>Danh mục:</span>
+                                                                    <span
+                                                                        class="custom-dropdown custom-dropdown--white"
+                                                                    >
+                                                                        <select
+                                                                            name=""
+                                                                            id=""
+                                                                            class="sort-by custom-dropdown__select custom-dropdown__select--white"
+                                                                        >
+                                                                            <option class="mauchunhat" value="manual">
+                                                                                Sản phẩm nổi bật
+                                                                            </option>
+                                                                            <option
+                                                                                class="mauchunhat"
+                                                                                value="price-ascending"
+                                                                            >
+                                                                                Giá: Tăng dần
+                                                                            </option>
+                                                                            <option
+                                                                                class="mauchunhat"
+                                                                                value="price-descending"
+                                                                            >
+                                                                                Giá: Giảm dần
+                                                                            </option>
+                                                                            <option
+                                                                                class="mauchunhat"
+                                                                                value="title-ascending"
+                                                                            >
+                                                                                Tên: A-Z
+                                                                            </option>
+                                                                            <option
+                                                                                class="mauchunhat"
+                                                                                value="title-descending"
+                                                                            >
+                                                                                Tên: Z-A
+                                                                            </option>
+                                                                            <option
+                                                                                class="mauchunhat"
+                                                                                value="created-ascending"
+                                                                            >
+                                                                                Cũ nhất
+                                                                            </option>
+                                                                            <option
+                                                                                class="mauchunhat"
+                                                                                value="created-descending"
+                                                                            >
+                                                                                Mới nhất
+                                                                            </option>
+                                                                            <option
+                                                                                class="mauchunhat"
+                                                                                value="best-selling"
+                                                                            >
+                                                                                Bán chạy nhất
+                                                                            </option>
+                                                                        </select>
+                                                                    </span>
+                                                                </div>
+
+                                                                <!-- <form id="app-cover">
+                                                                    <div id="select-box">
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            id="options-view-button"
+                                                                        />
+                                                                        <div id="select-button" class="brd">
+                                                                            <div id="selected-value">
+                                                                                <span>Select a platform</span>
+                                                                            </div>
+                                                                            <div id="chevrons">
+                                                                                <i class="fas fa-chevron-up"></i>
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div id="options">
+                                                                            <div class="option">
+                                                                                <input
+                                                                                    class="s-c top"
+                                                                                    type="radio"
+                                                                                    name="platform"
+                                                                                    value="codepen"
+                                                                                />
+                                                                                <input
+                                                                                    class="s-c bottom"
+                                                                                    type="radio"
+                                                                                    name="platform"
+                                                                                    value="codepen"
+                                                                                />
+                                                                                <i class="fab fa-codepen"></i>
+                                                                                <span class="label">CodePen</span>
+                                                                                <span class="opt-val">CodePen</span>
+                                                                            </div>
+                                                                            <div class="option">
+                                                                                <input
+                                                                                    class="s-c top"
+                                                                                    type="radio"
+                                                                                    name="platform"
+                                                                                    value="dribbble"
+                                                                                />
+                                                                                <input
+                                                                                    class="s-c bottom"
+                                                                                    type="radio"
+                                                                                    name="platform"
+                                                                                    value="dribbble"
+                                                                                />
+                                                                                <i class="fab fa-dribbble"></i>
+                                                                                <span class="label">Dribbble</span>
+                                                                                <span class="opt-val">Dribbble</span>
+                                                                            </div>
+                                                                            <div class="option">
+                                                                                <input
+                                                                                    class="s-c top"
+                                                                                    type="radio"
+                                                                                    name="platform"
+                                                                                    value="behance"
+                                                                                />
+                                                                                <input
+                                                                                    class="s-c bottom"
+                                                                                    type="radio"
+                                                                                    name="platform"
+                                                                                    value="behance"
+                                                                                />
+                                                                                <i class="fab fa-behance"></i>
+                                                                                <span class="label">Behance</span>
+                                                                                <span class="opt-val">Behance</span>
+                                                                            </div>
+                                                                            <div class="option">
+                                                                                <input
+                                                                                    class="s-c top"
+                                                                                    type="radio"
+                                                                                    name="platform"
+                                                                                    value="hackerrank"
+                                                                                />
+                                                                                <input
+                                                                                    class="s-c bottom"
+                                                                                    type="radio"
+                                                                                    name="platform"
+                                                                                    value="hackerrank"
+                                                                                />
+                                                                                <i class="fab fa-hackerrank"></i>
+                                                                                <span class="label">HackerRank</span>
+                                                                                <span class="opt-val">HackerRank</span>
+                                                                            </div>
+                                                                            <div class="option">
+                                                                                <input
+                                                                                    class="s-c top"
+                                                                                    type="radio"
+                                                                                    name="platform"
+                                                                                    value="stackoverflow"
+                                                                                />
+                                                                                <input
+                                                                                    class="s-c bottom"
+                                                                                    type="radio"
+                                                                                    name="platform"
+                                                                                    value="stackoverflow"
+                                                                                />
+                                                                                <i class="fab fa-stack-overflow"></i>
+                                                                                <span class="label">StackOverflow</span>
+                                                                                <span class="opt-val"
+                                                                                    >StackOverflow</span
+                                                                                >
+                                                                            </div>
+                                                                            <div class="option">
+                                                                                <input
+                                                                                    class="s-c top"
+                                                                                    type="radio"
+                                                                                    name="platform"
+                                                                                    value="freecodecamp"
+                                                                                />
+                                                                                <input
+                                                                                    class="s-c bottom"
+                                                                                    type="radio"
+                                                                                    name="platform"
+                                                                                    value="freecodecamp"
+                                                                                />
+                                                                                <i class="fab fa-free-code-camp"></i>
+                                                                                <span class="label">FreeCodeCamp</span>
+                                                                                <span class="opt-val"
+                                                                                    >FreeCodeCamp</span
+                                                                                >
+                                                                            </div>
+                                                                            <div id="option-bg"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form> -->
+                                                            </div>
+                                                            <br />
+                                                            <div style="color: red"></div>
+                                                            <div id="list-product"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- phần mô tả các trang sau -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="tag2">
-                    <i class="fa-solid fa-heart fa-4x"></i>
-                    <h2>Sách bán chạy</h2>
-                </div>
-                <div id="tag3">
-                    <i class="fa-solid fa-money-check-dollar fa-4x"></i>
-                    <h2>Sách khuyến mãi</h2>
-                </div>
-                <script></script>
             </div>
         </div>
 
         <!-- content -->
-        <div class="content">
-            <!-- <div class="container_title">
-                <h2 class="title">Brief answer to the big question</h2>
-                <div class="name"></div>
-                <div class="container_price">
-                    <div class="price"></div>
-                    <div class="del"></div>
-                </div>
-            </div> -->
-            <div class="example">
-                <div id="large-th">
-                    <div class="container">
-                        <h1>SÁCH MỚI</h1>
-                        <br />
-                        <div id="list-1"></div>
-                    </div>
-                    <div class="container">
-                        <h1>SÁCH BÁN CHẠY</h1>
-                        <br />
-                        <div id="list-2"></div>
-                    </div>
-                    <div class="container">
-                        <h1>SÁCH KHUYẾN MÃI</h1>
-                        <br />
-                        <div id="list-3"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <script src="../js/Home.js"></script>
-        <script src="../js/SanPham.js"></script>
+        <script src="../js/SanPham2.js"></script>
         <!-- end content -->
         <footer class="footer-position">
             <div class="side-footer">
