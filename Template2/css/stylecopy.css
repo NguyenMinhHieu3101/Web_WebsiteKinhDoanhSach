@@ -1508,7 +1508,7 @@ footer {
     height: auto;
     padding: 30px 100px 20px 100px;
     background: #313131;
-    color: #fff;
+    color: #fff !important;
 }
 
 footer .container {
