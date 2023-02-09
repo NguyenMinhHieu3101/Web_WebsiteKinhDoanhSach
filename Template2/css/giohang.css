@@ -188,6 +188,11 @@ html {
     border-color: var(--main-color);
 } */
 
+.text-bu {
+    font-size: 24px;
+    font-weight: 400px;
+}
+
 .table {
     position: relative;
     min-height: 1px;
@@ -195,13 +200,15 @@ html {
     padding-left: 15px;
     width: 100%;
     margin: auto;
-    margin-top: 10% !important;
+    margin-top: 10%;
 }
+
 .cart {
     position: relative;
-    margin: auto; 
+    margin: auto;
     text-align: right;
 }
+
 .content input {
     text-align: right;
     border-radius: 1vw;
@@ -231,7 +238,7 @@ tr {
     width: 20vw;
     margin-bottom: 2vw;
     border: var(--main-color) 1px solid !important;
-    border: 1px solid pink;  
+    border: 1px solid pink;
     border-collapse: collapse;
 
 }
@@ -264,10 +271,12 @@ td {
     margin-right: 20%; */
     margin-top: 5%;
 }
+
 .my-2 {
     margin-left: 20%;
     margin-right: 20%;
 }
+
 .btn {
     display: inline-block;
     font-weight: 400;
@@ -283,7 +292,7 @@ td {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0.25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 
