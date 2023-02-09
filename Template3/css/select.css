@@ -17,7 +17,7 @@
     flex-direction: row-reverse;
 }
 .top-select {
-    padding-right: 20px;
+    padding-right: 50px;
 }
 
 #app-cover {
@@ -382,4 +382,15 @@ input[type='radio'] {
     border-radius: 0 0 4px 4px;
 }
 
-#list-product
+#div-count {
+    margin: 10px 20px 0px 0px;
+}
+
+#count {
+    font-weight: 400;
+    white-space: nowrap;
+    color: #c83d53 !important;
+    /* c83548 */
+    font-size: 12px;
+    font-style: italic;
+}

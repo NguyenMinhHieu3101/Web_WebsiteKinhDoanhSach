@@ -12,12 +12,12 @@ function getOffset(el) {
 }
 console.log();
 
-document.getElementById('tag1').addEventListener('click', function () {
+document.getElementById('tag1')?.addEventListener('click', function () {
     document.documentElement.scrollTop = getOffset(document.getElementById('container-1')).top - 50;
 });
-document.getElementById('tag2').addEventListener('click', function () {
+document.getElementById('tag2')?.addEventListener('click', function () {
     document.documentElement.scrollTop = getOffset(document.getElementById('container-2')).top - 50;
 });
-document.getElementById('tag3').addEventListener('click', function () {
+document.getElementById('tag3')?.addEventListener('click', function () {
     document.documentElement.scrollTop = getOffset(document.getElementById('container-3')).top - 50;
 });
