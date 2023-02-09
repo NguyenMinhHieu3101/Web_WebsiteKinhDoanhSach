@@ -13,7 +13,7 @@
 /* Hide the images by default */
 .mySlides {
     width: 100vw;
-    display: none;
+    height: 500px;
 }
 
 /* Next & previous buttons */
